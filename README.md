@@ -1,1 +1,1 @@
-# BDSI_2022
+# Repository for Big Data Summer Institute - Machine Learning Group
