@@ -1,1 +1,1 @@
-# Repository for Big Data Summer Institute - Machine Learning Group
+# Big Data Summer Institute (2022) - Machine Learning Group
