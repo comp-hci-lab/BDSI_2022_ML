@@ -29,6 +29,6 @@ Go to BDSI_2022_ML directory and type:
 
 The virtualenv you set up will contain the module "gdown" which we will use to download files from [Google Drive](https://drive.google.com/drive/folders/1g3afNfIAtbYOcQtRBsxBUjn9tSVoNFW7?usp=sharing) onto your working directory. Click on the .zip data files and generate their links, which will contain the FILE ID. Enter the FILE ID in the command:
 
-`gdown https://drive.google.com/uc?id=[ENTER FILE ID HERE]`
+`gdown https://drive.google.com/uc?id=[FILE ID]`
 
 
