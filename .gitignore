@@ -1,1 +1,6 @@
 data/Task01_BrainTumour.h5
+starter_files
+data/GBM_test_images.zip
+data/GBM_test_labels.zip
+data/LGG_test_images.zip
+data/LGG_test_labels.zip
