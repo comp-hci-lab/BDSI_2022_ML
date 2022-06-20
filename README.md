@@ -31,4 +31,9 @@ The virtualenv you set up will contain the module "gdown" which we will use to d
 
 `gdown https://drive.google.com/uc?id=[FILE ID]`
 
+Next, you will have to unzip the files you just downloaded. Type the command in the linux terminal:
+
+`unzip [FILE_NAME].zip `
+
+
 
