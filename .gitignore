@@ -13,3 +13,4 @@ data/val_labels/
 data/zip_files/
 data/patient_list/
 .ipynb_checkpoints/
+.DS_Store
