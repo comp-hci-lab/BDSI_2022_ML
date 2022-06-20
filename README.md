@@ -27,8 +27,13 @@ Go to BDSI_2022_ML directory and type:
 
 ## Downloading Data
 
-The virtualenv you set up will contain the module "gdown" which we will use to download files from [Google Drive](https://drive.google.com/drive/folders/1Y-p0NUCtyVz4pKVxgyB8IQWubjOED497?usp=sharing) onto your working directory. Click on the .zip data files and generate their links, which will contain the FILE ID. Enter the FILE ID in the command:
+The virtualenv you set up will contain the module "gdown" which we will use to download files from [Google Drive](https://drive.google.com/drive/folders/1Y-p0NUCtyVz4pKVxgyB8IQWubjOED497?usp=sharing) onto your working directory. First, navigate to the [data](https://github.com/comp-hci-lab/BDSI_2022_ML/tree/main/data) folder in the cloned repository. Next, click on the .zip data files and generate their links, which will contain the FILE ID. Enter the FILE ID in the command:
 
 `gdown https://drive.google.com/uc?id=[FILE ID]`
+
+Next, you will have to unzip the files you just downloaded. Type the command in the linux terminal:
+
+`unzip [FILE_NAME].zip `
+
 
 

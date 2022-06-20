@@ -1,0 +1,418 @@
+LAYER_NAME: all
+2021-03-03 09:25:48.470068: I tensorflow_io/core/kernels/cpu_check.cc:128] Your CPU supports instructions that this TensorFlow IO binary was not compiled to use: AVX2 AVX512F FMA
+2021-03-03 09:26:05.925017: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcuda.so.1
+2021-03-03 09:26:06.172611: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1561] Found device 0 with properties: 
+pciBusID: 0000:1d:00.0 name: GeForce RTX 2080 Ti computeCapability: 7.5
+coreClock: 1.545GHz coreCount: 68 deviceMemorySize: 10.76GiB deviceMemoryBandwidth: 573.69GiB/s
+2021-03-03 09:26:06.173960: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1561] Found device 1 with properties: 
+pciBusID: 0000:1e:00.0 name: GeForce RTX 2080 Ti computeCapability: 7.5
+coreClock: 1.545GHz coreCount: 68 deviceMemorySize: 10.76GiB deviceMemoryBandwidth: 573.69GiB/s
+2021-03-03 09:26:06.175277: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1561] Found device 2 with properties: 
+pciBusID: 0000:1f:00.0 name: GeForce RTX 2080 Ti computeCapability: 7.5
+coreClock: 1.545GHz coreCount: 68 deviceMemorySize: 10.76GiB deviceMemoryBandwidth: 573.69GiB/s
+2021-03-03 09:26:06.176578: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1561] Found device 3 with properties: 
+pciBusID: 0000:20:00.0 name: GeForce RTX 2080 Ti computeCapability: 7.5
+coreClock: 1.545GHz coreCount: 68 deviceMemorySize: 10.76GiB deviceMemoryBandwidth: 573.69GiB/s
+2021-03-03 09:26:06.177802: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1561] Found device 4 with properties: 
+pciBusID: 0000:21:00.0 name: GeForce RTX 2080 Ti computeCapability: 7.5
+coreClock: 1.545GHz coreCount: 68 deviceMemorySize: 10.76GiB deviceMemoryBandwidth: 573.69GiB/s
+2021-03-03 09:26:06.179045: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1561] Found device 5 with properties: 
+pciBusID: 0000:22:00.0 name: GeForce RTX 2080 Ti computeCapability: 7.5
+coreClock: 1.545GHz coreCount: 68 deviceMemorySize: 10.76GiB deviceMemoryBandwidth: 573.69GiB/s
+2021-03-03 09:26:06.180297: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1561] Found device 6 with properties: 
+pciBusID: 0000:23:00.0 name: GeForce RTX 2080 Ti computeCapability: 7.5
+coreClock: 1.545GHz coreCount: 68 deviceMemorySize: 10.76GiB deviceMemoryBandwidth: 573.69GiB/s
+2021-03-03 09:26:06.181584: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1561] Found device 7 with properties: 
+pciBusID: 0000:24:00.0 name: GeForce RTX 2080 Ti computeCapability: 7.5
+coreClock: 1.545GHz coreCount: 68 deviceMemorySize: 10.76GiB deviceMemoryBandwidth: 573.69GiB/s
+2021-03-03 09:26:06.271910: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcudart.so.10.1
+2021-03-03 09:26:06.714662: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcublas.so.10
+2021-03-03 09:26:07.096705: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcufft.so.10
+2021-03-03 09:26:07.264661: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcurand.so.10
+2021-03-03 09:26:07.673697: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcusolver.so.10
+2021-03-03 09:26:07.941911: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcusparse.so.10
+2021-03-03 09:26:08.876955: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcudnn.so.7
+2021-03-03 09:26:08.896460: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1703] Adding visible gpu devices: 0, 1, 2, 3, 4, 5, 6, 7
+2021-03-03 09:26:13.484180: I tensorflow/core/platform/cpu_feature_guard.cc:143] Your CPU supports instructions that this TensorFlow binary was not compiled to use: AVX2 AVX512F FMA
+2021-03-03 09:26:13.500099: I tensorflow/core/platform/profile_utils/cpu_utils.cc:102] CPU Frequency: 2100000000 Hz
+2021-03-03 09:26:13.501675: I tensorflow/compiler/xla/service/service.cc:168] XLA service 0x56159810cd00 initialized for platform Host (this does not guarantee that XLA will be used). Devices:
+2021-03-03 09:26:13.501701: I tensorflow/compiler/xla/service/service.cc:176]   StreamExecutor device (0): Host, Default Version
+2021-03-03 09:26:14.590890: I tensorflow/compiler/xla/service/service.cc:168] XLA service 0x56159819aaa0 initialized for platform CUDA (this does not guarantee that XLA will be used). Devices:
+2021-03-03 09:26:14.590922: I tensorflow/compiler/xla/service/service.cc:176]   StreamExecutor device (0): GeForce RTX 2080 Ti, Compute Capability 7.5
+2021-03-03 09:26:14.590930: I tensorflow/compiler/xla/service/service.cc:176]   StreamExecutor device (1): GeForce RTX 2080 Ti, Compute Capability 7.5
+2021-03-03 09:26:14.590936: I tensorflow/compiler/xla/service/service.cc:176]   StreamExecutor device (2): GeForce RTX 2080 Ti, Compute Capability 7.5
+2021-03-03 09:26:14.590942: I tensorflow/compiler/xla/service/service.cc:176]   StreamExecutor device (3): GeForce RTX 2080 Ti, Compute Capability 7.5
+2021-03-03 09:26:14.590948: I tensorflow/compiler/xla/service/service.cc:176]   StreamExecutor device (4): GeForce RTX 2080 Ti, Compute Capability 7.5
+2021-03-03 09:26:14.590954: I tensorflow/compiler/xla/service/service.cc:176]   StreamExecutor device (5): GeForce RTX 2080 Ti, Compute Capability 7.5
+2021-03-03 09:26:14.590960: I tensorflow/compiler/xla/service/service.cc:176]   StreamExecutor device (6): GeForce RTX 2080 Ti, Compute Capability 7.5
+2021-03-03 09:26:14.590965: I tensorflow/compiler/xla/service/service.cc:176]   StreamExecutor device (7): GeForce RTX 2080 Ti, Compute Capability 7.5
+2021-03-03 09:26:14.596851: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1561] Found device 0 with properties: 
+pciBusID: 0000:1d:00.0 name: GeForce RTX 2080 Ti computeCapability: 7.5
+coreClock: 1.545GHz coreCount: 68 deviceMemorySize: 10.76GiB deviceMemoryBandwidth: 573.69GiB/s
+2021-03-03 09:26:14.598153: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1561] Found device 1 with properties: 
+pciBusID: 0000:1e:00.0 name: GeForce RTX 2080 Ti computeCapability: 7.5
+coreClock: 1.545GHz coreCount: 68 deviceMemorySize: 10.76GiB deviceMemoryBandwidth: 573.69GiB/s
+2021-03-03 09:26:14.599436: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1561] Found device 2 with properties: 
+pciBusID: 0000:1f:00.0 name: GeForce RTX 2080 Ti computeCapability: 7.5
+coreClock: 1.545GHz coreCount: 68 deviceMemorySize: 10.76GiB deviceMemoryBandwidth: 573.69GiB/s
+2021-03-03 09:26:14.600717: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1561] Found device 3 with properties: 
+pciBusID: 0000:20:00.0 name: GeForce RTX 2080 Ti computeCapability: 7.5
+coreClock: 1.545GHz coreCount: 68 deviceMemorySize: 10.76GiB deviceMemoryBandwidth: 573.69GiB/s
+2021-03-03 09:26:14.601989: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1561] Found device 4 with properties: 
+pciBusID: 0000:21:00.0 name: GeForce RTX 2080 Ti computeCapability: 7.5
+coreClock: 1.545GHz coreCount: 68 deviceMemorySize: 10.76GiB deviceMemoryBandwidth: 573.69GiB/s
+2021-03-03 09:26:14.603256: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1561] Found device 5 with properties: 
+pciBusID: 0000:22:00.0 name: GeForce RTX 2080 Ti computeCapability: 7.5
+coreClock: 1.545GHz coreCount: 68 deviceMemorySize: 10.76GiB deviceMemoryBandwidth: 573.69GiB/s
+2021-03-03 09:26:14.604529: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1561] Found device 6 with properties: 
+pciBusID: 0000:23:00.0 name: GeForce RTX 2080 Ti computeCapability: 7.5
+coreClock: 1.545GHz coreCount: 68 deviceMemorySize: 10.76GiB deviceMemoryBandwidth: 573.69GiB/s
+2021-03-03 09:26:14.605808: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1561] Found device 7 with properties: 
+pciBusID: 0000:24:00.0 name: GeForce RTX 2080 Ti computeCapability: 7.5
+coreClock: 1.545GHz coreCount: 68 deviceMemorySize: 10.76GiB deviceMemoryBandwidth: 573.69GiB/s
+2021-03-03 09:26:14.605858: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcudart.so.10.1
+2021-03-03 09:26:14.605874: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcublas.so.10
+2021-03-03 09:26:14.605887: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcufft.so.10
+2021-03-03 09:26:14.605899: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcurand.so.10
+2021-03-03 09:26:14.605910: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcusolver.so.10
+2021-03-03 09:26:14.605922: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcusparse.so.10
+2021-03-03 09:26:14.605934: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcudnn.so.7
+2021-03-03 09:26:14.625050: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1703] Adding visible gpu devices: 0, 1, 2, 3, 4, 5, 6, 7
+2021-03-03 09:26:14.625128: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcudart.so.10.1
+2021-03-03 09:26:14.635229: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1102] Device interconnect StreamExecutor with strength 1 edge matrix:
+2021-03-03 09:26:14.635250: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1108]      0 1 2 3 4 5 6 7 
+2021-03-03 09:26:14.635261: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1121] 0:   N N N N N N N N 
+2021-03-03 09:26:14.635268: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1121] 1:   N N N N N N N N 
+2021-03-03 09:26:14.635274: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1121] 2:   N N N N N N N N 
+2021-03-03 09:26:14.635279: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1121] 3:   N N N N N N N N 
+2021-03-03 09:26:14.635285: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1121] 4:   N N N N N N N N 
+2021-03-03 09:26:14.635290: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1121] 5:   N N N N N N N N 
+2021-03-03 09:26:14.635296: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1121] 6:   N N N N N N N N 
+2021-03-03 09:26:14.635302: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1121] 7:   N N N N N N N N 
+2021-03-03 09:26:14.646064: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1247] Created TensorFlow device (/job:localhost/replica:0/task:0/device:GPU:0 with 10209 MB memory) -> physical GPU (device: 0, name: GeForce RTX 2080 Ti, pci bus id: 0000:1d:00.0, compute capability: 7.5)
+2021-03-03 09:26:14.647554: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1247] Created TensorFlow device (/job:localhost/replica:0/task:0/device:GPU:1 with 10209 MB memory) -> physical GPU (device: 1, name: GeForce RTX 2080 Ti, pci bus id: 0000:1e:00.0, compute capability: 7.5)
+2021-03-03 09:26:14.649019: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1247] Created TensorFlow device (/job:localhost/replica:0/task:0/device:GPU:2 with 10209 MB memory) -> physical GPU (device: 2, name: GeForce RTX 2080 Ti, pci bus id: 0000:1f:00.0, compute capability: 7.5)
+2021-03-03 09:26:14.650471: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1247] Created TensorFlow device (/job:localhost/replica:0/task:0/device:GPU:3 with 10209 MB memory) -> physical GPU (device: 3, name: GeForce RTX 2080 Ti, pci bus id: 0000:20:00.0, compute capability: 7.5)
+2021-03-03 09:26:14.651928: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1247] Created TensorFlow device (/job:localhost/replica:0/task:0/device:GPU:4 with 10209 MB memory) -> physical GPU (device: 4, name: GeForce RTX 2080 Ti, pci bus id: 0000:21:00.0, compute capability: 7.5)
+2021-03-03 09:26:14.653374: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1247] Created TensorFlow device (/job:localhost/replica:0/task:0/device:GPU:5 with 10209 MB memory) -> physical GPU (device: 5, name: GeForce RTX 2080 Ti, pci bus id: 0000:22:00.0, compute capability: 7.5)
+2021-03-03 09:26:14.654834: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1247] Created TensorFlow device (/job:localhost/replica:0/task:0/device:GPU:6 with 10209 MB memory) -> physical GPU (device: 6, name: GeForce RTX 2080 Ti, pci bus id: 0000:23:00.0, compute capability: 7.5)
+2021-03-03 09:26:14.656271: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1247] Created TensorFlow device (/job:localhost/replica:0/task:0/device:GPU:7 with 10209 MB memory) -> physical GPU (device: 7, name: GeForce RTX 2080 Ti, pci bus id: 0000:24:00.0, compute capability: 7.5)
+WARNING:tensorflow:From ./all_train.py:152: Model.fit_generator (from tensorflow.python.keras.engine.training) is deprecated and will be removed in a future version.
+Instructions for updating:
+Please use Model.fit, which supports generators.
+WARNING:tensorflow:Using a generator with `use_multiprocessing=True` and multiple workers may duplicate your data. Please consider using the `tf.data.Dataset`.
+WARNING:tensorflow:multiprocessing can interact badly with TensorFlow, causing nondeterministic deadlocks. For high performance data pipelines tf.data is recommended.
+2.2.0
+Listing all GPU resources:
+[PhysicalDevice(name='/physical_device:GPU:0', device_type='GPU'), PhysicalDevice(name='/physical_device:GPU:1', device_type='GPU'), PhysicalDevice(name='/physical_device:GPU:2', device_type='GPU'), PhysicalDevice(name='/physical_device:GPU:3', device_type='GPU'), PhysicalDevice(name='/physical_device:GPU:4', device_type='GPU'), PhysicalDevice(name='/physical_device:GPU:5', device_type='GPU'), PhysicalDevice(name='/physical_device:GPU:6', device_type='GPU'), PhysicalDevice(name='/physical_device:GPU:7', device_type='GPU')]
+
+0.10.1
+------------------------------
+Constructing model...
+------------------------------
+
+Input size: (None, 144, 144, 4)
+Output size: (None, 144, 144, 1)
+Model summary:
+Model: "model_all"
+__________________________________________________________________________________________________
+Layer (type)                    Output Shape         Param #     Connected to                     
+==================================================================================================
+input_layer (InputLayer)        [(None, 144, 144, 4) 0                                            
+__________________________________________________________________________________________________
+encoder_1_a (Conv2D)            (None, 144, 144, 32) 1184        input_layer[0][0]                
+__________________________________________________________________________________________________
+encoder_1_b (Conv2D)            (None, 144, 144, 32) 9248        encoder_1_a[0][0]                
+__________________________________________________________________________________________________
+batchnorm_1 (BatchNormalization (None, 144, 144, 32) 128         encoder_1_b[0][0]                
+__________________________________________________________________________________________________
+downsample_1 (MaxPooling2D)     (None, 72, 72, 32)   0           batchnorm_1[0][0]                
+__________________________________________________________________________________________________
+encoder_2_a (Conv2D)            (None, 72, 72, 64)   18496       downsample_1[0][0]               
+__________________________________________________________________________________________________
+encoder_2_b (Conv2D)            (None, 72, 72, 64)   36928       encoder_2_a[0][0]                
+__________________________________________________________________________________________________
+batchnorm_2 (BatchNormalization (None, 72, 72, 64)   256         encoder_2_b[0][0]                
+__________________________________________________________________________________________________
+downsample_2 (MaxPooling2D)     (None, 36, 36, 64)   0           batchnorm_2[0][0]                
+__________________________________________________________________________________________________
+encoder_3_a (Conv2D)            (None, 36, 36, 128)  73856       downsample_2[0][0]               
+__________________________________________________________________________________________________
+encoder_3_b (Conv2D)            (None, 36, 36, 128)  147584      encoder_3_a[0][0]                
+__________________________________________________________________________________________________
+batchnorm_3 (BatchNormalization (None, 36, 36, 128)  512         encoder_3_b[0][0]                
+__________________________________________________________________________________________________
+downsample_3 (MaxPooling2D)     (None, 18, 18, 128)  0           batchnorm_3[0][0]                
+__________________________________________________________________________________________________
+encoder_4_a (Conv2D)            (None, 18, 18, 256)  295168      downsample_3[0][0]               
+__________________________________________________________________________________________________
+encoder_4_b (Conv2D)            (None, 18, 18, 256)  590080      encoder_4_a[0][0]                
+__________________________________________________________________________________________________
+batchnorm_4 (BatchNormalization (None, 18, 18, 256)  1024        encoder_4_b[0][0]                
+__________________________________________________________________________________________________
+downsample_4 (MaxPooling2D)     (None, 9, 9, 256)    0           batchnorm_4[0][0]                
+__________________________________________________________________________________________________
+encoder_5_a (Conv2D)            (None, 9, 9, 512)    1180160     downsample_4[0][0]               
+__________________________________________________________________________________________________
+encoder_5_b (Conv2D)            (None, 9, 9, 512)    2359808     encoder_5_a[0][0]                
+__________________________________________________________________________________________________
+upsample_4 (UpSampling2D)       (None, 18, 18, 512)  0           encoder_5_b[0][0]                
+__________________________________________________________________________________________________
+concat_4 (Concatenate)          (None, 18, 18, 768)  0           upsample_4[0][0]                 
+                                                                 encoder_4_b[0][0]                
+__________________________________________________________________________________________________
+decoder_4_a (Conv2D)            (None, 18, 18, 256)  1769728     concat_4[0][0]                   
+__________________________________________________________________________________________________
+decoder_4_b (Conv2D)            (None, 18, 18, 256)  590080      decoder_4_a[0][0]                
+__________________________________________________________________________________________________
+upsample_3 (UpSampling2D)       (None, 36, 36, 256)  0           decoder_4_b[0][0]                
+__________________________________________________________________________________________________
+concat_3 (Concatenate)          (None, 36, 36, 384)  0           upsample_3[0][0]                 
+                                                                 encoder_3_b[0][0]                
+__________________________________________________________________________________________________
+decoder_3_a (Conv2D)            (None, 36, 36, 128)  442496      concat_3[0][0]                   
+__________________________________________________________________________________________________
+decoder_3_b (Conv2D)            (None, 36, 36, 128)  147584      decoder_3_a[0][0]                
+__________________________________________________________________________________________________
+upsample_2 (UpSampling2D)       (None, 72, 72, 128)  0           decoder_3_b[0][0]                
+__________________________________________________________________________________________________
+concat_2 (Concatenate)          (None, 72, 72, 192)  0           upsample_2[0][0]                 
+                                                                 encoder_2_b[0][0]                
+__________________________________________________________________________________________________
+decoder_2_a (Conv2D)            (None, 72, 72, 64)   110656      concat_2[0][0]                   
+__________________________________________________________________________________________________
+decoder_2_b (Conv2D)            (None, 72, 72, 64)   36928       decoder_2_a[0][0]                
+__________________________________________________________________________________________________
+upsample_1 (UpSampling2D)       (None, 144, 144, 64) 0           decoder_2_b[0][0]                
+__________________________________________________________________________________________________
+concat_1 (Concatenate)          (None, 144, 144, 96) 0           upsample_1[0][0]                 
+                                                                 encoder_1_b[0][0]                
+__________________________________________________________________________________________________
+decoder_1_a (Conv2D)            (None, 144, 144, 32) 27680       concat_1[0][0]                   
+__________________________________________________________________________________________________
+decoder_1_b (Conv2D)            (None, 144, 144, 32) 9248        decoder_1_a[0][0]                
+__________________________________________________________________________________________________
+last_layer (Conv2D)             (None, 144, 144, 1)  33          decoder_1_b[0][0]                
+__________________________________________________________________________________________________
+activation (Activation)         (None, 144, 144, 1)  0           last_layer[0][0]                 
+==================================================================================================
+Total params: 7,848,865
+Trainable params: 7,847,905
+Non-trainable params: 960
+__________________________________________________________________________________________________
+None
+Model losses:
+[]
+------------------------------
+Loading training and testing data...
+------------------------------
+------------------------------
+Fitting model with training data ...
+------------------------------
+Training the model started at 2021-03-03 09:27:47.235943
+Epoch 1/100
+2021-03-03 09:28:08.745341: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcudnn.so.7
+2021-03-03 09:28:11.906964: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcublas.so.10
+187/187 - 201s - loss: 0.7603 - dice_coef: 0.2397 - accuracy: 0.9557 - mean_binary_crossentropy: 0.1071 - soft_dice_coef: 0.2397 - dice_coef_loss: 0.7603 - val_loss: 0.8446 - val_dice_coef: 0.1567 - val_accuracy: 0.9049 - val_mean_binary_crossentropy: 0.4147 - val_soft_dice_coef: 0.1567 - val_dice_coef_loss: 0.8433
+Epoch 2/100
+187/187 - 195s - loss: 0.6520 - dice_coef: 0.3480 - accuracy: 0.9871 - mean_binary_crossentropy: 0.0883 - soft_dice_coef: 0.3480 - dice_coef_loss: 0.6520 - val_loss: 0.2594 - val_dice_coef: 0.7421 - val_accuracy: 0.9882 - val_mean_binary_crossentropy: 0.1852 - val_soft_dice_coef: 0.7421 - val_dice_coef_loss: 0.2579
+Epoch 3/100
+187/187 - 200s - loss: 0.1844 - dice_coef: 0.8155 - accuracy: 0.9886 - mean_binary_crossentropy: 0.2346 - soft_dice_coef: 0.8155 - dice_coef_loss: 0.1845 - val_loss: 0.1403 - val_dice_coef: 0.8603 - val_accuracy: 0.9936 - val_mean_binary_crossentropy: 0.1426 - val_soft_dice_coef: 0.8603 - val_dice_coef_loss: 0.1397
+Epoch 4/100
+187/187 - 200s - loss: 0.1700 - dice_coef: 0.8300 - accuracy: 0.9892 - mean_binary_crossentropy: 0.2262 - soft_dice_coef: 0.8300 - dice_coef_loss: 0.1700 - val_loss: 0.1359 - val_dice_coef: 0.8647 - val_accuracy: 0.9936 - val_mean_binary_crossentropy: 0.1596 - val_soft_dice_coef: 0.8647 - val_dice_coef_loss: 0.1353
+Epoch 5/100
+187/187 - 201s - loss: 0.1572 - dice_coef: 0.8429 - accuracy: 0.9900 - mean_binary_crossentropy: 0.1966 - soft_dice_coef: 0.8429 - dice_coef_loss: 0.1571 - val_loss: 0.1327 - val_dice_coef: 0.8679 - val_accuracy: 0.9939 - val_mean_binary_crossentropy: 0.1637 - val_soft_dice_coef: 0.8679 - val_dice_coef_loss: 0.1321
+Epoch 6/100
+187/187 - 202s - loss: 0.1529 - dice_coef: 0.8471 - accuracy: 0.9902 - mean_binary_crossentropy: 0.1968 - soft_dice_coef: 0.8471 - dice_coef_loss: 0.1529 - val_loss: 0.1297 - val_dice_coef: 0.8710 - val_accuracy: 0.9938 - val_mean_binary_crossentropy: 0.1392 - val_soft_dice_coef: 0.8710 - val_dice_coef_loss: 0.1290
+Epoch 7/100
+187/187 - 198s - loss: 0.1492 - dice_coef: 0.8508 - accuracy: 0.9904 - mean_binary_crossentropy: 0.1891 - soft_dice_coef: 0.8508 - dice_coef_loss: 0.1492 - val_loss: 0.1286 - val_dice_coef: 0.8720 - val_accuracy: 0.9940 - val_mean_binary_crossentropy: 0.1354 - val_soft_dice_coef: 0.8720 - val_dice_coef_loss: 0.1280
+Epoch 8/100
+187/187 - 201s - loss: 0.1483 - dice_coef: 0.8516 - accuracy: 0.9904 - mean_binary_crossentropy: 0.1880 - soft_dice_coef: 0.8516 - dice_coef_loss: 0.1484 - val_loss: 0.1310 - val_dice_coef: 0.8696 - val_accuracy: 0.9941 - val_mean_binary_crossentropy: 0.1826 - val_soft_dice_coef: 0.8696 - val_dice_coef_loss: 0.1304
+Epoch 9/100
+187/187 - 200s - loss: 0.1455 - dice_coef: 0.8545 - accuracy: 0.9905 - mean_binary_crossentropy: 0.2258 - soft_dice_coef: 0.8545 - dice_coef_loss: 0.1455 - val_loss: 0.1407 - val_dice_coef: 0.8600 - val_accuracy: 0.9929 - val_mean_binary_crossentropy: 0.1473 - val_soft_dice_coef: 0.8600 - val_dice_coef_loss: 0.1400
+Epoch 10/100
+187/187 - 202s - loss: 0.1423 - dice_coef: 0.8576 - accuracy: 0.9906 - mean_binary_crossentropy: 0.1930 - soft_dice_coef: 0.8576 - dice_coef_loss: 0.1424 - val_loss: 0.1198 - val_dice_coef: 0.8807 - val_accuracy: 0.9945 - val_mean_binary_crossentropy: 0.1268 - val_soft_dice_coef: 0.8807 - val_dice_coef_loss: 0.1193
+Epoch 11/100
+187/187 - 200s - loss: 0.1392 - dice_coef: 0.8608 - accuracy: 0.9909 - mean_binary_crossentropy: 0.1625 - soft_dice_coef: 0.8608 - dice_coef_loss: 0.1392 - val_loss: 0.1183 - val_dice_coef: 0.8822 - val_accuracy: 0.9947 - val_mean_binary_crossentropy: 0.1262 - val_soft_dice_coef: 0.8822 - val_dice_coef_loss: 0.1178
+Epoch 12/100
+187/187 - 201s - loss: 0.1376 - dice_coef: 0.8624 - accuracy: 0.9909 - mean_binary_crossentropy: 0.1816 - soft_dice_coef: 0.8624 - dice_coef_loss: 0.1376 - val_loss: 0.1244 - val_dice_coef: 0.8761 - val_accuracy: 0.9944 - val_mean_binary_crossentropy: 0.1767 - val_soft_dice_coef: 0.8761 - val_dice_coef_loss: 0.1239
+Epoch 13/100
+187/187 - 201s - loss: 0.1359 - dice_coef: 0.8641 - accuracy: 0.9910 - mean_binary_crossentropy: 0.1858 - soft_dice_coef: 0.8641 - dice_coef_loss: 0.1359 - val_loss: 0.1171 - val_dice_coef: 0.8835 - val_accuracy: 0.9947 - val_mean_binary_crossentropy: 0.1113 - val_soft_dice_coef: 0.8835 - val_dice_coef_loss: 0.1165
+Epoch 14/100
+187/187 - 201s - loss: 0.1343 - dice_coef: 0.8657 - accuracy: 0.9910 - mean_binary_crossentropy: 0.1718 - soft_dice_coef: 0.8657 - dice_coef_loss: 0.1343 - val_loss: 0.1164 - val_dice_coef: 0.8840 - val_accuracy: 0.9948 - val_mean_binary_crossentropy: 0.1134 - val_soft_dice_coef: 0.8840 - val_dice_coef_loss: 0.1160
+Epoch 15/100
+187/187 - 201s - loss: 0.1365 - dice_coef: 0.8635 - accuracy: 0.9910 - mean_binary_crossentropy: 0.1882 - soft_dice_coef: 0.8635 - dice_coef_loss: 0.1365 - val_loss: 0.1308 - val_dice_coef: 0.8696 - val_accuracy: 0.9939 - val_mean_binary_crossentropy: 0.2077 - val_soft_dice_coef: 0.8696 - val_dice_coef_loss: 0.1304
+Epoch 16/100
+187/187 - 201s - loss: 0.1304 - dice_coef: 0.8696 - accuracy: 0.9913 - mean_binary_crossentropy: 0.1663 - soft_dice_coef: 0.8696 - dice_coef_loss: 0.1304 - val_loss: 0.1162 - val_dice_coef: 0.8843 - val_accuracy: 0.9948 - val_mean_binary_crossentropy: 0.1145 - val_soft_dice_coef: 0.8843 - val_dice_coef_loss: 0.1157
+Epoch 17/100
+187/187 - 201s - loss: 0.1353 - dice_coef: 0.8647 - accuracy: 0.9911 - mean_binary_crossentropy: 0.1822 - soft_dice_coef: 0.8647 - dice_coef_loss: 0.1353 - val_loss: 0.1201 - val_dice_coef: 0.8804 - val_accuracy: 0.9949 - val_mean_binary_crossentropy: 0.0980 - val_soft_dice_coef: 0.8804 - val_dice_coef_loss: 0.1196
+Epoch 18/100
+187/187 - 201s - loss: 0.1326 - dice_coef: 0.8674 - accuracy: 0.9911 - mean_binary_crossentropy: 0.1780 - soft_dice_coef: 0.8674 - dice_coef_loss: 0.1326 - val_loss: 0.1170 - val_dice_coef: 0.8836 - val_accuracy: 0.9948 - val_mean_binary_crossentropy: 0.1163 - val_soft_dice_coef: 0.8836 - val_dice_coef_loss: 0.1164
+Epoch 19/100
+187/187 - 201s - loss: 0.1322 - dice_coef: 0.8678 - accuracy: 0.9913 - mean_binary_crossentropy: 0.1731 - soft_dice_coef: 0.8678 - dice_coef_loss: 0.1322 - val_loss: 0.1183 - val_dice_coef: 0.8823 - val_accuracy: 0.9944 - val_mean_binary_crossentropy: 0.1476 - val_soft_dice_coef: 0.8823 - val_dice_coef_loss: 0.1177
+Epoch 20/100
+187/187 - 202s - loss: 0.1321 - dice_coef: 0.8680 - accuracy: 0.9911 - mean_binary_crossentropy: 0.1934 - soft_dice_coef: 0.8680 - dice_coef_loss: 0.1320 - val_loss: 0.1113 - val_dice_coef: 0.8892 - val_accuracy: 0.9950 - val_mean_binary_crossentropy: 0.0986 - val_soft_dice_coef: 0.8892 - val_dice_coef_loss: 0.1108
+Epoch 21/100
+187/187 - 201s - loss: 0.1234 - dice_coef: 0.8766 - accuracy: 0.9916 - mean_binary_crossentropy: 0.1351 - soft_dice_coef: 0.8766 - dice_coef_loss: 0.1234 - val_loss: 0.1122 - val_dice_coef: 0.8883 - val_accuracy: 0.9948 - val_mean_binary_crossentropy: 0.1465 - val_soft_dice_coef: 0.8883 - val_dice_coef_loss: 0.1117
+Epoch 22/100
+187/187 - 200s - loss: 0.1264 - dice_coef: 0.8736 - accuracy: 0.9915 - mean_binary_crossentropy: 0.1543 - soft_dice_coef: 0.8736 - dice_coef_loss: 0.1264 - val_loss: 0.1088 - val_dice_coef: 0.8917 - val_accuracy: 0.9949 - val_mean_binary_crossentropy: 0.1084 - val_soft_dice_coef: 0.8917 - val_dice_coef_loss: 0.1083
+Epoch 23/100
+187/187 - 200s - loss: 0.1250 - dice_coef: 0.8750 - accuracy: 0.9916 - mean_binary_crossentropy: 0.1463 - soft_dice_coef: 0.8750 - dice_coef_loss: 0.1250 - val_loss: 0.1107 - val_dice_coef: 0.8898 - val_accuracy: 0.9949 - val_mean_binary_crossentropy: 0.1281 - val_soft_dice_coef: 0.8898 - val_dice_coef_loss: 0.1102
+Epoch 24/100
+187/187 - 201s - loss: 0.1250 - dice_coef: 0.8750 - accuracy: 0.9915 - mean_binary_crossentropy: 0.1406 - soft_dice_coef: 0.8750 - dice_coef_loss: 0.1250 - val_loss: 0.1106 - val_dice_coef: 0.8900 - val_accuracy: 0.9951 - val_mean_binary_crossentropy: 0.1242 - val_soft_dice_coef: 0.8900 - val_dice_coef_loss: 0.1100
+Epoch 25/100
+187/187 - 202s - loss: 0.1241 - dice_coef: 0.8759 - accuracy: 0.9917 - mean_binary_crossentropy: 0.1539 - soft_dice_coef: 0.8759 - dice_coef_loss: 0.1241 - val_loss: 0.1089 - val_dice_coef: 0.8916 - val_accuracy: 0.9949 - val_mean_binary_crossentropy: 0.1477 - val_soft_dice_coef: 0.8916 - val_dice_coef_loss: 0.1084
+Epoch 26/100
+187/187 - 200s - loss: 0.1226 - dice_coef: 0.8774 - accuracy: 0.9917 - mean_binary_crossentropy: 0.1563 - soft_dice_coef: 0.8774 - dice_coef_loss: 0.1226 - val_loss: 0.1282 - val_dice_coef: 0.8725 - val_accuracy: 0.9937 - val_mean_binary_crossentropy: 0.1084 - val_soft_dice_coef: 0.8725 - val_dice_coef_loss: 0.1275
+Epoch 27/100
+187/187 - 203s - loss: 0.1243 - dice_coef: 0.8757 - accuracy: 0.9916 - mean_binary_crossentropy: 0.1723 - soft_dice_coef: 0.8757 - dice_coef_loss: 0.1243 - val_loss: 0.1316 - val_dice_coef: 0.8690 - val_accuracy: 0.9941 - val_mean_binary_crossentropy: 0.3880 - val_soft_dice_coef: 0.8690 - val_dice_coef_loss: 0.1310
+Epoch 28/100
+187/187 - 201s - loss: 0.1214 - dice_coef: 0.8785 - accuracy: 0.9918 - mean_binary_crossentropy: 0.1575 - soft_dice_coef: 0.8785 - dice_coef_loss: 0.1215 - val_loss: 0.1083 - val_dice_coef: 0.8922 - val_accuracy: 0.9950 - val_mean_binary_crossentropy: 0.1284 - val_soft_dice_coef: 0.8922 - val_dice_coef_loss: 0.1078
+Epoch 29/100
+187/187 - 201s - loss: 0.1194 - dice_coef: 0.8806 - accuracy: 0.9918 - mean_binary_crossentropy: 0.1581 - soft_dice_coef: 0.8806 - dice_coef_loss: 0.1194 - val_loss: 0.1126 - val_dice_coef: 0.8880 - val_accuracy: 0.9950 - val_mean_binary_crossentropy: 0.0975 - val_soft_dice_coef: 0.8880 - val_dice_coef_loss: 0.1120
+Epoch 30/100
+187/187 - 201s - loss: 0.1248 - dice_coef: 0.8752 - accuracy: 0.9916 - mean_binary_crossentropy: 0.1730 - soft_dice_coef: 0.8752 - dice_coef_loss: 0.1248 - val_loss: 0.1160 - val_dice_coef: 0.8847 - val_accuracy: 0.9939 - val_mean_binary_crossentropy: 0.1536 - val_soft_dice_coef: 0.8847 - val_dice_coef_loss: 0.1153
+Epoch 31/100
+187/187 - 201s - loss: 0.1212 - dice_coef: 0.8788 - accuracy: 0.9918 - mean_binary_crossentropy: 0.1665 - soft_dice_coef: 0.8788 - dice_coef_loss: 0.1212 - val_loss: 0.1073 - val_dice_coef: 0.8932 - val_accuracy: 0.9950 - val_mean_binary_crossentropy: 0.0992 - val_soft_dice_coef: 0.8932 - val_dice_coef_loss: 0.1068
+Epoch 32/100
+187/187 - 202s - loss: 0.1281 - dice_coef: 0.8719 - accuracy: 0.9914 - mean_binary_crossentropy: 0.2139 - soft_dice_coef: 0.8719 - dice_coef_loss: 0.1281 - val_loss: 0.1086 - val_dice_coef: 0.8918 - val_accuracy: 0.9953 - val_mean_binary_crossentropy: 0.0977 - val_soft_dice_coef: 0.8918 - val_dice_coef_loss: 0.1082
+Epoch 33/100
+187/187 - 202s - loss: 0.1176 - dice_coef: 0.8824 - accuracy: 0.9919 - mean_binary_crossentropy: 0.1506 - soft_dice_coef: 0.8824 - dice_coef_loss: 0.1176 - val_loss: 0.1070 - val_dice_coef: 0.8935 - val_accuracy: 0.9950 - val_mean_binary_crossentropy: 0.1398 - val_soft_dice_coef: 0.8935 - val_dice_coef_loss: 0.1065
+Epoch 34/100
+187/187 - 201s - loss: 0.1209 - dice_coef: 0.8791 - accuracy: 0.9917 - mean_binary_crossentropy: 0.1649 - soft_dice_coef: 0.8791 - dice_coef_loss: 0.1209 - val_loss: 0.1094 - val_dice_coef: 0.8910 - val_accuracy: 0.9952 - val_mean_binary_crossentropy: 0.1585 - val_soft_dice_coef: 0.8910 - val_dice_coef_loss: 0.1090
+Epoch 35/100
+187/187 - 203s - loss: 0.1192 - dice_coef: 0.8809 - accuracy: 0.9919 - mean_binary_crossentropy: 0.1684 - soft_dice_coef: 0.8809 - dice_coef_loss: 0.1191 - val_loss: 0.1086 - val_dice_coef: 0.8919 - val_accuracy: 0.9953 - val_mean_binary_crossentropy: 0.0939 - val_soft_dice_coef: 0.8919 - val_dice_coef_loss: 0.1081
+Epoch 36/100
+187/187 - 200s - loss: 0.1195 - dice_coef: 0.8805 - accuracy: 0.9919 - mean_binary_crossentropy: 0.1850 - soft_dice_coef: 0.8805 - dice_coef_loss: 0.1195 - val_loss: 0.1015 - val_dice_coef: 0.8989 - val_accuracy: 0.9951 - val_mean_binary_crossentropy: 0.1234 - val_soft_dice_coef: 0.8989 - val_dice_coef_loss: 0.1011
+Epoch 37/100
+187/187 - 201s - loss: 0.1202 - dice_coef: 0.8797 - accuracy: 0.9918 - mean_binary_crossentropy: 0.1644 - soft_dice_coef: 0.8797 - dice_coef_loss: 0.1203 - val_loss: 0.1008 - val_dice_coef: 0.8996 - val_accuracy: 0.9952 - val_mean_binary_crossentropy: 0.1212 - val_soft_dice_coef: 0.8996 - val_dice_coef_loss: 0.1004
+Epoch 38/100
+187/187 - 202s - loss: 0.1178 - dice_coef: 0.8823 - accuracy: 0.9918 - mean_binary_crossentropy: 0.1691 - soft_dice_coef: 0.8823 - dice_coef_loss: 0.1177 - val_loss: 0.1075 - val_dice_coef: 0.8931 - val_accuracy: 0.9947 - val_mean_binary_crossentropy: 0.1426 - val_soft_dice_coef: 0.8931 - val_dice_coef_loss: 0.1069
+Epoch 39/100
+187/187 - 202s - loss: 0.1149 - dice_coef: 0.8851 - accuracy: 0.9920 - mean_binary_crossentropy: 0.1404 - soft_dice_coef: 0.8851 - dice_coef_loss: 0.1149 - val_loss: 0.1038 - val_dice_coef: 0.8967 - val_accuracy: 0.9952 - val_mean_binary_crossentropy: 0.1327 - val_soft_dice_coef: 0.8967 - val_dice_coef_loss: 0.1033
+Epoch 40/100
+187/187 - 201s - loss: 0.1176 - dice_coef: 0.8824 - accuracy: 0.9919 - mean_binary_crossentropy: 0.1326 - soft_dice_coef: 0.8824 - dice_coef_loss: 0.1176 - val_loss: 0.1032 - val_dice_coef: 0.8973 - val_accuracy: 0.9953 - val_mean_binary_crossentropy: 0.0992 - val_soft_dice_coef: 0.8973 - val_dice_coef_loss: 0.1027
+Epoch 41/100
+187/187 - 201s - loss: 0.1163 - dice_coef: 0.8837 - accuracy: 0.9920 - mean_binary_crossentropy: 0.1539 - soft_dice_coef: 0.8837 - dice_coef_loss: 0.1163 - val_loss: 0.1094 - val_dice_coef: 0.8912 - val_accuracy: 0.9946 - val_mean_binary_crossentropy: 0.2008 - val_soft_dice_coef: 0.8912 - val_dice_coef_loss: 0.1088
+Epoch 42/100
+187/187 - 201s - loss: 0.1163 - dice_coef: 0.8836 - accuracy: 0.9920 - mean_binary_crossentropy: 0.1612 - soft_dice_coef: 0.8836 - dice_coef_loss: 0.1164 - val_loss: 0.1064 - val_dice_coef: 0.8941 - val_accuracy: 0.9951 - val_mean_binary_crossentropy: 0.1724 - val_soft_dice_coef: 0.8941 - val_dice_coef_loss: 0.1059
+Epoch 43/100
+187/187 - 202s - loss: 0.1216 - dice_coef: 0.8784 - accuracy: 0.9915 - mean_binary_crossentropy: 0.2768 - soft_dice_coef: 0.8784 - dice_coef_loss: 0.1216 - val_loss: 0.1048 - val_dice_coef: 0.8958 - val_accuracy: 0.9952 - val_mean_binary_crossentropy: 0.0942 - val_soft_dice_coef: 0.8958 - val_dice_coef_loss: 0.1042
+Epoch 44/100
+187/187 - 201s - loss: 0.1221 - dice_coef: 0.8779 - accuracy: 0.9918 - mean_binary_crossentropy: 0.1860 - soft_dice_coef: 0.8779 - dice_coef_loss: 0.1221 - val_loss: 0.1145 - val_dice_coef: 0.8860 - val_accuracy: 0.9949 - val_mean_binary_crossentropy: 0.2784 - val_soft_dice_coef: 0.8860 - val_dice_coef_loss: 0.1140
+Epoch 45/100
+187/187 - 202s - loss: 0.1182 - dice_coef: 0.8818 - accuracy: 0.9920 - mean_binary_crossentropy: 0.1792 - soft_dice_coef: 0.8818 - dice_coef_loss: 0.1182 - val_loss: 0.1029 - val_dice_coef: 0.8977 - val_accuracy: 0.9951 - val_mean_binary_crossentropy: 0.1648 - val_soft_dice_coef: 0.8977 - val_dice_coef_loss: 0.1023
+Epoch 46/100
+187/187 - 201s - loss: 0.1144 - dice_coef: 0.8856 - accuracy: 0.9919 - mean_binary_crossentropy: 0.1646 - soft_dice_coef: 0.8856 - dice_coef_loss: 0.1144 - val_loss: 0.1124 - val_dice_coef: 0.8882 - val_accuracy: 0.9948 - val_mean_binary_crossentropy: 0.1151 - val_soft_dice_coef: 0.8882 - val_dice_coef_loss: 0.1118
+Epoch 47/100
+187/187 - 203s - loss: 0.1177 - dice_coef: 0.8823 - accuracy: 0.9920 - mean_binary_crossentropy: 0.1833 - soft_dice_coef: 0.8823 - dice_coef_loss: 0.1177 - val_loss: 0.1059 - val_dice_coef: 0.8946 - val_accuracy: 0.9952 - val_mean_binary_crossentropy: 0.1241 - val_soft_dice_coef: 0.8946 - val_dice_coef_loss: 0.1054
+Epoch 48/100
+187/187 - 201s - loss: 0.1176 - dice_coef: 0.8824 - accuracy: 0.9919 - mean_binary_crossentropy: 0.1758 - soft_dice_coef: 0.8824 - dice_coef_loss: 0.1176 - val_loss: 0.1162 - val_dice_coef: 0.8843 - val_accuracy: 0.9947 - val_mean_binary_crossentropy: 0.3607 - val_soft_dice_coef: 0.8843 - val_dice_coef_loss: 0.1157
+Epoch 49/100
+187/187 - 200s - loss: 0.1121 - dice_coef: 0.8879 - accuracy: 0.9921 - mean_binary_crossentropy: 0.1619 - soft_dice_coef: 0.8879 - dice_coef_loss: 0.1121 - val_loss: 0.1070 - val_dice_coef: 0.8935 - val_accuracy: 0.9950 - val_mean_binary_crossentropy: 0.2764 - val_soft_dice_coef: 0.8935 - val_dice_coef_loss: 0.1065
+Epoch 50/100
+187/187 - 199s - loss: 0.1172 - dice_coef: 0.8828 - accuracy: 0.9921 - mean_binary_crossentropy: 0.1675 - soft_dice_coef: 0.8828 - dice_coef_loss: 0.1172 - val_loss: 0.1053 - val_dice_coef: 0.8953 - val_accuracy: 0.9947 - val_mean_binary_crossentropy: 0.1339 - val_soft_dice_coef: 0.8953 - val_dice_coef_loss: 0.1047
+Epoch 51/100
+187/187 - 202s - loss: 0.1133 - dice_coef: 0.8867 - accuracy: 0.9919 - mean_binary_crossentropy: 0.1872 - soft_dice_coef: 0.8867 - dice_coef_loss: 0.1133 - val_loss: 0.1004 - val_dice_coef: 0.9001 - val_accuracy: 0.9954 - val_mean_binary_crossentropy: 0.1384 - val_soft_dice_coef: 0.9001 - val_dice_coef_loss: 0.0999
+Epoch 52/100
+187/187 - 201s - loss: 0.1136 - dice_coef: 0.8864 - accuracy: 0.9921 - mean_binary_crossentropy: 0.1605 - soft_dice_coef: 0.8864 - dice_coef_loss: 0.1136 - val_loss: 0.1031 - val_dice_coef: 0.8974 - val_accuracy: 0.9948 - val_mean_binary_crossentropy: 0.1447 - val_soft_dice_coef: 0.8974 - val_dice_coef_loss: 0.1026
+Epoch 53/100
+187/187 - 201s - loss: 0.1124 - dice_coef: 0.8876 - accuracy: 0.9922 - mean_binary_crossentropy: 0.1573 - soft_dice_coef: 0.8876 - dice_coef_loss: 0.1124 - val_loss: 0.1024 - val_dice_coef: 0.8981 - val_accuracy: 0.9951 - val_mean_binary_crossentropy: 0.1628 - val_soft_dice_coef: 0.8981 - val_dice_coef_loss: 0.1019
+Epoch 54/100
+187/187 - 200s - loss: 0.1146 - dice_coef: 0.8854 - accuracy: 0.9920 - mean_binary_crossentropy: 0.1879 - soft_dice_coef: 0.8854 - dice_coef_loss: 0.1146 - val_loss: 0.1097 - val_dice_coef: 0.8908 - val_accuracy: 0.9952 - val_mean_binary_crossentropy: 0.1187 - val_soft_dice_coef: 0.8908 - val_dice_coef_loss: 0.1092
+Epoch 55/100
+187/187 - 202s - loss: 0.1160 - dice_coef: 0.8840 - accuracy: 0.9919 - mean_binary_crossentropy: 0.1703 - soft_dice_coef: 0.8840 - dice_coef_loss: 0.1160 - val_loss: 0.1086 - val_dice_coef: 0.8920 - val_accuracy: 0.9953 - val_mean_binary_crossentropy: 0.0990 - val_soft_dice_coef: 0.8920 - val_dice_coef_loss: 0.1080
+Epoch 56/100
+187/187 - 199s - loss: 0.1103 - dice_coef: 0.8896 - accuracy: 0.9922 - mean_binary_crossentropy: 0.1410 - soft_dice_coef: 0.8896 - dice_coef_loss: 0.1104 - val_loss: 0.1020 - val_dice_coef: 0.8985 - val_accuracy: 0.9950 - val_mean_binary_crossentropy: 0.1156 - val_soft_dice_coef: 0.8985 - val_dice_coef_loss: 0.1015
+Epoch 57/100
+187/187 - 200s - loss: 0.1128 - dice_coef: 0.8872 - accuracy: 0.9922 - mean_binary_crossentropy: 0.1505 - soft_dice_coef: 0.8872 - dice_coef_loss: 0.1128 - val_loss: 0.1114 - val_dice_coef: 0.8892 - val_accuracy: 0.9950 - val_mean_binary_crossentropy: 0.1106 - val_soft_dice_coef: 0.8892 - val_dice_coef_loss: 0.1108
+Epoch 58/100
+187/187 - 199s - loss: 0.1114 - dice_coef: 0.8886 - accuracy: 0.9923 - mean_binary_crossentropy: 0.1580 - soft_dice_coef: 0.8886 - dice_coef_loss: 0.1114 - val_loss: 0.0963 - val_dice_coef: 0.9040 - val_accuracy: 0.9956 - val_mean_binary_crossentropy: 0.1228 - val_soft_dice_coef: 0.9040 - val_dice_coef_loss: 0.0960
+Epoch 59/100
+187/187 - 199s - loss: 0.1097 - dice_coef: 0.8903 - accuracy: 0.9922 - mean_binary_crossentropy: 0.1574 - soft_dice_coef: 0.8903 - dice_coef_loss: 0.1097 - val_loss: 0.1042 - val_dice_coef: 0.8964 - val_accuracy: 0.9951 - val_mean_binary_crossentropy: 0.1754 - val_soft_dice_coef: 0.8964 - val_dice_coef_loss: 0.1036
+Epoch 60/100
+187/187 - 198s - loss: 0.1094 - dice_coef: 0.8906 - accuracy: 0.9922 - mean_binary_crossentropy: 0.1774 - soft_dice_coef: 0.8906 - dice_coef_loss: 0.1094 - val_loss: 0.1038 - val_dice_coef: 0.8968 - val_accuracy: 0.9947 - val_mean_binary_crossentropy: 0.1728 - val_soft_dice_coef: 0.8968 - val_dice_coef_loss: 0.1032
+Epoch 61/100
+187/187 - 198s - loss: 0.1183 - dice_coef: 0.8817 - accuracy: 0.9920 - mean_binary_crossentropy: 0.2124 - soft_dice_coef: 0.8817 - dice_coef_loss: 0.1183 - val_loss: 0.1061 - val_dice_coef: 0.8944 - val_accuracy: 0.9950 - val_mean_binary_crossentropy: 0.1218 - val_soft_dice_coef: 0.8944 - val_dice_coef_loss: 0.1056
+Epoch 62/100
+187/187 - 200s - loss: 0.1106 - dice_coef: 0.8894 - accuracy: 0.9922 - mean_binary_crossentropy: 0.1526 - soft_dice_coef: 0.8894 - dice_coef_loss: 0.1106 - val_loss: 0.1005 - val_dice_coef: 0.9000 - val_accuracy: 0.9953 - val_mean_binary_crossentropy: 0.1332 - val_soft_dice_coef: 0.9000 - val_dice_coef_loss: 0.1000
+Epoch 63/100
+187/187 - 199s - loss: 0.1106 - dice_coef: 0.8894 - accuracy: 0.9922 - mean_binary_crossentropy: 0.1442 - soft_dice_coef: 0.8894 - dice_coef_loss: 0.1106 - val_loss: 0.1028 - val_dice_coef: 0.8977 - val_accuracy: 0.9953 - val_mean_binary_crossentropy: 0.1178 - val_soft_dice_coef: 0.8977 - val_dice_coef_loss: 0.1023
+Epoch 64/100
+187/187 - 200s - loss: 0.1115 - dice_coef: 0.8885 - accuracy: 0.9922 - mean_binary_crossentropy: 0.1728 - soft_dice_coef: 0.8885 - dice_coef_loss: 0.1115 - val_loss: 0.1060 - val_dice_coef: 0.8946 - val_accuracy: 0.9952 - val_mean_binary_crossentropy: 0.1190 - val_soft_dice_coef: 0.8946 - val_dice_coef_loss: 0.1054
+Epoch 65/100
+187/187 - 200s - loss: 0.1108 - dice_coef: 0.8892 - accuracy: 0.9922 - mean_binary_crossentropy: 0.1592 - soft_dice_coef: 0.8892 - dice_coef_loss: 0.1108 - val_loss: 0.1039 - val_dice_coef: 0.8966 - val_accuracy: 0.9952 - val_mean_binary_crossentropy: 0.1826 - val_soft_dice_coef: 0.8966 - val_dice_coef_loss: 0.1034
+Epoch 66/100
+187/187 - 200s - loss: 0.1109 - dice_coef: 0.8891 - accuracy: 0.9923 - mean_binary_crossentropy: 0.1407 - soft_dice_coef: 0.8891 - dice_coef_loss: 0.1109 - val_loss: 0.1076 - val_dice_coef: 0.8930 - val_accuracy: 0.9952 - val_mean_binary_crossentropy: 0.1105 - val_soft_dice_coef: 0.8930 - val_dice_coef_loss: 0.1070
+Epoch 67/100
+187/187 - 201s - loss: 0.1149 - dice_coef: 0.8851 - accuracy: 0.9922 - mean_binary_crossentropy: 0.1906 - soft_dice_coef: 0.8851 - dice_coef_loss: 0.1149 - val_loss: 0.1043 - val_dice_coef: 0.8962 - val_accuracy: 0.9954 - val_mean_binary_crossentropy: 0.1404 - val_soft_dice_coef: 0.8962 - val_dice_coef_loss: 0.1038
+Epoch 68/100
+187/187 - 201s - loss: 0.1138 - dice_coef: 0.8861 - accuracy: 0.9921 - mean_binary_crossentropy: 0.2301 - soft_dice_coef: 0.8861 - dice_coef_loss: 0.1139 - val_loss: 0.1297 - val_dice_coef: 0.8709 - val_accuracy: 0.9934 - val_mean_binary_crossentropy: 0.6140 - val_soft_dice_coef: 0.8709 - val_dice_coef_loss: 0.1291
+Epoch 69/100
+187/187 - 202s - loss: 0.1104 - dice_coef: 0.8896 - accuracy: 0.9921 - mean_binary_crossentropy: 0.1494 - soft_dice_coef: 0.8896 - dice_coef_loss: 0.1104 - val_loss: 0.1056 - val_dice_coef: 0.8950 - val_accuracy: 0.9950 - val_mean_binary_crossentropy: 0.2002 - val_soft_dice_coef: 0.8950 - val_dice_coef_loss: 0.1050
+Epoch 70/100
+187/187 - 202s - loss: 0.1110 - dice_coef: 0.8890 - accuracy: 0.9920 - mean_binary_crossentropy: 0.2120 - soft_dice_coef: 0.8890 - dice_coef_loss: 0.1110 - val_loss: 0.1009 - val_dice_coef: 0.8996 - val_accuracy: 0.9953 - val_mean_binary_crossentropy: 0.1539 - val_soft_dice_coef: 0.8996 - val_dice_coef_loss: 0.1004
+Epoch 71/100
+187/187 - 201s - loss: 0.1117 - dice_coef: 0.8883 - accuracy: 0.9923 - mean_binary_crossentropy: 0.1873 - soft_dice_coef: 0.8883 - dice_coef_loss: 0.1117 - val_loss: 0.1015 - val_dice_coef: 0.8990 - val_accuracy: 0.9953 - val_mean_binary_crossentropy: 0.1653 - val_soft_dice_coef: 0.8990 - val_dice_coef_loss: 0.1010
+Epoch 72/100
+187/187 - 200s - loss: 0.1086 - dice_coef: 0.8915 - accuracy: 0.9922 - mean_binary_crossentropy: 0.1615 - soft_dice_coef: 0.8915 - dice_coef_loss: 0.1085 - val_loss: 0.1030 - val_dice_coef: 0.8974 - val_accuracy: 0.9953 - val_mean_binary_crossentropy: 0.2186 - val_soft_dice_coef: 0.8974 - val_dice_coef_loss: 0.1026
+Epoch 73/100
+187/187 - 198s - loss: 0.1105 - dice_coef: 0.8895 - accuracy: 0.9923 - mean_binary_crossentropy: 0.1980 - soft_dice_coef: 0.8895 - dice_coef_loss: 0.1105 - val_loss: 0.1018 - val_dice_coef: 0.8986 - val_accuracy: 0.9951 - val_mean_binary_crossentropy: 0.2027 - val_soft_dice_coef: 0.8986 - val_dice_coef_loss: 0.1014
+Epoch 74/100
+187/187 - 200s - loss: 0.1092 - dice_coef: 0.8908 - accuracy: 0.9923 - mean_binary_crossentropy: 0.1713 - soft_dice_coef: 0.8908 - dice_coef_loss: 0.1092 - val_loss: 0.1019 - val_dice_coef: 0.8985 - val_accuracy: 0.9954 - val_mean_binary_crossentropy: 0.1592 - val_soft_dice_coef: 0.8985 - val_dice_coef_loss: 0.1015
+Epoch 75/100
+187/187 - 200s - loss: 0.1083 - dice_coef: 0.8917 - accuracy: 0.9923 - mean_binary_crossentropy: 0.1526 - soft_dice_coef: 0.8917 - dice_coef_loss: 0.1083 - val_loss: 0.1087 - val_dice_coef: 0.8918 - val_accuracy: 0.9948 - val_mean_binary_crossentropy: 0.3446 - val_soft_dice_coef: 0.8918 - val_dice_coef_loss: 0.1082
+Epoch 76/100
+187/187 - 201s - loss: 0.1106 - dice_coef: 0.8893 - accuracy: 0.9923 - mean_binary_crossentropy: 0.2044 - soft_dice_coef: 0.8893 - dice_coef_loss: 0.1107 - val_loss: 0.1000 - val_dice_coef: 0.9005 - val_accuracy: 0.9951 - val_mean_binary_crossentropy: 0.1685 - val_soft_dice_coef: 0.9005 - val_dice_coef_loss: 0.0995
+Epoch 77/100
+187/187 - 200s - loss: 0.1095 - dice_coef: 0.8905 - accuracy: 0.9923 - mean_binary_crossentropy: 0.1705 - soft_dice_coef: 0.8905 - dice_coef_loss: 0.1095 - val_loss: 0.1017 - val_dice_coef: 0.8988 - val_accuracy: 0.9951 - val_mean_binary_crossentropy: 0.1927 - val_soft_dice_coef: 0.8988 - val_dice_coef_loss: 0.1012
+Epoch 78/100
+187/187 - 199s - loss: 0.1076 - dice_coef: 0.8924 - accuracy: 0.9924 - mean_binary_crossentropy: 0.1785 - soft_dice_coef: 0.8924 - dice_coef_loss: 0.1076 - val_loss: 0.0987 - val_dice_coef: 0.9017 - val_accuracy: 0.9953 - val_mean_binary_crossentropy: 0.1988 - val_soft_dice_coef: 0.9017 - val_dice_coef_loss: 0.0983
+Epoch 79/100
+187/187 - 199s - loss: 0.1184 - dice_coef: 0.8816 - accuracy: 0.9920 - mean_binary_crossentropy: 0.2806 - soft_dice_coef: 0.8816 - dice_coef_loss: 0.1184 - val_loss: 0.1059 - val_dice_coef: 0.8946 - val_accuracy: 0.9953 - val_mean_binary_crossentropy: 0.2470 - val_soft_dice_coef: 0.8946 - val_dice_coef_loss: 0.1054
+Epoch 80/100
+187/187 - 201s - loss: 0.1118 - dice_coef: 0.8882 - accuracy: 0.9924 - mean_binary_crossentropy: 0.1527 - soft_dice_coef: 0.8882 - dice_coef_loss: 0.1118 - val_loss: 0.1137 - val_dice_coef: 0.8869 - val_accuracy: 0.9947 - val_mean_binary_crossentropy: 0.4351 - val_soft_dice_coef: 0.8869 - val_dice_coef_loss: 0.1131
+Epoch 81/100
+187/187 - 202s - loss: 0.1095 - dice_coef: 0.8905 - accuracy: 0.9923 - mean_binary_crossentropy: 0.1996 - soft_dice_coef: 0.8905 - dice_coef_loss: 0.1095 - val_loss: 0.1042 - val_dice_coef: 0.8963 - val_accuracy: 0.9948 - val_mean_binary_crossentropy: 0.1945 - val_soft_dice_coef: 0.8963 - val_dice_coef_loss: 0.1037
+Epoch 82/100
+187/187 - 201s - loss: 0.1080 - dice_coef: 0.8920 - accuracy: 0.9923 - mean_binary_crossentropy: 0.1690 - soft_dice_coef: 0.8920 - dice_coef_loss: 0.1080 - val_loss: 0.0992 - val_dice_coef: 0.9013 - val_accuracy: 0.9952 - val_mean_binary_crossentropy: 0.1804 - val_soft_dice_coef: 0.9013 - val_dice_coef_loss: 0.0987
+Epoch 83/100
+187/187 - 200s - loss: 0.1071 - dice_coef: 0.8928 - accuracy: 0.9925 - mean_binary_crossentropy: 0.1415 - soft_dice_coef: 0.8928 - dice_coef_loss: 0.1072 - val_loss: 0.1028 - val_dice_coef: 0.8977 - val_accuracy: 0.9951 - val_mean_binary_crossentropy: 0.2243 - val_soft_dice_coef: 0.8977 - val_dice_coef_loss: 0.1023
+Epoch 84/100
+187/187 - 201s - loss: 0.1076 - dice_coef: 0.8924 - accuracy: 0.9924 - mean_binary_crossentropy: 0.1740 - soft_dice_coef: 0.8924 - dice_coef_loss: 0.1076 - val_loss: 0.1023 - val_dice_coef: 0.8983 - val_accuracy: 0.9954 - val_mean_binary_crossentropy: 0.1245 - val_soft_dice_coef: 0.8983 - val_dice_coef_loss: 0.1017
+Epoch 85/100
+187/187 - 201s - loss: 0.1111 - dice_coef: 0.8889 - accuracy: 0.9923 - mean_binary_crossentropy: 0.1712 - soft_dice_coef: 0.8889 - dice_coef_loss: 0.1111 - val_loss: 0.1159 - val_dice_coef: 0.8848 - val_accuracy: 0.9945 - val_mean_binary_crossentropy: 0.4778 - val_soft_dice_coef: 0.8848 - val_dice_coef_loss: 0.1152
+Epoch 86/100
+187/187 - 201s - loss: 0.1092 - dice_coef: 0.8908 - accuracy: 0.9924 - mean_binary_crossentropy: 0.1611 - soft_dice_coef: 0.8908 - dice_coef_loss: 0.1092 - val_loss: 0.1009 - val_dice_coef: 0.8997 - val_accuracy: 0.9955 - val_mean_binary_crossentropy: 0.1084 - val_soft_dice_coef: 0.8997 - val_dice_coef_loss: 0.1003
+Epoch 87/100
+187/187 - 201s - loss: 0.1063 - dice_coef: 0.8937 - accuracy: 0.9924 - mean_binary_crossentropy: 0.1445 - soft_dice_coef: 0.8937 - dice_coef_loss: 0.1063 - val_loss: 0.0992 - val_dice_coef: 0.9013 - val_accuracy: 0.9956 - val_mean_binary_crossentropy: 0.1423 - val_soft_dice_coef: 0.9013 - val_dice_coef_loss: 0.0987
+Epoch 88/100
+187/187 - 201s - loss: 0.1059 - dice_coef: 0.8941 - accuracy: 0.9925 - mean_binary_crossentropy: 0.1784 - soft_dice_coef: 0.8941 - dice_coef_loss: 0.1059 - val_loss: 0.1012 - val_dice_coef: 0.8992 - val_accuracy: 0.9954 - val_mean_binary_crossentropy: 0.1572 - val_soft_dice_coef: 0.8992 - val_dice_coef_loss: 0.1008
+Epoch 89/100
+187/187 - 202s - loss: 0.1080 - dice_coef: 0.8920 - accuracy: 0.9925 - mean_binary_crossentropy: 0.1621 - soft_dice_coef: 0.8920 - dice_coef_loss: 0.1080 - val_loss: 0.0991 - val_dice_coef: 0.9014 - val_accuracy: 0.9953 - val_mean_binary_crossentropy: 0.1471 - val_soft_dice_coef: 0.9014 - val_dice_coef_loss: 0.0986
+Epoch 90/100
+187/187 - 202s - loss: 0.1074 - dice_coef: 0.8926 - accuracy: 0.9925 - mean_binary_crossentropy: 0.1377 - soft_dice_coef: 0.8926 - dice_coef_loss: 0.1074 - val_loss: 0.0977 - val_dice_coef: 0.9028 - val_accuracy: 0.9955 - val_mean_binary_crossentropy: 0.1410 - val_soft_dice_coef: 0.9028 - val_dice_coef_loss: 0.0972
+Epoch 91/100
+187/187 - 200s - loss: 0.1052 - dice_coef: 0.8948 - accuracy: 0.9925 - mean_binary_crossentropy: 0.1500 - soft_dice_coef: 0.8948 - dice_coef_loss: 0.1052 - val_loss: 0.0995 - val_dice_coef: 0.9010 - val_accuracy: 0.9954 - val_mean_binary_crossentropy: 0.1310 - val_soft_dice_coef: 0.9010 - val_dice_coef_loss: 0.0990
+Epoch 92/100
+187/187 - 201s - loss: 0.1083 - dice_coef: 0.8917 - accuracy: 0.9924 - mean_binary_crossentropy: 0.1711 - soft_dice_coef: 0.8917 - dice_coef_loss: 0.1083 - val_loss: 0.1061 - val_dice_coef: 0.8944 - val_accuracy: 0.9950 - val_mean_binary_crossentropy: 0.3334 - val_soft_dice_coef: 0.8944 - val_dice_coef_loss: 0.1056
+Epoch 93/100
+187/187 - 203s - loss: 0.1039 - dice_coef: 0.8961 - accuracy: 0.9925 - mean_binary_crossentropy: 0.1643 - soft_dice_coef: 0.8961 - dice_coef_loss: 0.1039 - val_loss: 0.1025 - val_dice_coef: 0.8980 - val_accuracy: 0.9952 - val_mean_binary_crossentropy: 0.1902 - val_soft_dice_coef: 0.8980 - val_dice_coef_loss: 0.1020
+Epoch 94/100
+187/187 - 200s - loss: 0.1103 - dice_coef: 0.8897 - accuracy: 0.9925 - mean_binary_crossentropy: 0.1388 - soft_dice_coef: 0.8897 - dice_coef_loss: 0.1103 - val_loss: 0.1030 - val_dice_coef: 0.8974 - val_accuracy: 0.9954 - val_mean_binary_crossentropy: 0.1374 - val_soft_dice_coef: 0.8974 - val_dice_coef_loss: 0.1026
+Epoch 95/100
+187/187 - 201s - loss: 0.1060 - dice_coef: 0.8940 - accuracy: 0.9925 - mean_binary_crossentropy: 0.1614 - soft_dice_coef: 0.8940 - dice_coef_loss: 0.1060 - val_loss: 0.0991 - val_dice_coef: 0.9014 - val_accuracy: 0.9954 - val_mean_binary_crossentropy: 0.1805 - val_soft_dice_coef: 0.9014 - val_dice_coef_loss: 0.0986
+Epoch 96/100
+187/187 - 201s - loss: 0.1044 - dice_coef: 0.8956 - accuracy: 0.9925 - mean_binary_crossentropy: 0.1589 - soft_dice_coef: 0.8956 - dice_coef_loss: 0.1044 - val_loss: 0.1008 - val_dice_coef: 0.8998 - val_accuracy: 0.9954 - val_mean_binary_crossentropy: 0.1781 - val_soft_dice_coef: 0.8998 - val_dice_coef_loss: 0.1002
+Epoch 97/100
+187/187 - 201s - loss: 0.1076 - dice_coef: 0.8924 - accuracy: 0.9925 - mean_binary_crossentropy: 0.1712 - soft_dice_coef: 0.8924 - dice_coef_loss: 0.1076 - val_loss: 0.0971 - val_dice_coef: 0.9033 - val_accuracy: 0.9956 - val_mean_binary_crossentropy: 0.1457 - val_soft_dice_coef: 0.9033 - val_dice_coef_loss: 0.0967
+Epoch 98/100
+187/187 - 201s - loss: 0.1072 - dice_coef: 0.8928 - accuracy: 0.9925 - mean_binary_crossentropy: 0.1902 - soft_dice_coef: 0.8928 - dice_coef_loss: 0.1072 - val_loss: 0.1129 - val_dice_coef: 0.8878 - val_accuracy: 0.9949 - val_mean_binary_crossentropy: 0.1238 - val_soft_dice_coef: 0.8878 - val_dice_coef_loss: 0.1122
+Epoch 99/100
+187/187 - 201s - loss: 0.1065 - dice_coef: 0.8935 - accuracy: 0.9924 - mean_binary_crossentropy: 0.1415 - soft_dice_coef: 0.8935 - dice_coef_loss: 0.1065 - val_loss: 0.1195 - val_dice_coef: 0.8812 - val_accuracy: 0.9953 - val_mean_binary_crossentropy: 0.1021 - val_soft_dice_coef: 0.8812 - val_dice_coef_loss: 0.1188
+Epoch 100/100
+187/187 - 200s - loss: 0.1046 - dice_coef: 0.8954 - accuracy: 0.9925 - mean_binary_crossentropy: 0.1559 - soft_dice_coef: 0.8954 - dice_coef_loss: 0.1046 - val_loss: 0.0949 - val_dice_coef: 0.9056 - val_accuracy: 0.9956 - val_mean_binary_crossentropy: 0.1370 - val_soft_dice_coef: 0.9056 - val_dice_coef_loss: 0.0944
+Total time elapsed for training = 20120.73760533333 seconds
+Training finished at 2021-03-03 15:03:07.973606
+Saved model to disk (.h5)
+Pickled training history
