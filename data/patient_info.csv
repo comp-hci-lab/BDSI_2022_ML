@@ -1,76 +1,76 @@
-,Unnamed: 0,Case,Tissue source site,Study,Histology,Grade,Age (years at diagnosis),Gender,Survival (months),Vital status (1=dead)
-0,318,TCGA-HT-A5RC,Case Western - St Joes,Brain Lower Grade Glioma,astrocytoma,G3,70.0,female,5.322493799999998,1.0
-1,1,TCGA-CS-4941,Thomas Jefferson University,Brain Lower Grade Glioma,astrocytoma,G3,67.0,male,7.6880466,1.0
-2,550,TCGA-02-0060,MD Anderson Cancer Center,Glioblastoma multiforme,glioblastoma,G4,66.0,female,6.012446700000001,1.0
-3,849,TCGA-12-1093,Duke,Glioblastoma multiforme,glioblastoma,G4,66.0,female,15.9674814,1.0
-4,687,TCGA-06-0241,Henry Ford Hospital,Glioblastoma multiforme,glioblastoma,G4,65.0,female,14.948979500000002,0.0
-5,96,TCGA-DU-6410,Henry Ford Hospital,Brain Lower Grade Glioma,oligodendroglioma,G3,56.0,male,7.950885799999999,0.0
-6,301,TCGA-HT-8107,Case Western - St Joes,Brain Lower Grade Glioma,oligodendroglioma,G2,62.0,male,0.45996859999999995,0.0
-7,139,TCGA-DU-A6S6,Henry Ford Hospital,Brain Lower Grade Glioma,oligoastrocytoma,G2,35.0,female,77.9318228,0.0
-8,258,TCGA-HT-7616,Case Western - St Joes,Brain Lower Grade Glioma,oligodendroglioma,G3,75.0,male,0.22998429999999997,1.0
-9,218,TCGA-FG-A6IZ,Case Western,Brain Lower Grade Glioma,oligodendroglioma,G2,60.0,male,4.205427200000001,0.0
-10,130,TCGA-DU-A5TP,Henry Ford Hospital,Brain Lower Grade Glioma,astrocytoma,G3,33.0,male,14.2261717,0.0
-11,87,TCGA-DU-6400,Henry Ford Hospital,Brain Lower Grade Glioma,oligodendroglioma,G2,66.0,female,1.2156313,1.0
-12,652,TCGA-06-0168,Henry Ford Hospital,Glioblastoma multiforme,glioblastoma,G4,59.0,female,19.6472302,1.0
-13,785,TCGA-08-0357,UCSF,Glioblastoma multiforme,glioblastoma,G4,49.0,male,37.5531507,1.0
-14,810,TCGA-08-0529,UCSF,Glioblastoma multiforme,glioblastoma,G4,56.0,female,18.398744,1.0
-15,94,TCGA-DU-6407,Henry Ford Hospital,Brain Lower Grade Glioma,oligodendroglioma,G2,35.0,female,94.4578375,1.0
-16,288,TCGA-HT-7882,Case Western - St Joes,Brain Lower Grade Glioma,oligodendroglioma,G3,66.0,male,3.7126037000000003,1.0
-17,319,TCGA-HT-A614,Case Western - St Joes,Brain Lower Grade Glioma,oligoastrocytoma,G2,47.0,male,2.6941017999999994,0.0
-18,95,TCGA-DU-6408,Henry Ford Hospital,Brain Lower Grade Glioma,oligodendroglioma,G3,23.0,female,114.00650300000001,1.0
-19,299,TCGA-HT-8105,Case Western - St Joes,Brain Lower Grade Glioma,oligodendroglioma,G3,54.0,male,6.242431,0.0
-20,3,TCGA-CS-4943,Thomas Jefferson University,Brain Lower Grade Glioma,astrocytoma,G3,37.0,male,18.135904800000002,0.0
-21,70,TCGA-DU-5849,Henry Ford Hospital,Brain Lower Grade Glioma,oligodendroglioma,G2,48.0,male,14.554720699999999,0.0
-22,72,TCGA-DU-5852,Henry Ford Hospital,Brain Lower Grade Glioma,oligoastrocytoma,G3,61.0,female,6.7352545,1.0
-23,798,TCGA-08-0510,UCSF,Glioblastoma multiforme,glioblastoma,G4,75.0,male,4.271137,1.0
-24,8,TCGA-CS-5395,Thomas Jefferson University,Brain Lower Grade Glioma,oligodendroglioma,G2,43.0,male,20.994281100000002,1.0
-25,277,TCGA-HT-7856,Case Western - St Joes,Brain Lower Grade Glioma,oligodendroglioma,G3,35.0,male,39.0644761,0.0
-26,780,TCGA-08-0352,UCSF,Glioblastoma multiforme,glioblastoma,G4,79.0,male,1.2813411,1.0
-27,806,TCGA-08-0521,UCSF,Glioblastoma multiforme,glioblastoma,G4,17.0,male,4.7968154,1.0
-28,300,TCGA-HT-8106,Case Western - St Joes,Brain Lower Grade Glioma,astrocytoma,G3,53.0,male,0.09856469999999999,0.0
-29,786,TCGA-08-0358,UCSF,Glioblastoma multiforme,glioblastoma,G4,50.0,male,22.275622199999997,1.0
-30,282,TCGA-HT-7874,Case Western - St Joes,Brain Lower Grade Glioma,oligodendroglioma,G3,41.0,female,37.126037,0.0
-31,700,TCGA-06-0649,Henry Ford Hospital,Glioblastoma multiforme,glioblastoma,G4,73.0,female,2.1027136000000004,1.0
-32,650,TCGA-06-0166,Henry Ford Hospital,Glioblastoma multiforme,glioblastoma,G4,51.0,male,5.8481722000000005,1.0
-33,782,TCGA-08-0354,UCSF,Glioblastoma multiforme,glioblastoma,G4,52.0,female,17.938775399999994,1.0
-34,808,TCGA-08-0524,UCSF,Glioblastoma multiforme,glioblastoma,G4,17.0,female,7.2609328999999985,1.0
-35,861,TCGA-12-1602,Duke,Glioblastoma multiforme,glioblastoma,G4,58.0,male,6.7681094,1.0
-36,13,TCGA-CS-6290,Thomas Jefferson University,Brain Lower Grade Glioma,astrocytoma,G3,31.0,male,17.938775399999994,0.0
-37,667,TCGA-06-0189,Henry Ford Hospital,Glioblastoma multiforme,glioblastoma,G4,55.0,male,15.4089481,1.0
-38,781,TCGA-08-0353,UCSF,Glioblastoma multiforme,glioblastoma,G4,58.0,male,8.410854400000002,1.0
-39,623,TCGA-06-0132,Henry Ford Hospital,Glioblastoma multiforme,glioblastoma,G4,49.0,male,25.3311279,1.0
-40,16,TCGA-CS-6667,Thomas Jefferson University,Brain Lower Grade Glioma,astrocytoma,G2,39.0,female,7.5566270000000015,0.0
-41,778,TCGA-08-0350,UCSF,Glioblastoma multiforme,glioblastoma,G4,32.0,male,29.2080061,1.0
-42,998,TCGA-27-1834,"Milan - Italy, Fondazione IRCCS Instituto Neuroligico C. Besta",Glioblastoma multiforme,glioblastoma,G4,56.0,male,40.510091700000004,1.0
-43,225,TCGA-FG-A713,Case Western,Brain Lower Grade Glioma,oligoastrocytoma,G2,74.0,female,5.223929099999999,0.0
-44,237,TCGA-HT-7475,Case Western - St Joes,Brain Lower Grade Glioma,oligoastrocytoma,G3,67.0,male,17.413097,0.0
-45,264,TCGA-HT-7684,Case Western - St Joes,Brain Lower Grade Glioma,oligoastrocytoma,G3,58.0,male,6.0453015999999975,0.0
-46,619,TCGA-06-0128,Henry Ford Hospital,Glioblastoma multiforme,glioblastoma,G4,66.0,male,22.7027359,1.0
-47,280,TCGA-HT-7860,Case Western - St Joes,Brain Lower Grade Glioma,astrocytoma,G3,60.0,female,0.49282349999999997,0.0
-48,77,TCGA-DU-5871,Henry Ford Hospital,Brain Lower Grade Glioma,oligoastrocytoma,G2,37.0,female,18.924422399999997,0.0
-49,138,TCGA-DU-A6S3,Henry Ford Hospital,Brain Lower Grade Glioma,oligodendroglioma,G2,60.0,male,2.6941017999999994,0.0
-50,271,TCGA-HT-7692,Case Western - St Joes,Brain Lower Grade Glioma,oligoastrocytoma,G2,43.0,male,2.956941,0.0
-51,126,TCGA-DU-8165,Henry Ford Hospital,Brain Lower Grade Glioma,oligodendroglioma,G3,60.0,female,19.121551800000002,0.0
-52,741,TCGA-06-5412,Henry Ford Hospital,Glioblastoma multiforme,glioblastoma,G4,78.0,female,4.5339762000000015,1.0
-53,879,TCGA-14-0789,Emory University,Glioblastoma multiforme,glioblastoma,G4,54.0,male,11.2363758,1.0
-54,191,TCGA-FG-6688,Case Western,Brain Lower Grade Glioma,astrocytoma,G3,59.0,female,18.7601479,0.0
-55,88,TCGA-DU-6401,Henry Ford Hospital,Brain Lower Grade Glioma,oligodendroglioma,G2,31.0,female,87.39403399999998,1.0
-56,137,TCGA-DU-A6S2,Henry Ford Hospital,Brain Lower Grade Glioma,oligodendroglioma,G2,37.0,female,8.640838699999998,0.0
-57,201,TCGA-FG-7643,Case Western,Brain Lower Grade Glioma,oligoastrocytoma,G2,49.0,female,20.0743439,0.0
-58,1008,TCGA-27-2526,"Milan - Italy, Fondazione IRCCS Instituto Neuroligico C. Besta",Glioblastoma multiforme,glioblastoma,G4,79.0,female,2.8583762999999998,1.0
-59,542,TCGA-02-0048,MD Anderson Cancer Center,Glioblastoma multiforme,glioblastoma,G4,80.0,male,3.2197802,1.0
-60,85,TCGA-DU-6397,Henry Ford Hospital,Brain Lower Grade Glioma,oligodendroglioma,G3,45.0,male,46.029714899999995,1.0
-61,624,TCGA-06-0133,Henry Ford Hospital,Glioblastoma multiforme,glioblastoma,G4,64.0,male,14.2918815,1.0
-62,272,TCGA-HT-7693,Case Western - St Joes,Brain Lower Grade Glioma,oligodendroglioma,G2,51.0,female,17.5116617,0.0
-63,1002,TCGA-27-1838,"Milan - Italy, Fondazione IRCCS Instituto Neuroligico C. Besta",Glioblastoma multiforme,glioblastoma,G4,59.0,female,11.499215,1.0
-64,73,TCGA-DU-5853,Henry Ford Hospital,Brain Lower Grade Glioma,oligoastrocytoma,G2,29.0,male,13.3719443,0.0
-65,92,TCGA-DU-6405,Henry Ford Hospital,Brain Lower Grade Glioma,astrocytoma,G3,51.0,female,19.877214499999997,1.0
-66,86,TCGA-DU-6399,Henry Ford Hospital,Brain Lower Grade Glioma,oligodendroglioma,G2,54.0,male,65.7098,1.0
-67,679,TCGA-06-0213,Henry Ford Hospital,Glioblastoma multiforme,glioblastoma,G4,55.0,female,0.5256784000000001,1.0
-68,276,TCGA-HT-7855,Case Western - St Joes,Brain Lower Grade Glioma,astrocytoma,G3,39.0,male,19.2201165,0.0
-69,947,TCGA-19-1390,Case Western,Glioblastoma multiforme,glioblastoma,G4,63.0,female,25.363982800000002,1.0
-70,657,TCGA-06-0175,Henry Ford Hospital,Glioblastoma multiforme,glioblastoma,G4,69.0,male,4.0411527000000005,1.0
-71,517,TCGA-02-0003,MD Anderson Cancer Center,Glioblastoma multiforme,glioblastoma,G4,50.0,male,4.731105599999999,1.0
-72,306,TCGA-HT-8113,Case Western - St Joes,Brain Lower Grade Glioma,oligodendroglioma,G2,49.0,female,29.569409999999998,0.0
-73,699,TCGA-06-0648,Henry Ford Hospital,Glioblastoma multiforme,glioblastoma,G4,77.0,male,9.7907602,1.0
-74,911,TCGA-14-1829,Emory University,Glioblastoma multiforme,glioblastoma,G4,57.0,male,7.1623682,0.0
+Case,Tissue source site,Study,Histology,Grade,Age (years at diagnosis),Gender,Survival (months),Vital status (1=dead)
+TCGA-HT-A5RC,Case Western - St Joes,Brain Lower Grade Glioma,astrocytoma,G3,70.0,female,5.322493799999998,1.0
+TCGA-CS-4941,Thomas Jefferson University,Brain Lower Grade Glioma,astrocytoma,G3,67.0,male,7.6880466,1.0
+TCGA-02-0060,MD Anderson Cancer Center,Glioblastoma multiforme,glioblastoma,G4,66.0,female,6.012446700000001,1.0
+TCGA-12-1093,Duke,Glioblastoma multiforme,glioblastoma,G4,66.0,female,15.9674814,1.0
+TCGA-06-0241,Henry Ford Hospital,Glioblastoma multiforme,glioblastoma,G4,65.0,female,14.948979500000002,0.0
+TCGA-DU-6410,Henry Ford Hospital,Brain Lower Grade Glioma,oligodendroglioma,G3,56.0,male,7.950885799999999,0.0
+TCGA-HT-8107,Case Western - St Joes,Brain Lower Grade Glioma,oligodendroglioma,G2,62.0,male,0.45996859999999995,0.0
+TCGA-DU-A6S6,Henry Ford Hospital,Brain Lower Grade Glioma,oligoastrocytoma,G2,35.0,female,77.9318228,0.0
+TCGA-HT-7616,Case Western - St Joes,Brain Lower Grade Glioma,oligodendroglioma,G3,75.0,male,0.22998429999999997,1.0
+TCGA-FG-A6IZ,Case Western,Brain Lower Grade Glioma,oligodendroglioma,G2,60.0,male,4.205427200000001,0.0
+TCGA-DU-A5TP,Henry Ford Hospital,Brain Lower Grade Glioma,astrocytoma,G3,33.0,male,14.2261717,0.0
+TCGA-DU-6400,Henry Ford Hospital,Brain Lower Grade Glioma,oligodendroglioma,G2,66.0,female,1.2156313,1.0
+TCGA-06-0168,Henry Ford Hospital,Glioblastoma multiforme,glioblastoma,G4,59.0,female,19.6472302,1.0
+TCGA-08-0357,UCSF,Glioblastoma multiforme,glioblastoma,G4,49.0,male,37.5531507,1.0
+TCGA-08-0529,UCSF,Glioblastoma multiforme,glioblastoma,G4,56.0,female,18.398744,1.0
+TCGA-DU-6407,Henry Ford Hospital,Brain Lower Grade Glioma,oligodendroglioma,G2,35.0,female,94.4578375,1.0
+TCGA-HT-7882,Case Western - St Joes,Brain Lower Grade Glioma,oligodendroglioma,G3,66.0,male,3.7126037000000003,1.0
+TCGA-HT-A614,Case Western - St Joes,Brain Lower Grade Glioma,oligoastrocytoma,G2,47.0,male,2.6941017999999994,0.0
+TCGA-DU-6408,Henry Ford Hospital,Brain Lower Grade Glioma,oligodendroglioma,G3,23.0,female,114.00650300000001,1.0
+TCGA-HT-8105,Case Western - St Joes,Brain Lower Grade Glioma,oligodendroglioma,G3,54.0,male,6.242431,0.0
+TCGA-CS-4943,Thomas Jefferson University,Brain Lower Grade Glioma,astrocytoma,G3,37.0,male,18.135904800000002,0.0
+TCGA-DU-5849,Henry Ford Hospital,Brain Lower Grade Glioma,oligodendroglioma,G2,48.0,male,14.554720699999999,0.0
+TCGA-DU-5852,Henry Ford Hospital,Brain Lower Grade Glioma,oligoastrocytoma,G3,61.0,female,6.7352545,1.0
+TCGA-08-0510,UCSF,Glioblastoma multiforme,glioblastoma,G4,75.0,male,4.271137,1.0
+TCGA-CS-5395,Thomas Jefferson University,Brain Lower Grade Glioma,oligodendroglioma,G2,43.0,male,20.994281100000002,1.0
+TCGA-HT-7856,Case Western - St Joes,Brain Lower Grade Glioma,oligodendroglioma,G3,35.0,male,39.0644761,0.0
+TCGA-08-0352,UCSF,Glioblastoma multiforme,glioblastoma,G4,79.0,male,1.2813411,1.0
+TCGA-08-0521,UCSF,Glioblastoma multiforme,glioblastoma,G4,17.0,male,4.7968154,1.0
+TCGA-HT-8106,Case Western - St Joes,Brain Lower Grade Glioma,astrocytoma,G3,53.0,male,0.09856469999999999,0.0
+TCGA-08-0358,UCSF,Glioblastoma multiforme,glioblastoma,G4,50.0,male,22.275622199999997,1.0
+TCGA-HT-7874,Case Western - St Joes,Brain Lower Grade Glioma,oligodendroglioma,G3,41.0,female,37.126037,0.0
+TCGA-06-0649,Henry Ford Hospital,Glioblastoma multiforme,glioblastoma,G4,73.0,female,2.1027136000000004,1.0
+TCGA-06-0166,Henry Ford Hospital,Glioblastoma multiforme,glioblastoma,G4,51.0,male,5.8481722000000005,1.0
+TCGA-08-0354,UCSF,Glioblastoma multiforme,glioblastoma,G4,52.0,female,17.938775399999994,1.0
+TCGA-08-0524,UCSF,Glioblastoma multiforme,glioblastoma,G4,17.0,female,7.2609328999999985,1.0
+TCGA-12-1602,Duke,Glioblastoma multiforme,glioblastoma,G4,58.0,male,6.7681094,1.0
+TCGA-CS-6290,Thomas Jefferson University,Brain Lower Grade Glioma,astrocytoma,G3,31.0,male,17.938775399999994,0.0
+TCGA-06-0189,Henry Ford Hospital,Glioblastoma multiforme,glioblastoma,G4,55.0,male,15.4089481,1.0
+TCGA-08-0353,UCSF,Glioblastoma multiforme,glioblastoma,G4,58.0,male,8.410854400000002,1.0
+TCGA-06-0132,Henry Ford Hospital,Glioblastoma multiforme,glioblastoma,G4,49.0,male,25.3311279,1.0
+TCGA-CS-6667,Thomas Jefferson University,Brain Lower Grade Glioma,astrocytoma,G2,39.0,female,7.5566270000000015,0.0
+TCGA-08-0350,UCSF,Glioblastoma multiforme,glioblastoma,G4,32.0,male,29.2080061,1.0
+TCGA-27-1834,"Milan - Italy, Fondazione IRCCS Instituto Neuroligico C. Besta",Glioblastoma multiforme,glioblastoma,G4,56.0,male,40.510091700000004,1.0
+TCGA-FG-A713,Case Western,Brain Lower Grade Glioma,oligoastrocytoma,G2,74.0,female,5.223929099999999,0.0
+TCGA-HT-7475,Case Western - St Joes,Brain Lower Grade Glioma,oligoastrocytoma,G3,67.0,male,17.413097,0.0
+TCGA-HT-7684,Case Western - St Joes,Brain Lower Grade Glioma,oligoastrocytoma,G3,58.0,male,6.0453015999999975,0.0
+TCGA-06-0128,Henry Ford Hospital,Glioblastoma multiforme,glioblastoma,G4,66.0,male,22.7027359,1.0
+TCGA-HT-7860,Case Western - St Joes,Brain Lower Grade Glioma,astrocytoma,G3,60.0,female,0.49282349999999997,0.0
+TCGA-DU-5871,Henry Ford Hospital,Brain Lower Grade Glioma,oligoastrocytoma,G2,37.0,female,18.924422399999997,0.0
+TCGA-DU-A6S3,Henry Ford Hospital,Brain Lower Grade Glioma,oligodendroglioma,G2,60.0,male,2.6941017999999994,0.0
+TCGA-HT-7692,Case Western - St Joes,Brain Lower Grade Glioma,oligoastrocytoma,G2,43.0,male,2.956941,0.0
+TCGA-DU-8165,Henry Ford Hospital,Brain Lower Grade Glioma,oligodendroglioma,G3,60.0,female,19.121551800000002,0.0
+TCGA-06-5412,Henry Ford Hospital,Glioblastoma multiforme,glioblastoma,G4,78.0,female,4.5339762000000015,1.0
+TCGA-14-0789,Emory University,Glioblastoma multiforme,glioblastoma,G4,54.0,male,11.2363758,1.0
+TCGA-FG-6688,Case Western,Brain Lower Grade Glioma,astrocytoma,G3,59.0,female,18.7601479,0.0
+TCGA-DU-6401,Henry Ford Hospital,Brain Lower Grade Glioma,oligodendroglioma,G2,31.0,female,87.39403399999998,1.0
+TCGA-DU-A6S2,Henry Ford Hospital,Brain Lower Grade Glioma,oligodendroglioma,G2,37.0,female,8.640838699999998,0.0
+TCGA-FG-7643,Case Western,Brain Lower Grade Glioma,oligoastrocytoma,G2,49.0,female,20.0743439,0.0
+TCGA-27-2526,"Milan - Italy, Fondazione IRCCS Instituto Neuroligico C. Besta",Glioblastoma multiforme,glioblastoma,G4,79.0,female,2.8583762999999998,1.0
+TCGA-02-0048,MD Anderson Cancer Center,Glioblastoma multiforme,glioblastoma,G4,80.0,male,3.2197802,1.0
+TCGA-DU-6397,Henry Ford Hospital,Brain Lower Grade Glioma,oligodendroglioma,G3,45.0,male,46.029714899999995,1.0
+TCGA-06-0133,Henry Ford Hospital,Glioblastoma multiforme,glioblastoma,G4,64.0,male,14.2918815,1.0
+TCGA-HT-7693,Case Western - St Joes,Brain Lower Grade Glioma,oligodendroglioma,G2,51.0,female,17.5116617,0.0
+TCGA-27-1838,"Milan - Italy, Fondazione IRCCS Instituto Neuroligico C. Besta",Glioblastoma multiforme,glioblastoma,G4,59.0,female,11.499215,1.0
+TCGA-DU-5853,Henry Ford Hospital,Brain Lower Grade Glioma,oligoastrocytoma,G2,29.0,male,13.3719443,0.0
+TCGA-DU-6405,Henry Ford Hospital,Brain Lower Grade Glioma,astrocytoma,G3,51.0,female,19.877214499999997,1.0
+TCGA-DU-6399,Henry Ford Hospital,Brain Lower Grade Glioma,oligodendroglioma,G2,54.0,male,65.7098,1.0
+TCGA-06-0213,Henry Ford Hospital,Glioblastoma multiforme,glioblastoma,G4,55.0,female,0.5256784000000001,1.0
+TCGA-HT-7855,Case Western - St Joes,Brain Lower Grade Glioma,astrocytoma,G3,39.0,male,19.2201165,0.0
+TCGA-19-1390,Case Western,Glioblastoma multiforme,glioblastoma,G4,63.0,female,25.363982800000002,1.0
+TCGA-06-0175,Henry Ford Hospital,Glioblastoma multiforme,glioblastoma,G4,69.0,male,4.0411527000000005,1.0
+TCGA-02-0003,MD Anderson Cancer Center,Glioblastoma multiforme,glioblastoma,G4,50.0,male,4.731105599999999,1.0
+TCGA-HT-8113,Case Western - St Joes,Brain Lower Grade Glioma,oligodendroglioma,G2,49.0,female,29.569409999999998,0.0
+TCGA-06-0648,Henry Ford Hospital,Glioblastoma multiforme,glioblastoma,G4,77.0,male,9.7907602,1.0
+TCGA-14-1829,Emory University,Glioblastoma multiforme,glioblastoma,G4,57.0,male,7.1623682,0.0
