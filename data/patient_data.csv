@@ -1,0 +1,243 @@
+,Case,Tissue source site,Study,Histology,Grade,Age (years at diagnosis),Gender,Survival (months),Vital status (1=dead)
+1,TCGA-CS-4941,Thomas Jefferson University,Brain Lower Grade Glioma,astrocytoma,G3,67.0,male,7.6880466,1.0
+2,TCGA-CS-4942,Thomas Jefferson University,Brain Lower Grade Glioma,astrocytoma,G3,44.0,female,43.8612915,1.0
+3,TCGA-CS-4943,Thomas Jefferson University,Brain Lower Grade Glioma,astrocytoma,G3,37.0,male,18.1359048,0.0
+4,TCGA-CS-4944,Thomas Jefferson University,Brain Lower Grade Glioma,astrocytoma,G2,50.0,male,10.612132699999998,0.0
+6,TCGA-CS-5393,Thomas Jefferson University,Brain Lower Grade Glioma,astrocytoma,G3,39.0,male,40.1486878,0.0
+8,TCGA-CS-5395,Thomas Jefferson University,Brain Lower Grade Glioma,oligodendroglioma,G2,43.0,male,20.9942811,1.0
+9,TCGA-CS-5396,Thomas Jefferson University,Brain Lower Grade Glioma,oligodendroglioma,G3,53.0,female,9.9550347,0.0
+10,TCGA-CS-5397,Thomas Jefferson University,Brain Lower Grade Glioma,astrocytoma,G3,54.0,female,6.373850599999999,1.0
+11,TCGA-CS-6186,Thomas Jefferson University,Brain Lower Grade Glioma,oligoastrocytoma,G3,58.0,male,17.6759362,1.0
+12,TCGA-CS-6188,Thomas Jefferson University,Brain Lower Grade Glioma,astrocytoma,G3,48.0,male,23.8198025,0.0
+13,TCGA-CS-6290,Thomas Jefferson University,Brain Lower Grade Glioma,astrocytoma,G3,31.0,male,17.938775399999994,0.0
+14,TCGA-CS-6665,Thomas Jefferson University,Brain Lower Grade Glioma,astrocytoma,G3,51.0,female,12.4191522,0.0
+15,TCGA-CS-6666,Thomas Jefferson University,Brain Lower Grade Glioma,astrocytoma,G3,22.0,male,8.476564199999999,0.0
+16,TCGA-CS-6667,Thomas Jefferson University,Brain Lower Grade Glioma,astrocytoma,G2,39.0,female,7.5566270000000015,0.0
+17,TCGA-CS-6668,Thomas Jefferson University,Brain Lower Grade Glioma,oligodendroglioma,G2,57.0,female,8.016595599999999,0.0
+18,TCGA-CS-6669,Thomas Jefferson University,Brain Lower Grade Glioma,oligodendroglioma,G2,26.0,female,7.3923524999999985,0.0
+70,TCGA-DU-5849,Henry Ford Hospital,Brain Lower Grade Glioma,oligodendroglioma,G2,48.0,male,14.5547207,0.0
+71,TCGA-DU-5851,Henry Ford Hospital,Brain Lower Grade Glioma,oligoastrocytoma,G3,40.0,female,17.445951899999994,0.0
+72,TCGA-DU-5852,Henry Ford Hospital,Brain Lower Grade Glioma,oligoastrocytoma,G3,61.0,female,6.7352545,1.0
+73,TCGA-DU-5853,Henry Ford Hospital,Brain Lower Grade Glioma,oligoastrocytoma,G2,29.0,male,13.3719443,0.0
+74,TCGA-DU-5854,Henry Ford Hospital,Brain Lower Grade Glioma,astrocytoma,G3,57.0,female,8.4437093,0.0
+75,TCGA-DU-5855,Henry Ford Hospital,Brain Lower Grade Glioma,oligoastrocytoma,G3,49.0,female,6.8009643,0.0
+77,TCGA-DU-5871,Henry Ford Hospital,Brain Lower Grade Glioma,oligoastrocytoma,G2,37.0,female,18.9244224,0.0
+78,TCGA-DU-5872,Henry Ford Hospital,Brain Lower Grade Glioma,oligoastrocytoma,G2,43.0,female,17.4788068,0.0
+79,TCGA-DU-5874,Henry Ford Hospital,Brain Lower Grade Glioma,oligodendroglioma,G2,62.0,female,15.146108900000002,0.0
+85,TCGA-DU-6397,Henry Ford Hospital,Brain Lower Grade Glioma,oligodendroglioma,G3,45.0,male,46.0297149,1.0
+86,TCGA-DU-6399,Henry Ford Hospital,Brain Lower Grade Glioma,oligodendroglioma,G2,54.0,male,65.7098,1.0
+87,TCGA-DU-6400,Henry Ford Hospital,Brain Lower Grade Glioma,oligodendroglioma,G2,66.0,female,1.2156313,1.0
+88,TCGA-DU-6401,Henry Ford Hospital,Brain Lower Grade Glioma,oligodendroglioma,G2,31.0,female,87.39403399999998,1.0
+91,TCGA-DU-6404,Henry Ford Hospital,Brain Lower Grade Glioma,oligodendroglioma,G3,24.0,female,133.6537332,1.0
+92,TCGA-DU-6405,Henry Ford Hospital,Brain Lower Grade Glioma,astrocytoma,G3,51.0,female,19.8772145,1.0
+94,TCGA-DU-6407,Henry Ford Hospital,Brain Lower Grade Glioma,oligodendroglioma,G2,35.0,female,94.4578375,1.0
+95,TCGA-DU-6408,Henry Ford Hospital,Brain Lower Grade Glioma,oligodendroglioma,G3,23.0,female,114.006503,1.0
+96,TCGA-DU-6410,Henry Ford Hospital,Brain Lower Grade Glioma,oligodendroglioma,G3,56.0,male,7.950885799999999,0.0
+97,TCGA-DU-6542,Henry Ford Hospital,Brain Lower Grade Glioma,oligoastrocytoma,G3,25.0,male,7.7209015,0.0
+100,TCGA-DU-7008,Henry Ford Hospital,Brain Lower Grade Glioma,oligodendroglioma,G2,41.0,female,156.1264848,0.0
+102,TCGA-DU-7010,Henry Ford Hospital,Brain Lower Grade Glioma,astrocytoma,G3,58.0,female,14.9818344,1.0
+106,TCGA-DU-7014,Henry Ford Hospital,Brain Lower Grade Glioma,oligodendroglioma,G2,59.0,male,117.3248479,1.0
+107,TCGA-DU-7015,Henry Ford Hospital,Brain Lower Grade Glioma,oligodendroglioma,G2,41.0,female,90.7123789,0.0
+108,TCGA-DU-7018,Henry Ford Hospital,Brain Lower Grade Glioma,oligodendroglioma,G3,57.0,female,30.6536217,1.0
+109,TCGA-DU-7019,Henry Ford Hospital,Brain Lower Grade Glioma,oligoastrocytoma,G3,39.0,male,26.28392,0.0
+112,TCGA-DU-7294,Henry Ford Hospital,Brain Lower Grade Glioma,oligodendroglioma,G2,53.0,female,94.2607081,0.0
+113,TCGA-DU-7298,Henry Ford Hospital,Brain Lower Grade Glioma,astrocytoma,G3,38.0,female,18.9244224,1.0
+114,TCGA-DU-7299,Henry Ford Hospital,Brain Lower Grade Glioma,astrocytoma,G3,33.0,male,43.9927111,1.0
+115,TCGA-DU-7300,Henry Ford Hospital,Brain Lower Grade Glioma,oligodendroglioma,G3,53.0,female,61.9643414,1.0
+116,TCGA-DU-7301,Henry Ford Hospital,Brain Lower Grade Glioma,oligodendroglioma,G2,53.0,male,25.8896612,1.0
+117,TCGA-DU-7302,Henry Ford Hospital,Brain Lower Grade Glioma,oligodendroglioma,G3,48.0,female,60.2558866,0.0
+118,TCGA-DU-7304,Henry Ford Hospital,Brain Lower Grade Glioma,oligoastrocytoma,G3,43.0,male,23.2941241,1.0
+119,TCGA-DU-7306,Henry Ford Hospital,Brain Lower Grade Glioma,oligoastrocytoma,G2,67.0,male,41.9557073,0.0
+120,TCGA-DU-7309,Henry Ford Hospital,Brain Lower Grade Glioma,oligodendroglioma,G3,41.0,female,2.7598116000000004,0.0
+123,TCGA-DU-8162,Henry Ford Hospital,Brain Lower Grade Glioma,oligoastrocytoma,G3,61.0,female,14.5875756,1.0
+125,TCGA-DU-8164,Henry Ford Hospital,Brain Lower Grade Glioma,oligodendroglioma,G2,51.0,male,21.3885399,0.0
+126,TCGA-DU-8165,Henry Ford Hospital,Brain Lower Grade Glioma,oligodendroglioma,G3,60.0,female,19.1215518,0.0
+127,TCGA-DU-8166,Henry Ford Hospital,Brain Lower Grade Glioma,oligoastrocytoma,G2,29.0,female,16.953128399999994,0.0
+128,TCGA-DU-8167,Henry Ford Hospital,Brain Lower Grade Glioma,oligoastrocytoma,G2,69.0,female,15.4746579,0.0
+129,TCGA-DU-8168,Henry Ford Hospital,Brain Lower Grade Glioma,oligodendroglioma,G3,55.0,female,14.1604619,0.0
+130,TCGA-DU-A5TP,Henry Ford Hospital,Brain Lower Grade Glioma,astrocytoma,G3,33.0,male,14.2261717,0.0
+131,TCGA-DU-A5TR,Henry Ford Hospital,Brain Lower Grade Glioma,oligoastrocytoma,G2,51.0,male,12.5834267,0.0
+132,TCGA-DU-A5TS,Henry Ford Hospital,Brain Lower Grade Glioma,oligodendroglioma,G2,42.0,male,15.113254,0.0
+133,TCGA-DU-A5TT,Henry Ford Hospital,Brain Lower Grade Glioma,oligodendroglioma,G3,70.0,male,4.9610899,0.0
+134,TCGA-DU-A5TU,Henry Ford Hospital,Brain Lower Grade Glioma,astrocytoma,G2,62.0,female,3.6468939,0.0
+135,TCGA-DU-A5TW,Henry Ford Hospital,Brain Lower Grade Glioma,astrocytoma,G3,33.0,female,5.6510428,0.0
+136,TCGA-DU-A5TY,Henry Ford Hospital,Brain Lower Grade Glioma,astrocytoma,G3,46.0,female,12.1891679,0.0
+137,TCGA-DU-A6S2,Henry Ford Hospital,Brain Lower Grade Glioma,oligodendroglioma,G2,37.0,female,8.640838699999998,0.0
+138,TCGA-DU-A6S3,Henry Ford Hospital,Brain Lower Grade Glioma,oligodendroglioma,G2,60.0,male,2.6941017999999994,0.0
+139,TCGA-DU-A6S6,Henry Ford Hospital,Brain Lower Grade Glioma,oligoastrocytoma,G2,35.0,female,77.9318228,0.0
+140,TCGA-DU-A6S7,Henry Ford Hospital,Brain Lower Grade Glioma,astrocytoma,G3,27.0,female,7.228078,0.0
+141,TCGA-DU-A6S8,Henry Ford Hospital,Brain Lower Grade Glioma,oligodendroglioma,G3,74.0,female,5.9795918,0.0
+189,TCGA-FG-5964,Case Western,Brain Lower Grade Glioma,oligodendroglioma,G2,62.0,male,34.3333705,0.0
+191,TCGA-FG-6688,Case Western,Brain Lower Grade Glioma,astrocytoma,G3,59.0,female,18.7601479,0.0
+192,TCGA-FG-6689,Case Western,Brain Lower Grade Glioma,astrocytoma,G2,30.0,male,14.916124599999998,0.0
+194,TCGA-FG-6691,Case Western,Brain Lower Grade Glioma,astrocytoma,G2,23.0,female,23.951222100000006,0.0
+195,TCGA-FG-6692,Case Western,Brain Lower Grade Glioma,oligodendroglioma,G3,63.0,male,18.4315989,1.0
+196,TCGA-FG-7634,Case Western,Brain Lower Grade Glioma,oligodendroglioma,G2,28.0,male,15.3432383,0.0
+201,TCGA-FG-7643,Case Western,Brain Lower Grade Glioma,oligoastrocytoma,G2,49.0,female,20.0743439,0.0
+210,TCGA-FG-A4MT,Case Western,Brain Lower Grade Glioma,oligodendroglioma,G2,27.0,female,38.24310360000001,0.0
+218,TCGA-FG-A6IZ,Case Western,Brain Lower Grade Glioma,oligodendroglioma,G2,60.0,male,4.205427200000001,0.0
+225,TCGA-FG-A713,Case Western,Brain Lower Grade Glioma,oligoastrocytoma,G2,74.0,female,5.2239290999999985,0.0
+235,TCGA-HT-7473,Case Western - St Joes,Brain Lower Grade Glioma,oligoastrocytoma,G2,28.0,male,16.5260147,0.0
+237,TCGA-HT-7475,Case Western - St Joes,Brain Lower Grade Glioma,oligoastrocytoma,G3,67.0,male,17.413097,0.0
+248,TCGA-HT-7602,Case Western - St Joes,Brain Lower Grade Glioma,oligodendroglioma,G2,21.0,male,29.8322492,0.0
+258,TCGA-HT-7616,Case Western - St Joes,Brain Lower Grade Glioma,oligodendroglioma,G3,75.0,male,0.2299843,1.0
+262,TCGA-HT-7680,Case Western - St Joes,Brain Lower Grade Glioma,astrocytoma,G2,32.0,female,0.7556626999999999,0.0
+264,TCGA-HT-7684,Case Western - St Joes,Brain Lower Grade Glioma,oligoastrocytoma,G3,58.0,male,6.045301599999998,0.0
+265,TCGA-HT-7686,Case Western - St Joes,Brain Lower Grade Glioma,astrocytoma,G3,29.0,female,42.71137,0.0
+269,TCGA-HT-7690,Case Western - St Joes,Brain Lower Grade Glioma,oligoastrocytoma,G3,29.0,male,0.0985647,0.0
+271,TCGA-HT-7692,Case Western - St Joes,Brain Lower Grade Glioma,oligoastrocytoma,G2,43.0,male,2.956941,0.0
+272,TCGA-HT-7693,Case Western - St Joes,Brain Lower Grade Glioma,oligodendroglioma,G2,51.0,female,17.5116617,0.0
+273,TCGA-HT-7694,Case Western - St Joes,Brain Lower Grade Glioma,oligodendroglioma,G3,60.0,male,6.8995289999999985,0.0
+276,TCGA-HT-7855,Case Western - St Joes,Brain Lower Grade Glioma,astrocytoma,G3,39.0,male,19.2201165,0.0
+277,TCGA-HT-7856,Case Western - St Joes,Brain Lower Grade Glioma,oligodendroglioma,G3,35.0,male,39.0644761,0.0
+280,TCGA-HT-7860,Case Western - St Joes,Brain Lower Grade Glioma,astrocytoma,G3,60.0,female,0.4928235,0.0
+282,TCGA-HT-7874,Case Western - St Joes,Brain Lower Grade Glioma,oligodendroglioma,G3,41.0,female,37.126037,0.0
+285,TCGA-HT-7879,Case Western - St Joes,Brain Lower Grade Glioma,oligoastrocytoma,G3,31.0,male,3.6797488,0.0
+288,TCGA-HT-7882,Case Western - St Joes,Brain Lower Grade Glioma,oligodendroglioma,G3,66.0,male,3.7126037,1.0
+289,TCGA-HT-7884,Case Western - St Joes,Brain Lower Grade Glioma,astrocytoma,G2,44.0,female,11.269230699999998,0.0
+296,TCGA-HT-8018,Case Western - St Joes,Brain Lower Grade Glioma,oligoastrocytoma,G2,40.0,female,21.4871046,0.0
+299,TCGA-HT-8105,Case Western - St Joes,Brain Lower Grade Glioma,oligodendroglioma,G3,54.0,male,6.242431,0.0
+300,TCGA-HT-8106,Case Western - St Joes,Brain Lower Grade Glioma,astrocytoma,G3,53.0,male,0.0985647,0.0
+301,TCGA-HT-8107,Case Western - St Joes,Brain Lower Grade Glioma,oligodendroglioma,G2,62.0,male,0.4599686,0.0
+305,TCGA-HT-8111,Case Western - St Joes,Brain Lower Grade Glioma,oligoastrocytoma,G3,32.0,male,0.2299843,0.0
+306,TCGA-HT-8113,Case Western - St Joes,Brain Lower Grade Glioma,oligodendroglioma,G2,49.0,female,29.56941,0.0
+307,TCGA-HT-8114,Case Western - St Joes,Brain Lower Grade Glioma,oligoastrocytoma,G3,36.0,male,3.8768782,0.0
+309,TCGA-HT-8563,Case Western - St Joes,Brain Lower Grade Glioma,astrocytoma,G3,30.0,female,16.033191199999994,0.0
+318,TCGA-HT-A5RC,Case Western - St Joes,Brain Lower Grade Glioma,astrocytoma,G3,70.0,female,5.322493799999998,1.0
+319,TCGA-HT-A614,Case Western - St Joes,Brain Lower Grade Glioma,oligoastrocytoma,G2,47.0,male,2.6941017999999994,0.0
+325,TCGA-HT-A61A,Case Western - St Joes,Brain Lower Grade Glioma,oligodendroglioma,G2,20.0,female,6.373850599999999,0.0
+517,TCGA-02-0003,MD Anderson Cancer Center,Glioblastoma multiforme,glioblastoma,G4,50.0,male,4.7311055999999985,1.0
+519,TCGA-02-0006,MD Anderson Cancer Center,Glioblastoma multiforme,glioblastoma,G4,56.0,female,18.3330342,1.0
+521,TCGA-02-0009,MD Anderson Cancer Center,Glioblastoma multiforme,glioblastoma,G4,61.0,female,10.5792778,1.0
+523,TCGA-02-0011,MD Anderson Cancer Center,Glioblastoma multiforme,glioblastoma,G4,18.0,female,20.698587,1.0
+532,TCGA-02-0027,MD Anderson Cancer Center,Glioblastoma multiforme,glioblastoma,G4,33.0,female,12.156313,1.0
+534,TCGA-02-0033,MD Anderson Cancer Center,Glioblastoma multiforme,glioblastoma,G4,54.0,male,2.8255214,1.0
+535,TCGA-02-0034,MD Anderson Cancer Center,Glioblastoma multiforme,glioblastoma,G4,60.0,male,14.127607,1.0
+536,TCGA-02-0037,MD Anderson Cancer Center,Glioblastoma multiforme,glioblastoma,G4,74.0,female,3.614039,1.0
+540,TCGA-02-0046,MD Anderson Cancer Center,Glioblastoma multiforme,glioblastoma,G4,61.0,male,6.866674099999999,1.0
+541,TCGA-02-0047,MD Anderson Cancer Center,Glioblastoma multiforme,glioblastoma,G4,78.0,male,14.718995199999998,1.0
+542,TCGA-02-0048,MD Anderson Cancer Center,Glioblastoma multiforme,glioblastoma,G4,80.0,male,3.2197802,1.0
+545,TCGA-02-0054,MD Anderson Cancer Center,Glioblastoma multiforme,glioblastoma,G4,44.0,female,6.5381250999999985,1.0
+549,TCGA-02-0059,MD Anderson Cancer Center,Glioblastoma multiforme,glioblastoma,G4,68.0,female,9.5607759,1.0
+550,TCGA-02-0060,MD Anderson Cancer Center,Glioblastoma multiforme,glioblastoma,G4,66.0,female,6.012446700000001,1.0
+551,TCGA-02-0064,MD Anderson Cancer Center,Glioblastoma multiforme,glioblastoma,G4,50.0,male,19.71294,1.0
+552,TCGA-02-0068,MD Anderson Cancer Center,Glioblastoma multiforme,glioblastoma,G4,57.0,male,26.4153396,1.0
+553,TCGA-02-0069,MD Anderson Cancer Center,Glioblastoma multiforme,glioblastoma,G4,31.0,female,28.6823277,0.0
+554,TCGA-02-0070,MD Anderson Cancer Center,Glioblastoma multiforme,glioblastoma,G4,70.0,male,25.035433800000003,0.0
+557,TCGA-02-0075,MD Anderson Cancer Center,Glioblastoma multiforme,glioblastoma,G4,63.0,male,20.8300066,1.0
+562,TCGA-02-0085,MD Anderson Cancer Center,Glioblastoma multiforme,glioblastoma,G4,63.0,female,51.2864989,1.0
+563,TCGA-02-0086,MD Anderson Cancer Center,Glioblastoma multiforme,glioblastoma,G4,45.0,female,8.8051132,1.0
+564,TCGA-02-0087,MD Anderson Cancer Center,Glioblastoma multiforme,glioblastoma,G4,27.0,female,57.7260593,0.0
+567,TCGA-02-0102,MD Anderson Cancer Center,Glioblastoma multiforme,glioblastoma,G4,42.0,male,27.0067278,1.0
+569,TCGA-02-0106,MD Anderson Cancer Center,Glioblastoma multiforme,glioblastoma,G4,54.0,male,11.6634895,1.0
+575,TCGA-02-0116,MD Anderson Cancer Center,Glioblastoma multiforme,glioblastoma,G4,51.0,male,48.9209461,1.0
+612,TCGA-06-0119,Henry Ford Hospital,Glioblastoma multiforme,glioblastoma,G4,81.0,female,2.6941017999999994,1.0
+614,TCGA-06-0122,Henry Ford Hospital,Glioblastoma multiforme,glioblastoma,G4,84.0,female,6.1438663,1.0
+619,TCGA-06-0128,Henry Ford Hospital,Glioblastoma multiforme,glioblastoma,G4,66.0,male,22.7027359,1.0
+621,TCGA-06-0130,Henry Ford Hospital,Glioblastoma multiforme,glioblastoma,G4,54.0,male,12.9448306,1.0
+623,TCGA-06-0132,Henry Ford Hospital,Glioblastoma multiforme,glioblastoma,G4,49.0,male,25.3311279,1.0
+624,TCGA-06-0133,Henry Ford Hospital,Glioblastoma multiforme,glioblastoma,G4,64.0,male,14.2918815,1.0
+625,TCGA-06-0137,Henry Ford Hospital,Glioblastoma multiforme,glioblastoma,G4,63.0,female,26.6781788,1.0
+626,TCGA-06-0138,Henry Ford Hospital,Glioblastoma multiforme,glioblastoma,G4,43.0,male,24.2140613,1.0
+627,TCGA-06-0139,Henry Ford Hospital,Glioblastoma multiforme,glioblastoma,G4,40.0,male,11.8934738,1.0
+630,TCGA-06-0142,Henry Ford Hospital,Glioblastoma multiforme,glioblastoma,G4,81.0,male,2.2012783,1.0
+632,TCGA-06-0145,Henry Ford Hospital,Glioblastoma multiforme,glioblastoma,G4,53.0,female,2.3326979,1.0
+636,TCGA-06-0149,Henry Ford Hospital,Glioblastoma multiforme,glioblastoma,G4,74.0,female,8.6079838,1.0
+640,TCGA-06-0154,Henry Ford Hospital,Glioblastoma multiforme,glioblastoma,G4,54.0,male,13.930477599999998,1.0
+644,TCGA-06-0158,Henry Ford Hospital,Glioblastoma multiforme,glioblastoma,G4,73.0,male,10.8092621,1.0
+647,TCGA-06-0162,Henry Ford Hospital,Glioblastoma multiforme,glioblastoma,G4,47.0,female,3.4169096,1.0
+648,TCGA-06-0164,Henry Ford Hospital,Glioblastoma multiforme,glioblastoma,G4,47.0,male,56.8718319,1.0
+650,TCGA-06-0166,Henry Ford Hospital,Glioblastoma multiforme,glioblastoma,G4,51.0,male,5.8481722000000005,1.0
+652,TCGA-06-0168,Henry Ford Hospital,Glioblastoma multiforme,glioblastoma,G4,59.0,female,19.6472302,1.0
+657,TCGA-06-0175,Henry Ford Hospital,Glioblastoma multiforme,glioblastoma,G4,69.0,male,4.0411527000000005,1.0
+658,TCGA-06-0176,Henry Ford Hospital,Glioblastoma multiforme,glioblastoma,G4,34.0,male,51.3193538,0.0
+659,TCGA-06-0177,Henry Ford Hospital,Glioblastoma multiforme,glioblastoma,G4,64.0,male,4.1725723,1.0
+661,TCGA-06-0179,Henry Ford Hospital,Glioblastoma multiforme,glioblastoma,G4,64.0,male,20.2386184,1.0
+662,TCGA-06-0182,Henry Ford Hospital,Glioblastoma multiforme,glioblastoma,G4,76.0,male,3.6468939,1.0
+663,TCGA-06-0184,Henry Ford Hospital,Glioblastoma multiforme,glioblastoma,G4,63.0,male,40.3458172,0.0
+664,TCGA-06-0185,Henry Ford Hospital,Glioblastoma multiforme,glioblastoma,G4,54.0,male,36.9946174,0.0
+665,TCGA-06-0187,Henry Ford Hospital,Glioblastoma multiforme,glioblastoma,G4,69.0,male,27.2038572,1.0
+666,TCGA-06-0188,Henry Ford Hospital,Glioblastoma multiforme,glioblastoma,G4,71.0,male,28.4523434,0.0
+667,TCGA-06-0189,Henry Ford Hospital,Glioblastoma multiforme,glioblastoma,G4,55.0,male,15.4089481,1.0
+668,TCGA-06-0190,Henry Ford Hospital,Glioblastoma multiforme,glioblastoma,G4,62.0,male,10.4150033,1.0
+669,TCGA-06-0192,Henry Ford Hospital,Glioblastoma multiforme,glioblastoma,G4,58.0,male,18.3001793,0.0
+679,TCGA-06-0213,Henry Ford Hospital,Glioblastoma multiforme,glioblastoma,G4,55.0,female,0.5256784000000001,1.0
+685,TCGA-06-0238,Henry Ford Hospital,Glioblastoma multiforme,glioblastoma,G4,46.0,male,13.3062345,1.0
+686,TCGA-06-0240,Henry Ford Hospital,Glioblastoma multiforme,glioblastoma,G4,57.0,male,20.4028929,1.0
+687,TCGA-06-0241,Henry Ford Hospital,Glioblastoma multiforme,glioblastoma,G4,65.0,female,14.948979500000002,0.0
+696,TCGA-06-0644,Henry Ford Hospital,Glioblastoma multiforme,glioblastoma,G4,71.0,male,12.3205875,0.0
+698,TCGA-06-0646,Henry Ford Hospital,Glioblastoma multiforme,glioblastoma,G4,60.0,male,5.7496075,1.0
+699,TCGA-06-0648,Henry Ford Hospital,Glioblastoma multiforme,glioblastoma,G4,77.0,male,9.7907602,1.0
+700,TCGA-06-0649,Henry Ford Hospital,Glioblastoma multiforme,glioblastoma,G4,73.0,female,2.1027136000000004,1.0
+717,TCGA-06-1084,Henry Ford Hospital,Glioblastoma multiforme,glioblastoma,G4,54.0,male,7.4252074000000015,0.0
+722,TCGA-06-1802,Henry Ford Hospital,Glioblastoma multiforme,glioblastoma,G4,61.0,male,7.885175999999999,0.0
+737,TCGA-06-2570,Henry Ford Hospital,Glioblastoma multiforme,glioblastoma,G4,21.0,female,9.3636465,0.0
+738,TCGA-06-5408,Henry Ford Hospital,Glioblastoma multiforme,glioblastoma,G4,54.0,female,11.7291993,1.0
+741,TCGA-06-5412,Henry Ford Hospital,Glioblastoma multiforme,glioblastoma,G4,78.0,female,4.5339762000000015,1.0
+742,TCGA-06-5413,Henry Ford Hospital,Glioblastoma multiforme,glioblastoma,G4,67.0,male,8.8051132,0.0
+746,TCGA-06-5417,Henry Ford Hospital,Glioblastoma multiforme,glioblastoma,G4,45.0,female,5.0925095,0.0
+752,TCGA-06-6389,Henry Ford Hospital,Glioblastoma multiforme,glioblastoma,G4,49.0,female,7.7866113,0.0
+778,TCGA-08-0350,UCSF,Glioblastoma multiforme,glioblastoma,G4,32.0,male,29.2080061,1.0
+780,TCGA-08-0352,UCSF,Glioblastoma multiforme,glioblastoma,G4,79.0,male,1.2813411,1.0
+781,TCGA-08-0353,UCSF,Glioblastoma multiforme,glioblastoma,G4,58.0,male,8.410854400000002,1.0
+782,TCGA-08-0354,UCSF,Glioblastoma multiforme,glioblastoma,G4,52.0,female,17.938775399999994,1.0
+783,TCGA-08-0355,UCSF,Glioblastoma multiforme,glioblastoma,G4,30.0,female,24.5426103,1.0
+784,TCGA-08-0356,UCSF,Glioblastoma multiforme,glioblastoma,G4,59.0,female,31.0807354,1.0
+785,TCGA-08-0357,UCSF,Glioblastoma multiforme,glioblastoma,G4,49.0,male,37.5531507,1.0
+786,TCGA-08-0358,UCSF,Glioblastoma multiforme,glioblastoma,G4,50.0,male,22.2756222,1.0
+787,TCGA-08-0359,UCSF,Glioblastoma multiforme,glioblastoma,G4,59.0,female,3.3840547,1.0
+788,TCGA-08-0360,UCSF,Glioblastoma multiforme,glioblastoma,G4,76.0,male,15.3760932,1.0
+792,TCGA-08-0385,UCSF,Glioblastoma multiforme,glioblastoma,G4,71.0,male,2.6941017999999994,1.0
+794,TCGA-08-0389,UCSF,Glioblastoma multiforme,glioblastoma,G4,59.0,male,15.3432383,1.0
+795,TCGA-08-0390,UCSF,Glioblastoma multiforme,glioblastoma,G4,69.0,male,13.963332500000002,1.0
+796,TCGA-08-0392,UCSF,Glioblastoma multiforme,glioblastoma,G4,60.0,male,0.7228078,1.0
+797,TCGA-08-0509,UCSF,Glioblastoma multiforme,glioblastoma,G4,63.0,male,12.5505718,1.0
+798,TCGA-08-0510,UCSF,Glioblastoma multiforme,glioblastoma,G4,75.0,male,4.271137,1.0
+800,TCGA-08-0512,UCSF,Glioblastoma multiforme,glioblastoma,G4,48.0,male,42.1199818,1.0
+805,TCGA-08-0520,UCSF,Glioblastoma multiforme,glioblastoma,G4,70.0,male,10.7435523,1.0
+806,TCGA-08-0521,UCSF,Glioblastoma multiforme,glioblastoma,G4,17.0,male,4.7968154,1.0
+807,TCGA-08-0522,UCSF,Glioblastoma multiforme,glioblastoma,G4,61.0,male,20.8628615,1.0
+808,TCGA-08-0524,UCSF,Glioblastoma multiforme,glioblastoma,G4,17.0,female,7.2609328999999985,1.0
+810,TCGA-08-0529,UCSF,Glioblastoma multiforme,glioblastoma,G4,56.0,female,18.398744,1.0
+813,TCGA-12-0616,Duke,Glioblastoma multiforme,glioblastoma,G4,36.0,female,14.718995199999998,1.0
+832,TCGA-12-0776,Duke,Glioblastoma multiforme,glioblastoma,G4,52.0,male,9.7250504,1.0
+843,TCGA-12-0829,Duke,Glioblastoma multiforme,glioblastoma,G4,75.0,male,20.5671674,1.0
+849,TCGA-12-1093,Duke,Glioblastoma multiforme,glioblastoma,G4,66.0,female,15.9674814,1.0
+850,TCGA-12-1094,Duke,Glioblastoma multiforme,glioblastoma,G4,56.0,male,12.2220228,1.0
+854,TCGA-12-1098,Duke,Glioblastoma multiforme,glioblastoma,G4,75.0,female,3.9754429,1.0
+857,TCGA-12-1598,Duke,Glioblastoma multiforme,glioblastoma,G4,75.0,female,15.6389324,1.0
+860,TCGA-12-1601,Duke,Glioblastoma multiforme,,,,,,
+861,TCGA-12-1602,Duke,Glioblastoma multiforme,glioblastoma,G4,58.0,male,6.7681094,1.0
+866,TCGA-12-3650,Duke,Glioblastoma multiforme,glioblastoma,G4,46.0,male,10.9406817,1.0
+879,TCGA-14-0789,Emory University,Glioblastoma multiforme,glioblastoma,G4,54.0,male,11.2363758,1.0
+902,TCGA-14-1456,Emory University,Glioblastoma multiforme,glioblastoma,G4,23.0,male,40.9372054,0.0
+905,TCGA-14-1794,Emory University,Glioblastoma multiforme,glioblastoma,G4,59.0,male,0.985647,1.0
+909,TCGA-14-1825,Emory University,Glioblastoma multiforme,glioblastoma,G4,70.0,male,7.6223368,1.0
+911,TCGA-14-1829,Emory University,Glioblastoma multiforme,glioblastoma,G4,57.0,male,7.1623682,0.0
+915,TCGA-14-3477,Emory University,Glioblastoma multiforme,glioblastoma,G4,38.0,female,3.7783135,0.0
+940,TCGA-19-0963,Case Western,Glioblastoma multiforme,glioblastoma,G4,61.0,male,14.2590266,1.0
+947,TCGA-19-1390,Case Western,Glioblastoma multiforme,glioblastoma,G4,63.0,female,25.3639828,1.0
+952,TCGA-19-1789,Case Western,Glioblastoma multiforme,glioblastoma,G4,69.0,female,3.2526351000000004,1.0
+959,TCGA-19-2624,Case Western,Glioblastoma multiforme,glioblastoma,G4,51.0,male,0.1642745,1.0
+962,TCGA-19-2631,Case Western,Glioblastoma multiforme,glioblastoma,G4,74.0,female,6.998093700000001,1.0
+967,TCGA-19-5951,Case Western,Glioblastoma multiforme,glioblastoma,G4,76.0,female,8.016595599999999,1.0
+970,TCGA-19-5954,Case Western,Glioblastoma multiforme,glioblastoma,G4,72.0,female,7.950885799999999,0.0
+973,TCGA-19-5958,Case Western,Glioblastoma multiforme,glioblastoma,G4,56.0,male,5.388203599999999,0.0
+975,TCGA-19-5960,Case Western,Glioblastoma multiforme,glioblastoma,G4,56.0,male,5.4210585,0.0
+998,TCGA-27-1834,"Milan - Italy, Fondazione IRCCS Instituto Neuroligico C. Besta",Glioblastoma multiforme,glioblastoma,G4,56.0,male,40.5100917,1.0
+1002,TCGA-27-1838,"Milan - Italy, Fondazione IRCCS Instituto Neuroligico C. Besta",Glioblastoma multiforme,glioblastoma,G4,59.0,female,11.499215,1.0
+1008,TCGA-27-2526,"Milan - Italy, Fondazione IRCCS Instituto Neuroligico C. Besta",Glioblastoma multiforme,glioblastoma,G4,79.0,female,2.8583763,1.0
+1097,TCGA-76-4932,Thomas Jefferson University,Glioblastoma multiforme,glioblastoma,G4,50.0,female,47.90244420000001,1.0
+1098,TCGA-76-4934,Thomas Jefferson University,Glioblastoma multiforme,glioblastoma,G4,66.0,female,2.5298273,1.0
+1099,TCGA-76-4935,Thomas Jefferson University,Glioblastoma multiforme,glioblastoma,G4,52.0,female,10.776407199999998,0.0
+1100,TCGA-76-6191,Thomas Jefferson University,Glioblastoma multiforme,glioblastoma,G4,57.0,male,16.6902892,1.0
+1102,TCGA-76-6193,Thomas Jefferson University,Glioblastoma multiforme,glioblastoma,G4,78.0,male,2.6941017999999994,1.0
+1103,TCGA-76-6280,Thomas Jefferson University,Glioblastoma multiforme,glioblastoma,G4,57.0,male,11.3677954,1.0
+1104,TCGA-76-6282,Thomas Jefferson University,Glioblastoma multiforme,glioblastoma,G4,63.0,male,17.0516931,1.0
+1106,TCGA-76-6285,Thomas Jefferson University,Glioblastoma multiforme,glioblastoma,G4,64.0,female,8.3451446,1.0
+1108,TCGA-76-6656,Thomas Jefferson University,Glioblastoma multiforme,glioblastoma,G4,66.0,male,4.8296703,1.0
+1109,TCGA-76-6657,Thomas Jefferson University,Glioblastoma multiforme,glioblastoma,G4,74.0,male,5.0267997000000015,1.0
+1111,TCGA-76-6661,Thomas Jefferson University,Glioblastoma multiforme,glioblastoma,G4,54.0,male,0.2299843,0.0
+1112,TCGA-76-6662,Thomas Jefferson University,Glioblastoma multiforme,glioblastoma,G4,58.0,male,9.2650818,0.0
+1113,TCGA-76-6663,Thomas Jefferson University,Glioblastoma multiforme,glioblastoma,G4,44.0,female,7.7209015,0.0
+1114,TCGA-76-6664,Thomas Jefferson University,Glioblastoma multiforme,glioblastoma,G4,49.0,female,7.7866113,0.0
