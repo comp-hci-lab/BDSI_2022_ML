@@ -15,3 +15,4 @@ data/patient_list/
 .ipynb_checkpoints/
 .DS_Store
 data/train_labels.zip
+model/.DS_Store
