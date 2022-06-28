@@ -30,10 +30,7 @@ Go to BDSI_2022_ML directory and type:
 For this project, you will use Armis2 services for storing and working with your data. First, clone the git repository here:
 `/home/uniqname`
 
-The data can be read accessed from here:
-`/scratch/bdsi_root/bdsi1/shared_data/`
-
-Finally, any data you want to record can be saved here:
+Finally, any data you want towork with can be saved here:
 `/scratch/bdsi_root/bdsi1/uniqname`
 
 
