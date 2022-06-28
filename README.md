@@ -52,5 +52,9 @@ Next, you will have to unzip the files you just downloaded. Type the command in 
 
 `unzip [FILE_NAME].zip `
 
+## Opening Jupyter Notebook within the virtualenv:
+
+[Follow steps here](https://ipython.readthedocs.io/en/stable/install/kernel_install.html)
+
 
 
