@@ -38,7 +38,7 @@ Install requirements:
 
 Go to BDSI_2022_ML directory and type:
 
-`pip install -r requirements.txt`
+`pip install -r requirements_lite.txt`
 
 
 
