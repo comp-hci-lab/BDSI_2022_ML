@@ -1,6 +1,21 @@
 # Big Data Summer Institute (2022) - Machine Learning Group
 
-## Setup
+## Working with Armis2
+
+ssh into the Armis2:
+`ssh uniqname@armis2.arc-ts.umich.edu `
+
+Load the correct Python version (3.8.8) in the terminal:
+`module load python3.8-anaconda`
+
+For this project, you will use Armis2 services for storing and working with your data. First, clone the git repository here:
+`/home/uniqname`
+
+Finally, any data you want towork with can be saved here:
+`/scratch/bdsi_root/bdsi1/uniqname`
+
+
+## Setting up Virtual Environment
 
 Create a virtual environment:
 
@@ -24,15 +39,6 @@ Install requirements:
 Go to BDSI_2022_ML directory and type:
 
 `pip install -r requirements.txt`
-
-## Working with Armis2
-
-For this project, you will use Armis2 services for storing and working with your data. First, clone the git repository here:
-`/home/uniqname`
-
-Finally, any data you want towork with can be saved here:
-`/scratch/bdsi_root/bdsi1/uniqname`
-
 
 
 
