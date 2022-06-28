@@ -54,7 +54,14 @@ Next, you will have to unzip the files you just downloaded. Type the command in 
 
 ## Opening Jupyter Notebook within the virtualenv:
 
-[Follow steps here](https://ipython.readthedocs.io/en/stable/install/kernel_install.html)
+<pre>
+pip install ipykernel
+# Install jupyter kernel in your virtualenv (make sure it is active first)
+python -m ipykernel install --user --name BdsiEnv
+# To make sure you have installed it correctly, type in:
+jupyter kernelspec list
+#You should be able to see it in your available kernels
+</pre>
 
 
 
