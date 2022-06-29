@@ -70,5 +70,22 @@ jupyter kernelspec list
 #You should be able to see it in your available kernels
 </pre>
 
+## Accessing GPUs in Jupyter Notebook:
+In order to access GPUs, make sure you have tensorflow-gpu package in your virtualenv. Next, you need to specify certain settings in the (Armis2 browser page)[https://armis2.arc-ts.umich.edu/pun/sys/dashboard/batch_connect/sys/arcts_jupyter_notebook/session_contexts/new] order to access the GPUs:
+<pre>
+Anaconda Python module from which to run Jupyter : python3.8-anaconda/2021.05
+Slurm account: bdsi1
+partition: gpu
+Number of hours: 2
+Number of cores: 1
+Memory (GB): 4
+Number of GPUs: 1
+Module commands: load python3.8-anaconda cudnn cuda
+</pre>
+
+With the settings above, click on launch.
+
+
+
 
 
