@@ -5,15 +5,21 @@
 ssh into the Armis2:
 `ssh uniqname@armis2.arc-ts.umich.edu `
 
-Load the correct Python version (3.8.8) in the terminal:
-`module load python3.8-anaconda`
-
 For this project, you will use Armis2 services for storing and working with your data. First, clone the git repository here:
 `/home/uniqname`
 
 Finally, any data you want towork with can be saved here:
 `/scratch/bdsi_root/bdsi1/uniqname`
 
+## Loading necessary modules:
+Since you will be working with GPUs, you would have to load the python and cuda modules
+<pre>
+Load the correct Python version (3.8.8) in the terminal:
+`module load python3.8-anaconda`
+
+Next, load the cuda module:
+`module load cuda`
+</pre>
 
 ## Setting up Virtual Environment
 
