@@ -14,11 +14,12 @@ Finally, any data you want towork with can be saved here:
 ## Loading necessary modules:
 Since you will be working with GPUs, you would have to load the python and cuda modules
 <pre>
-Load the correct Python version (3.8.8) in the terminal:
-`module load python3.8-anaconda`
 
-Next, load the cuda module:
-`module load cuda`
+-Load the correct Python version (3.8.8) in the terminal:
+module load python3.8-anaconda
+
+-Next, load the cuda module:
+module load cuda
 </pre>
 
 ## Setting up Virtual Environment
