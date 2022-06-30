@@ -68,6 +68,10 @@ python -m ipykernel install --user --name BdsiEnv
 # To make sure you have installed it correctly, type in:
 jupyter kernelspec list
 #You should be able to see it in your available kernels
+
+#No browser:
+jupyter notebook --no-browser --port=8894
+ssh -N -f -L localhost:8892:localhost:8894 uniqname@armis2.arc-ts.umich.edu
 </pre>
 
 ## Accessing GPUs in Jupyter Notebook:
