@@ -1,6 +1,34 @@
 from __main__ import *
+import tensorflow as tf
+# import tensorflow_io as tfio
+# import tensorflow_probability as tfp
+from tensorflow.keras.preprocessing.image import ImageDataGenerator
+print(tf.__version__)
+print('Listing all GPU resources:')
+print(tf.config.experimental.list_physical_devices('GPU'))
+print()
+import tensorflow.keras as keras 
+# print(tfp.__version__)
+import numpy as np
+import datetime
+import time
+import matplotlib.pyplot as plt
+import pickle
+import os
+import sys
+import importlib.util
+# import git
 
 def make_model():
+    LAYER_NAME = "U-Net"
+
+    FILTERS = 32
+    DATA_SIZE = 60000*144*144
+
+    BATCH_SIZE = 128
+    EPOCHS = 100
+    VERBOSE = 2
+
 
     def mean_binary_crossentropy(y, y_pred):
         return tf.reduce_mean(keras.losses.binary_crossentropy(y, y_pred))
