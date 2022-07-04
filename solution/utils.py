@@ -31,6 +31,7 @@ class ModelLoader:
     def __init__(self):
         self.model_path = '../model/'
         self.weights_file = self.model_path+'model_weights.h5'
+        self.history_file = 'history.pkl'
         
         self.FILTERS = 32
         self.DATA_SIZE = 60000*144*144
@@ -168,6 +169,10 @@ class ModelLoader:
                                          outputs=model.get_layer(layer_name).output)
         return model
     
+    def read_history(self):
+        with open(self.model_path+self.history_file, 'rb') as f:
+            return pickle.load(f)
+
     def predict_and_calibrate(self,image_data):
         logits = self.intermediate_layer_model.predict(image_data).flatten()
         calibrated_pred = self.calibrator.predict_proba(logits.reshape(-1,1))
@@ -228,10 +233,13 @@ class Patient(DataLoader,ModelLoader):
         df = self.dataloader.clinical_information()
         return df[df['Case']==self.case]
         
-    def get_datafiles(self):
+    def get_datafiles(self, pred=False):
         self.image_data = np.load(self.image_path)
         self.label_data = np.load(self.label_path)
-        self.prediction_data = self.modelloader.predict_and_calibrate(self.image_data).reshape(self.label_data.shape)
+        if pred:
+            self.prediction_data = self.modelloader.predict_and_calibrate(self.image_data).reshape(self.label_data.shape)
+        else:
+            self.prediction_data = np.load(self.prediction_path)
         return self.image_data, self.label_data, self.prediction_data
     
     def plot_figures(self, z_slice):
@@ -266,18 +274,27 @@ class Patient(DataLoader,ModelLoader):
 
         plt.show()
         
-        
 class Metrics(Patient):
     def __init__(self, Patient):
         self.patient = Patient
-        _, self.y_true, self.y_pred = self.patient.get_datafiles()
-        self.y_true = self.y_true.astype(int).ravel()
-        self.y_prob = self.y_pred.ravel()
-        self.y_pred = self.y_pred.astype(int).ravel()
-        self.TN, self.FP, self.FN, self.TP = 0,0,0,0
         
-    def confusion_matrix(self,plot=False):
+        self.threshold = 0.5
+        _, self.y_true, self.y_prob = self.patient.get_datafiles()
+        self.y_true, self.y_prob = self.y_true.ravel(), self.y_prob.ravel()
+        self.y_pred = (self.y_prob > self.threshold).astype(int) 
+        
+        self.case = self.patient.case
+        
+        self.TN, self.FP, self.FN, self.TP = 0,0,0,0
+        self.tumor_percent = 0
+        self.non_tumor_percent = 0
+        
+    def confusion_matrix(self,plot=False,verbose=False):
         self.TN, self.FP, self.FN, self.TP = confusion_matrix(self.y_true, self.y_pred).ravel()
+        total = self.y_pred.shape[0]
+        self.tumor_percent = ((self.TP+self.FN)/total)*100
+        self.non_tumor_percent = ((self.TN+self.FP)/total)*100
+            
         if plot==True:
             clf_flat = np.array([self.TN,self.FP,self.FN,self.TP])
             ax= plt.subplot()
@@ -295,7 +312,26 @@ class Metrics(Patient):
             ax.set_xlabel('Predicted labels');ax.set_ylabel('True labels'); 
             ax.xaxis.set_ticklabels(['non-tumor', 'tumor'])
             ax.yaxis.set_ticklabels(['non-tumor', 'tumor']);
-        return self.TN, self.FP, self.FN, self.TP
+        
+        
+        if verbose:
+            print("True Negative:",self.TN)
+            print("False Positive:",self.FP)
+            print("False Negative:",self.FN)
+            print("True Positive:",self.TP)
+            print("Tumor Percent:",self.tumor_percent)
+            print("Non-tumor Percent:",self.non_tumor_percent)
+            
+        metric = ['Case','TN',
+            "FP",
+            "FN",
+            "TP",
+            "tumor_percent",
+            "non_tumor_percent"]
+        
+        value = [self.case, self.TN, self.FP, self.FN, self.TP, self.tumor_percent, self.non_tumor_percent]
+            
+        return metric, value 
     
     def classical_metrics(self,verbose=True):
         #sensitivity:
