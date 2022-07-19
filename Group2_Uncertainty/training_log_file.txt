@@ -1,0 +1,961 @@
+LAYER_NAME: encoder_1a
+2020-07-16 16:12:56.729431: I tensorflow_io/core/kernels/cpu_check.cc:128] Your CPU supports instructions that this TensorFlow IO binary was not compiled to use: AVX2 AVX512F FMA
+2020-07-16 16:12:58.158129: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcuda.so.1
+2020-07-16 16:12:58.304010: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1561] Found device 0 with properties: 
+pciBusID: 0000:1d:00.0 name: GeForce RTX 2080 Ti computeCapability: 7.5
+coreClock: 1.545GHz coreCount: 68 deviceMemorySize: 10.73GiB deviceMemoryBandwidth: 573.69GiB/s
+2020-07-16 16:12:58.306102: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1561] Found device 1 with properties: 
+pciBusID: 0000:1e:00.0 name: GeForce RTX 2080 Ti computeCapability: 7.5
+coreClock: 1.545GHz coreCount: 68 deviceMemorySize: 10.73GiB deviceMemoryBandwidth: 573.69GiB/s
+2020-07-16 16:12:58.308153: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1561] Found device 2 with properties: 
+pciBusID: 0000:1f:00.0 name: GeForce RTX 2080 Ti computeCapability: 7.5
+coreClock: 1.545GHz coreCount: 68 deviceMemorySize: 10.73GiB deviceMemoryBandwidth: 573.69GiB/s
+2020-07-16 16:12:58.314185: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcudart.so.10.1
+2020-07-16 16:12:58.345190: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcublas.so.10
+2020-07-16 16:12:58.361553: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcufft.so.10
+2020-07-16 16:12:58.375460: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcurand.so.10
+2020-07-16 16:12:58.398983: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcusolver.so.10
+2020-07-16 16:12:58.411592: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcusparse.so.10
+2020-07-16 16:12:58.465447: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcudnn.so.7
+2020-07-16 16:12:58.478072: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1703] Adding visible gpu devices: 0, 1, 2
+2020-07-16 16:12:59.390646: I tensorflow/core/platform/cpu_feature_guard.cc:143] Your CPU supports instructions that this TensorFlow binary was not compiled to use: AVX2 AVX512F FMA
+2020-07-16 16:12:59.401887: I tensorflow/core/platform/profile_utils/cpu_utils.cc:102] CPU Frequency: 2100000000 Hz
+2020-07-16 16:12:59.403546: I tensorflow/compiler/xla/service/service.cc:168] XLA service 0x5557fbbbf7f0 initialized for platform Host (this does not guarantee that XLA will be used). Devices:
+2020-07-16 16:12:59.403576: I tensorflow/compiler/xla/service/service.cc:176]   StreamExecutor device (0): Host, Default Version
+2020-07-16 16:12:59.807061: I tensorflow/compiler/xla/service/service.cc:168] XLA service 0x5557fbc29ca0 initialized for platform CUDA (this does not guarantee that XLA will be used). Devices:
+2020-07-16 16:12:59.807098: I tensorflow/compiler/xla/service/service.cc:176]   StreamExecutor device (0): GeForce RTX 2080 Ti, Compute Capability 7.5
+2020-07-16 16:12:59.807105: I tensorflow/compiler/xla/service/service.cc:176]   StreamExecutor device (1): GeForce RTX 2080 Ti, Compute Capability 7.5
+2020-07-16 16:12:59.807111: I tensorflow/compiler/xla/service/service.cc:176]   StreamExecutor device (2): GeForce RTX 2080 Ti, Compute Capability 7.5
+2020-07-16 16:12:59.810984: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1561] Found device 0 with properties: 
+pciBusID: 0000:1d:00.0 name: GeForce RTX 2080 Ti computeCapability: 7.5
+coreClock: 1.545GHz coreCount: 68 deviceMemorySize: 10.73GiB deviceMemoryBandwidth: 573.69GiB/s
+2020-07-16 16:12:59.812943: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1561] Found device 1 with properties: 
+pciBusID: 0000:1e:00.0 name: GeForce RTX 2080 Ti computeCapability: 7.5
+coreClock: 1.545GHz coreCount: 68 deviceMemorySize: 10.73GiB deviceMemoryBandwidth: 573.69GiB/s
+2020-07-16 16:12:59.814884: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1561] Found device 2 with properties: 
+pciBusID: 0000:1f:00.0 name: GeForce RTX 2080 Ti computeCapability: 7.5
+coreClock: 1.545GHz coreCount: 68 deviceMemorySize: 10.73GiB deviceMemoryBandwidth: 573.69GiB/s
+2020-07-16 16:12:59.814922: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcudart.so.10.1
+2020-07-16 16:12:59.814935: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcublas.so.10
+2020-07-16 16:12:59.814947: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcufft.so.10
+2020-07-16 16:12:59.814958: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcurand.so.10
+2020-07-16 16:12:59.814970: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcusolver.so.10
+2020-07-16 16:12:59.814982: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcusparse.so.10
+2020-07-16 16:12:59.814994: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcudnn.so.7
+2020-07-16 16:12:59.826237: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1703] Adding visible gpu devices: 0, 1, 2
+2020-07-16 16:12:59.826274: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcudart.so.10.1
+2020-07-16 16:12:59.832801: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1102] Device interconnect StreamExecutor with strength 1 edge matrix:
+2020-07-16 16:12:59.832823: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1108]      0 1 2 
+2020-07-16 16:12:59.832834: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1121] 0:   N N N 
+2020-07-16 16:12:59.832840: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1121] 1:   N N N 
+2020-07-16 16:12:59.832845: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1121] 2:   N N N 
+2020-07-16 16:12:59.842204: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1247] Created TensorFlow device (/job:localhost/replica:0/task:0/device:GPU:0 with 10176 MB memory) -> physical GPU (device: 0, name: GeForce RTX 2080 Ti, pci bus id: 0000:1d:00.0, compute capability: 7.5)
+2020-07-16 16:12:59.844757: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1247] Created TensorFlow device (/job:localhost/replica:0/task:0/device:GPU:1 with 10176 MB memory) -> physical GPU (device: 1, name: GeForce RTX 2080 Ti, pci bus id: 0000:1e:00.0, compute capability: 7.5)
+2020-07-16 16:12:59.847273: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1247] Created TensorFlow device (/job:localhost/replica:0/task:0/device:GPU:2 with 10176 MB memory) -> physical GPU (device: 2, name: GeForce RTX 2080 Ti, pci bus id: 0000:1f:00.0, compute capability: 7.5)
+WARNING:tensorflow:From /home/hauthj/.conda/envs/gpu-env/lib/python3.8/site-packages/tensorflow_probability/python/layers/util.py:99: Layer.add_variable (from tensorflow.python.keras.engine.base_layer) is deprecated and will be removed in a future version.
+Instructions for updating:
+Please use `layer.add_weight` method instead.
+2020-07-16 16:15:15.108293: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcudnn.so.7
+2020-07-16 16:15:19.464037: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcublas.so.10
+2.2.0
+Listing all GPU resources:
+[PhysicalDevice(name='/physical_device:GPU:0', device_type='GPU'), PhysicalDevice(name='/physical_device:GPU:1', device_type='GPU'), PhysicalDevice(name='/physical_device:GPU:2', device_type='GPU')]
+
+0.10.0
+------------------------------
+Constructing model...
+------------------------------
+
+Input size: (None, 144, 144, 4)
+Output size: (None, 144, 144, 1)
+Model summary:
+Model: "model_encoder_1a"
+__________________________________________________________________________________________________
+Layer (type)                    Output Shape         Param #     Connected to                     
+==================================================================================================
+input_layer (InputLayer)        [(None, 144, 144, 4) 0                                            
+__________________________________________________________________________________________________
+encoder_1_a (Conv2DFlipout)     (None, 144, 144, 32) 4736        input_layer[0][0]                
+__________________________________________________________________________________________________
+encoder_1_b (Conv2D)            (None, 144, 144, 32) 9248        encoder_1_a[0][0]                
+__________________________________________________________________________________________________
+downsample_1 (MaxPooling2D)     (None, 72, 72, 32)   0           encoder_1_b[0][0]                
+__________________________________________________________________________________________________
+encoder_2_a (Conv2D)            (None, 72, 72, 64)   18496       downsample_1[0][0]               
+__________________________________________________________________________________________________
+encoder_2_b (Conv2D)            (None, 72, 72, 64)   36928       encoder_2_a[0][0]                
+__________________________________________________________________________________________________
+downsample_2 (MaxPooling2D)     (None, 36, 36, 64)   0           encoder_2_b[0][0]                
+__________________________________________________________________________________________________
+encoder_3_a (Conv2D)            (None, 36, 36, 128)  73856       downsample_2[0][0]               
+__________________________________________________________________________________________________
+encoder_3_b (Conv2D)            (None, 36, 36, 128)  147584      encoder_3_a[0][0]                
+__________________________________________________________________________________________________
+downsample_3 (MaxPooling2D)     (None, 18, 18, 128)  0           encoder_3_b[0][0]                
+__________________________________________________________________________________________________
+encoder_4_a (Conv2D)            (None, 18, 18, 256)  295168      downsample_3[0][0]               
+__________________________________________________________________________________________________
+encoder_4_b (Conv2D)            (None, 18, 18, 256)  590080      encoder_4_a[0][0]                
+__________________________________________________________________________________________________
+downsample_4 (MaxPooling2D)     (None, 9, 9, 256)    0           encoder_4_b[0][0]                
+__________________________________________________________________________________________________
+encoder_5_a (Conv2D)            (None, 9, 9, 512)    1180160     downsample_4[0][0]               
+__________________________________________________________________________________________________
+encoder_5_b (Conv2D)            (None, 9, 9, 512)    2359808     encoder_5_a[0][0]                
+__________________________________________________________________________________________________
+upsample_4 (UpSampling2D)       (None, 18, 18, 512)  0           encoder_5_b[0][0]                
+__________________________________________________________________________________________________
+concat_4 (Concatenate)          (None, 18, 18, 768)  0           upsample_4[0][0]                 
+                                                                 encoder_4_b[0][0]                
+__________________________________________________________________________________________________
+decoder_4_a (Conv2D)            (None, 18, 18, 256)  1769728     concat_4[0][0]                   
+__________________________________________________________________________________________________
+decoder_4_b (Conv2D)            (None, 18, 18, 256)  590080      decoder_4_a[0][0]                
+__________________________________________________________________________________________________
+upsample_3 (UpSampling2D)       (None, 36, 36, 256)  0           decoder_4_b[0][0]                
+__________________________________________________________________________________________________
+concat_3 (Concatenate)          (None, 36, 36, 384)  0           upsample_3[0][0]                 
+                                                                 encoder_3_b[0][0]                
+__________________________________________________________________________________________________
+decoder_3_a (Conv2D)            (None, 36, 36, 128)  442496      concat_3[0][0]                   
+__________________________________________________________________________________________________
+decoder_3_b (Conv2D)            (None, 36, 36, 128)  147584      decoder_3_a[0][0]                
+__________________________________________________________________________________________________
+upsample_2 (UpSampling2D)       (None, 72, 72, 128)  0           decoder_3_b[0][0]                
+__________________________________________________________________________________________________
+concat_2 (Concatenate)          (None, 72, 72, 192)  0           upsample_2[0][0]                 
+                                                                 encoder_2_b[0][0]                
+__________________________________________________________________________________________________
+decoder_2_a (Conv2D)            (None, 72, 72, 64)   110656      concat_2[0][0]                   
+__________________________________________________________________________________________________
+decoder_2_b (Conv2D)            (None, 72, 72, 64)   36928       decoder_2_a[0][0]                
+__________________________________________________________________________________________________
+upsample_1 (UpSampling2D)       (None, 144, 144, 64) 0           decoder_2_b[0][0]                
+__________________________________________________________________________________________________
+concat_1 (Concatenate)          (None, 144, 144, 96) 0           upsample_1[0][0]                 
+                                                                 encoder_1_b[0][0]                
+__________________________________________________________________________________________________
+decoder_1_a (Conv2D)            (None, 144, 144, 32) 27680       concat_1[0][0]                   
+__________________________________________________________________________________________________
+decoder_1_b (Conv2D)            (None, 144, 144, 32) 9248        decoder_1_a[0][0]                
+__________________________________________________________________________________________________
+output_layer (Conv2D)           (None, 144, 144, 1)  33          decoder_1_b[0][0]                
+==================================================================================================
+Total params: 7,850,497
+Trainable params: 7,850,497
+Non-trainable params: 0
+__________________________________________________________________________________________________
+None
+Model losses:
+[<tf.Tensor: shape=(), dtype=float32, numpy=226241.44>, <tf.Tensor: shape=(), dtype=float32, numpy=6242.662>]
+------------------------------
+Loading training and testing data...
+------------------------------
+------------------------------
+Fitting model with training data ...
+------------------------------
+Training the model started at 2020-07-16 16:13:47.821664
+Epoch 1/400
+229/229 - 83s - likelihood_loss: 12128.6562 - mean_binary_crossentropy: 0.2021 - loss: 236425.5938 - val_likelihood_loss: 8661.5605 - val_mean_binary_crossentropy: 0.1444 - val_loss: 224693.4844
+Epoch 2/400
+229/229 - 77s - likelihood_loss: 8346.9639 - mean_binary_crossentropy: 0.1391 - loss: 216802.4219 - val_likelihood_loss: 7202.1128 - val_mean_binary_crossentropy: 0.1200 - val_loss: 208238.3906
+Epoch 3/400
+229/229 - 76s - likelihood_loss: 5977.8286 - mean_binary_crossentropy: 0.0996 - loss: 200185.7188 - val_likelihood_loss: 5015.9229 - val_mean_binary_crossentropy: 0.0836 - val_loss: 192504.0156
+Epoch 4/400
+229/229 - 76s - likelihood_loss: 4671.5815 - mean_binary_crossentropy: 0.0779 - loss: 185962.5156 - val_likelihood_loss: 4267.1597 - val_mean_binary_crossentropy: 0.0711 - val_loss: 179437.4844
+Epoch 5/400
+229/229 - 78s - likelihood_loss: 4069.5334 - mean_binary_crossentropy: 0.0678 - loss: 173574.6562 - val_likelihood_loss: 3643.1099 - val_mean_binary_crossentropy: 0.0607 - val_loss: 167547.9375
+Epoch 6/400
+229/229 - 77s - likelihood_loss: 3661.1838 - mean_binary_crossentropy: 0.0610 - loss: 162358.5469 - val_likelihood_loss: 3657.8794 - val_mean_binary_crossentropy: 0.0610 - val_loss: 157203.5156
+Epoch 7/400
+229/229 - 78s - likelihood_loss: 3249.8762 - mean_binary_crossentropy: 0.0542 - loss: 152001.1719 - val_likelihood_loss: 2948.7463 - val_mean_binary_crossentropy: 0.0491 - val_loss: 146948.5625
+Epoch 8/400
+229/229 - 78s - likelihood_loss: 3024.9119 - mean_binary_crossentropy: 0.0504 - loss: 142591.3750 - val_likelihood_loss: 2725.2637 - val_mean_binary_crossentropy: 0.0454 - val_loss: 137895.3750
+Epoch 9/400
+229/229 - 78s - likelihood_loss: 2665.5042 - mean_binary_crossentropy: 0.0444 - loss: 133727.6875 - val_likelihood_loss: 2537.1113 - val_mean_binary_crossentropy: 0.0423 - val_loss: 129520.6406
+Epoch 10/400
+229/229 - 77s - likelihood_loss: 2375.7678 - mean_binary_crossentropy: 0.0396 - loss: 125541.7109 - val_likelihood_loss: 2500.2473 - val_mean_binary_crossentropy: 0.0417 - val_loss: 121869.6797
+Epoch 11/400
+229/229 - 77s - likelihood_loss: 2213.1726 - mean_binary_crossentropy: 0.0369 - loss: 118033.5938 - val_likelihood_loss: 2293.7554 - val_mean_binary_crossentropy: 0.0382 - val_loss: 114580.6953
+Epoch 12/400
+229/229 - 78s - likelihood_loss: 2028.0502 - mean_binary_crossentropy: 0.0338 - loss: 110999.3984 - val_likelihood_loss: 2048.9944 - val_mean_binary_crossentropy: 0.0341 - val_loss: 107720.5312
+Epoch 13/400
+229/229 - 78s - likelihood_loss: 1916.1130 - mean_binary_crossentropy: 0.0319 - loss: 104490.1562 - val_likelihood_loss: 2052.7063 - val_mean_binary_crossentropy: 0.0342 - val_loss: 101539.7109
+Epoch 14/400
+229/229 - 79s - likelihood_loss: 1726.1824 - mean_binary_crossentropy: 0.0288 - loss: 98315.3594 - val_likelihood_loss: 1946.9250 - val_mean_binary_crossentropy: 0.0324 - val_loss: 95645.9531
+Epoch 15/400
+229/229 - 78s - likelihood_loss: 1608.3260 - mean_binary_crossentropy: 0.0268 - loss: 92590.3281 - val_likelihood_loss: 1972.5721 - val_mean_binary_crossentropy: 0.0329 - val_loss: 90245.1016
+Epoch 16/400
+229/229 - 77s - likelihood_loss: 1536.5859 - mean_binary_crossentropy: 0.0256 - loss: 87259.7969 - val_likelihood_loss: 1843.2462 - val_mean_binary_crossentropy: 0.0307 - val_loss: 85021.9453
+Epoch 17/400
+229/229 - 78s - likelihood_loss: 1487.1517 - mean_binary_crossentropy: 0.0248 - loss: 82270.8125 - val_likelihood_loss: 1810.4331 - val_mean_binary_crossentropy: 0.0302 - val_loss: 80203.5391
+Epoch 18/400
+229/229 - 79s - likelihood_loss: 1395.1591 - mean_binary_crossentropy: 0.0233 - loss: 77534.8594 - val_likelihood_loss: 1729.3466 - val_mean_binary_crossentropy: 0.0288 - val_loss: 75621.0938
+Epoch 19/400
+229/229 - 79s - likelihood_loss: 1346.9044 - mean_binary_crossentropy: 0.0224 - loss: 73119.3203 - val_likelihood_loss: 1690.0918 - val_mean_binary_crossentropy: 0.0282 - val_loss: 71344.7500
+Epoch 20/400
+229/229 - 78s - likelihood_loss: 1248.9963 - mean_binary_crossentropy: 0.0208 - loss: 68908.3672 - val_likelihood_loss: 1888.9612 - val_mean_binary_crossentropy: 0.0315 - val_loss: 67554.2188
+Epoch 21/400
+229/229 - 78s - likelihood_loss: 1260.5602 - mean_binary_crossentropy: 0.0210 - loss: 65045.3945 - val_likelihood_loss: 1663.8768 - val_mean_binary_crossentropy: 0.0277 - val_loss: 63568.6484
+Epoch 22/400
+229/229 - 77s - likelihood_loss: 1173.3195 - mean_binary_crossentropy: 0.0196 - loss: 61305.9414 - val_likelihood_loss: 1612.3812 - val_mean_binary_crossentropy: 0.0269 - val_loss: 59974.2812
+Epoch 23/400
+229/229 - 78s - likelihood_loss: 1111.1207 - mean_binary_crossentropy: 0.0185 - loss: 57800.0117 - val_likelihood_loss: 1667.7122 - val_mean_binary_crossentropy: 0.0278 - val_loss: 56685.4453
+Epoch 24/400
+229/229 - 77s - likelihood_loss: 1073.9650 - mean_binary_crossentropy: 0.0179 - loss: 54513.9180 - val_likelihood_loss: 1701.0315 - val_mean_binary_crossentropy: 0.0284 - val_loss: 53563.7305
+Epoch 25/400
+229/229 - 77s - likelihood_loss: 1058.0475 - mean_binary_crossentropy: 0.0176 - loss: 51432.2305 - val_likelihood_loss: 1682.1931 - val_mean_binary_crossentropy: 0.0280 - val_loss: 50566.4922
+Epoch 26/400
+229/229 - 77s - likelihood_loss: 1017.4442 - mean_binary_crossentropy: 0.0170 - loss: 48497.3359 - val_likelihood_loss: 1659.5234 - val_mean_binary_crossentropy: 0.0277 - val_loss: 47733.3867
+Epoch 27/400
+229/229 - 78s - likelihood_loss: 960.9412 - mean_binary_crossentropy: 0.0160 - loss: 45708.4883 - val_likelihood_loss: 1726.0421 - val_mean_binary_crossentropy: 0.0288 - val_loss: 45145.4023
+Epoch 28/400
+229/229 - 77s - likelihood_loss: 935.9826 - mean_binary_crossentropy: 0.0156 - loss: 43103.4180 - val_likelihood_loss: 1845.6895 - val_mean_binary_crossentropy: 0.0308 - val_loss: 42758.3750
+Epoch 29/400
+229/229 - 77s - likelihood_loss: 2129.5979 - mean_binary_crossentropy: 0.0355 - loss: 41859.0781 - val_likelihood_loss: 2461.3870 - val_mean_binary_crossentropy: 0.0410 - val_loss: 41004.1680
+Epoch 30/400
+229/229 - 77s - likelihood_loss: 1282.3672 - mean_binary_crossentropy: 0.0214 - loss: 38708.4648 - val_likelihood_loss: 1600.2531 - val_mean_binary_crossentropy: 0.0267 - val_loss: 37907.1992
+Epoch 31/400
+229/229 - 76s - likelihood_loss: 1026.0225 - mean_binary_crossentropy: 0.0171 - loss: 36278.5078 - val_likelihood_loss: 1625.4502 - val_mean_binary_crossentropy: 0.0271 - val_loss: 35820.2734
+Epoch 32/400
+229/229 - 77s - likelihood_loss: 947.5315 - mean_binary_crossentropy: 0.0158 - loss: 34146.8828 - val_likelihood_loss: 1611.5138 - val_mean_binary_crossentropy: 0.0269 - val_loss: 33813.6289
+Epoch 33/400
+229/229 - 78s - likelihood_loss: 887.2058 - mean_binary_crossentropy: 0.0148 - loss: 32147.2832 - val_likelihood_loss: 1538.4650 - val_mean_binary_crossentropy: 0.0256 - val_loss: 31855.6738
+Epoch 34/400
+229/229 - 76s - likelihood_loss: 848.9312 - mean_binary_crossentropy: 0.0141 - loss: 30277.0059 - val_likelihood_loss: 1567.9054 - val_mean_binary_crossentropy: 0.0261 - val_loss: 30104.6191
+Epoch 35/400
+229/229 - 77s - likelihood_loss: 813.5402 - mean_binary_crossentropy: 0.0136 - loss: 28510.9316 - val_likelihood_loss: 1614.2400 - val_mean_binary_crossentropy: 0.0269 - val_loss: 28470.1914
+Epoch 36/400
+229/229 - 79s - likelihood_loss: 789.4229 - mean_binary_crossentropy: 0.0132 - loss: 26851.9238 - val_likelihood_loss: 1617.3215 - val_mean_binary_crossentropy: 0.0270 - val_loss: 26885.1445
+Epoch 37/400
+229/229 - 78s - likelihood_loss: 773.5323 - mean_binary_crossentropy: 0.0129 - loss: 25291.9043 - val_likelihood_loss: 1555.4539 - val_mean_binary_crossentropy: 0.0259 - val_loss: 25322.1914
+Epoch 38/400
+229/229 - 78s - likelihood_loss: 772.5991 - mean_binary_crossentropy: 0.0129 - loss: 23832.1191 - val_likelihood_loss: 1622.9297 - val_mean_binary_crossentropy: 0.0270 - val_loss: 23972.4062
+Epoch 39/400
+229/229 - 79s - likelihood_loss: 743.2984 - mean_binary_crossentropy: 0.0124 - loss: 22424.6289 - val_likelihood_loss: 1654.6964 - val_mean_binary_crossentropy: 0.0276 - val_loss: 22666.9902
+Epoch 40/400
+229/229 - 77s - likelihood_loss: 728.6775 - mean_binary_crossentropy: 0.0121 - loss: 21108.6445 - val_likelihood_loss: 1583.9998 - val_mean_binary_crossentropy: 0.0264 - val_loss: 21331.6660
+Epoch 41/400
+229/229 - 77s - likelihood_loss: 706.9846 - mean_binary_crossentropy: 0.0118 - loss: 19859.5508 - val_likelihood_loss: 1716.8265 - val_mean_binary_crossentropy: 0.0286 - val_loss: 20272.2852
+Epoch 42/400
+229/229 - 78s - likelihood_loss: 701.2214 - mean_binary_crossentropy: 0.0117 - loss: 18693.9531 - val_likelihood_loss: 1685.3163 - val_mean_binary_crossentropy: 0.0281 - val_loss: 19115.2656
+Epoch 43/400
+229/229 - 77s - likelihood_loss: 712.6741 - mean_binary_crossentropy: 0.0119 - loss: 17610.8320 - val_likelihood_loss: 1734.0193 - val_mean_binary_crossentropy: 0.0289 - val_loss: 18099.7148
+Epoch 44/400
+229/229 - 77s - likelihood_loss: 698.2042 - mean_binary_crossentropy: 0.0116 - loss: 16562.8086 - val_likelihood_loss: 1647.7129 - val_mean_binary_crossentropy: 0.0275 - val_loss: 17010.5215
+Epoch 45/400
+229/229 - 76s - likelihood_loss: 667.0737 - mean_binary_crossentropy: 0.0111 - loss: 15555.2793 - val_likelihood_loss: 2059.2288 - val_mean_binary_crossentropy: 0.0343 - val_loss: 16470.3340
+Epoch 46/400
+229/229 - 78s - likelihood_loss: 674.7039 - mean_binary_crossentropy: 0.0112 - loss: 14642.6328 - val_likelihood_loss: 2503.8020 - val_mean_binary_crossentropy: 0.0417 - val_loss: 16025.4180
+Epoch 47/400
+229/229 - 77s - likelihood_loss: 671.7219 - mean_binary_crossentropy: 0.0112 - loss: 13772.1191 - val_likelihood_loss: 1545.7487 - val_mean_binary_crossentropy: 0.0258 - val_loss: 14222.3525
+Epoch 48/400
+229/229 - 77s - likelihood_loss: 645.8810 - mean_binary_crossentropy: 0.0108 - loss: 12926.4102 - val_likelihood_loss: 1565.0897 - val_mean_binary_crossentropy: 0.0261 - val_loss: 13445.5664
+Epoch 49/400
+229/229 - 77s - likelihood_loss: 643.0048 - mean_binary_crossentropy: 0.0107 - loss: 12151.0293 - val_likelihood_loss: 2433.5305 - val_mean_binary_crossentropy: 0.0406 - val_loss: 13564.4561
+Epoch 50/400
+229/229 - 78s - likelihood_loss: 628.8451 - mean_binary_crossentropy: 0.0105 - loss: 11408.4639 - val_likelihood_loss: 1681.2565 - val_mean_binary_crossentropy: 0.0280 - val_loss: 12106.4297
+Epoch 51/400
+229/229 - 78s - likelihood_loss: 606.0858 - mean_binary_crossentropy: 0.0101 - loss: 10698.6426 - val_likelihood_loss: 1721.9656 - val_mean_binary_crossentropy: 0.0287 - val_loss: 11479.7100
+Epoch 52/400
+229/229 - 76s - likelihood_loss: 604.5092 - mean_binary_crossentropy: 0.0101 - loss: 10049.1836 - val_likelihood_loss: 1994.9015 - val_mean_binary_crossentropy: 0.0332 - val_loss: 11122.4854
+Epoch 53/400
+229/229 - 77s - likelihood_loss: 612.2762 - mean_binary_crossentropy: 0.0102 - loss: 9446.7295 - val_likelihood_loss: 1663.4922 - val_mean_binary_crossentropy: 0.0277 - val_loss: 10201.5801
+Epoch 54/400
+229/229 - 77s - likelihood_loss: 591.2545 - mean_binary_crossentropy: 0.0099 - loss: 8850.6943 - val_likelihood_loss: 2047.6112 - val_mean_binary_crossentropy: 0.0341 - val_loss: 10022.8574
+Epoch 55/400
+229/229 - 77s - likelihood_loss: 571.2846 - mean_binary_crossentropy: 0.0095 - loss: 8288.9434 - val_likelihood_loss: 1795.5569 - val_mean_binary_crossentropy: 0.0299 - val_loss: 9249.2773
+Epoch 56/400
+229/229 - 77s - likelihood_loss: 576.5110 - mean_binary_crossentropy: 0.0096 - loss: 7783.8838 - val_likelihood_loss: 2002.1450 - val_mean_binary_crossentropy: 0.0334 - val_loss: 8959.5166
+Epoch 57/400
+229/229 - 77s - likelihood_loss: 567.6259 - mean_binary_crossentropy: 0.0095 - loss: 7294.4893 - val_likelihood_loss: 1652.8868 - val_mean_binary_crossentropy: 0.0275 - val_loss: 8144.4336
+Epoch 58/400
+229/229 - 77s - likelihood_loss: 561.3871 - mean_binary_crossentropy: 0.0094 - loss: 6835.8560 - val_likelihood_loss: 1600.9249 - val_mean_binary_crossentropy: 0.0267 - val_loss: 7653.6743
+Epoch 59/400
+229/229 - 77s - likelihood_loss: 566.6091 - mean_binary_crossentropy: 0.0094 - loss: 6415.4575 - val_likelihood_loss: 2402.2461 - val_mean_binary_crossentropy: 0.0400 - val_loss: 8036.5645
+Epoch 60/400
+229/229 - 78s - likelihood_loss: 558.9798 - mean_binary_crossentropy: 0.0093 - loss: 6007.5469 - val_likelihood_loss: 1568.7059 - val_mean_binary_crossentropy: 0.0261 - val_loss: 6818.7222
+Epoch 61/400
+229/229 - 78s - likelihood_loss: 562.6956 - mean_binary_crossentropy: 0.0094 - loss: 5634.5801 - val_likelihood_loss: 1998.8073 - val_mean_binary_crossentropy: 0.0333 - val_loss: 6886.1733
+Epoch 62/400
+229/229 - 77s - likelihood_loss: 544.3248 - mean_binary_crossentropy: 0.0091 - loss: 5262.2812 - val_likelihood_loss: 1553.1525 - val_mean_binary_crossentropy: 0.0259 - val_loss: 6095.3340
+Epoch 63/400
+229/229 - 76s - likelihood_loss: 524.0871 - mean_binary_crossentropy: 0.0087 - loss: 4909.3682 - val_likelihood_loss: 2430.9385 - val_mean_binary_crossentropy: 0.0405 - val_loss: 6650.2910
+Epoch 64/400
+229/229 - 77s - likelihood_loss: 527.7753 - mean_binary_crossentropy: 0.0088 - loss: 4600.2437 - val_likelihood_loss: 1644.6906 - val_mean_binary_crossentropy: 0.0274 - val_loss: 5558.5181
+Epoch 65/400
+229/229 - 77s - likelihood_loss: 527.2942 - mean_binary_crossentropy: 0.0088 - loss: 4306.0078 - val_likelihood_loss: 2646.1462 - val_mean_binary_crossentropy: 0.0441 - val_loss: 6280.2598
+Epoch 66/400
+229/229 - 77s - likelihood_loss: 530.1354 - mean_binary_crossentropy: 0.0088 - loss: 4033.9758 - val_likelihood_loss: 1636.5897 - val_mean_binary_crossentropy: 0.0273 - val_loss: 5001.3188
+Epoch 67/400
+229/229 - 77s - likelihood_loss: 518.3054 - mean_binary_crossentropy: 0.0086 - loss: 3763.5552 - val_likelihood_loss: 2067.1709 - val_mean_binary_crossentropy: 0.0345 - val_loss: 5184.0098
+Epoch 68/400
+229/229 - 78s - likelihood_loss: 517.9051 - mean_binary_crossentropy: 0.0086 - loss: 3520.9036 - val_likelihood_loss: 1682.4149 - val_mean_binary_crossentropy: 0.0280 - val_loss: 4561.9126
+Epoch 69/400
+229/229 - 76s - likelihood_loss: 511.9173 - mean_binary_crossentropy: 0.0085 - loss: 3287.6726 - val_likelihood_loss: 1678.5226 - val_mean_binary_crossentropy: 0.0280 - val_loss: 4338.4780
+Epoch 70/400
+229/229 - 76s - likelihood_loss: 511.3493 - mean_binary_crossentropy: 0.0085 - loss: 3074.1724 - val_likelihood_loss: 1637.9465 - val_mean_binary_crossentropy: 0.0273 - val_loss: 4091.4507
+Epoch 71/400
+229/229 - 77s - likelihood_loss: 518.1583 - mean_binary_crossentropy: 0.0086 - loss: 2881.1699 - val_likelihood_loss: 2262.5698 - val_mean_binary_crossentropy: 0.0377 - val_loss: 4522.7314
+Epoch 72/400
+229/229 - 77s - likelihood_loss: 506.8849 - mean_binary_crossentropy: 0.0084 - loss: 2683.4775 - val_likelihood_loss: 1643.1777 - val_mean_binary_crossentropy: 0.0274 - val_loss: 3723.7922
+Epoch 73/400
+229/229 - 78s - likelihood_loss: 500.5624 - mean_binary_crossentropy: 0.0083 - loss: 2502.7778 - val_likelihood_loss: 1733.3419 - val_mean_binary_crossentropy: 0.0289 - val_loss: 3645.5786
+Epoch 74/400
+229/229 - 77s - likelihood_loss: 493.8880 - mean_binary_crossentropy: 0.0082 - loss: 2333.3289 - val_likelihood_loss: 1649.1132 - val_mean_binary_crossentropy: 0.0275 - val_loss: 3404.1521
+Epoch 75/400
+229/229 - 77s - likelihood_loss: 490.5100 - mean_binary_crossentropy: 0.0082 - loss: 2177.7986 - val_likelihood_loss: 1815.9656 - val_mean_binary_crossentropy: 0.0303 - val_loss: 3422.8213
+Epoch 76/400
+229/229 - 76s - likelihood_loss: 492.1124 - mean_binary_crossentropy: 0.0082 - loss: 2037.6298 - val_likelihood_loss: 1795.3209 - val_mean_binary_crossentropy: 0.0299 - val_loss: 3265.3242
+Epoch 77/400
+229/229 - 77s - likelihood_loss: 493.8224 - mean_binary_crossentropy: 0.0082 - loss: 1906.9359 - val_likelihood_loss: 1664.4952 - val_mean_binary_crossentropy: 0.0277 - val_loss: 3006.2654
+Epoch 78/400
+229/229 - 78s - likelihood_loss: 510.7619 - mean_binary_crossentropy: 0.0085 - loss: 1800.5596 - val_likelihood_loss: 1685.4299 - val_mean_binary_crossentropy: 0.0281 - val_loss: 2910.0432
+Epoch 79/400
+229/229 - 77s - likelihood_loss: 491.4244 - mean_binary_crossentropy: 0.0082 - loss: 1666.4590 - val_likelihood_loss: 1949.3781 - val_mean_binary_crossentropy: 0.0325 - val_loss: 3060.9500
+Epoch 80/400
+229/229 - 78s - likelihood_loss: 483.4062 - mean_binary_crossentropy: 0.0081 - loss: 1551.3334 - val_likelihood_loss: 1744.6923 - val_mean_binary_crossentropy: 0.0291 - val_loss: 2756.4619
+Epoch 81/400
+229/229 - 76s - likelihood_loss: 480.8396 - mean_binary_crossentropy: 0.0080 - loss: 1449.7219 - val_likelihood_loss: 1797.6678 - val_mean_binary_crossentropy: 0.0300 - val_loss: 2715.6277
+Epoch 82/400
+229/229 - 78s - likelihood_loss: 482.0520 - mean_binary_crossentropy: 0.0080 - loss: 1359.7114 - val_likelihood_loss: 1608.8184 - val_mean_binary_crossentropy: 0.0268 - val_loss: 2436.1633
+Epoch 83/400
+229/229 - 78s - likelihood_loss: 484.9447 - mean_binary_crossentropy: 0.0081 - loss: 1277.7473 - val_likelihood_loss: 1656.4810 - val_mean_binary_crossentropy: 0.0276 - val_loss: 2401.9648
+Epoch 84/400
+229/229 - 78s - likelihood_loss: 483.7292 - mean_binary_crossentropy: 0.0081 - loss: 1197.8779 - val_likelihood_loss: 1692.5369 - val_mean_binary_crossentropy: 0.0282 - val_loss: 2361.3403
+Epoch 85/400
+229/229 - 78s - likelihood_loss: 478.8759 - mean_binary_crossentropy: 0.0080 - loss: 1120.1016 - val_likelihood_loss: 1564.4851 - val_mean_binary_crossentropy: 0.0261 - val_loss: 2163.9917
+Epoch 86/400
+229/229 - 80s - likelihood_loss: 478.4376 - mean_binary_crossentropy: 0.0080 - loss: 1052.9652 - val_likelihood_loss: 1800.1066 - val_mean_binary_crossentropy: 0.0300 - val_loss: 2336.7461
+Epoch 87/400
+229/229 - 78s - likelihood_loss: 471.4923 - mean_binary_crossentropy: 0.0079 - loss: 984.7624 - val_likelihood_loss: 1828.1710 - val_mean_binary_crossentropy: 0.0305 - val_loss: 2305.9839
+Epoch 88/400
+229/229 - 77s - likelihood_loss: 457.8203 - mean_binary_crossentropy: 0.0076 - loss: 914.6073 - val_likelihood_loss: 2112.9749 - val_mean_binary_crossentropy: 0.0352 - val_loss: 2535.7275
+Epoch 89/400
+229/229 - 77s - likelihood_loss: 455.5364 - mean_binary_crossentropy: 0.0076 - loss: 860.5997 - val_likelihood_loss: 1700.0297 - val_mean_binary_crossentropy: 0.0283 - val_loss: 2072.5996
+Epoch 90/400
+229/229 - 76s - likelihood_loss: 457.8084 - mean_binary_crossentropy: 0.0076 - loss: 815.4042 - val_likelihood_loss: 1800.2175 - val_mean_binary_crossentropy: 0.0300 - val_loss: 2127.8164
+Epoch 91/400
+229/229 - 77s - likelihood_loss: 455.0551 - mean_binary_crossentropy: 0.0076 - loss: 769.4739 - val_likelihood_loss: 1523.7328 - val_mean_binary_crossentropy: 0.0254 - val_loss: 1811.2162
+Epoch 92/400
+229/229 - 76s - likelihood_loss: 464.2884 - mean_binary_crossentropy: 0.0077 - loss: 739.6520 - val_likelihood_loss: 1722.3512 - val_mean_binary_crossentropy: 0.0287 - val_loss: 1972.5840
+Epoch 93/400
+229/229 - 76s - likelihood_loss: 463.4543 - mean_binary_crossentropy: 0.0077 - loss: 703.2789 - val_likelihood_loss: 1894.6190 - val_mean_binary_crossentropy: 0.0316 - val_loss: 2110.9226
+Epoch 94/400
+229/229 - 77s - likelihood_loss: 456.5551 - mean_binary_crossentropy: 0.0076 - loss: 664.2114 - val_likelihood_loss: 2038.0388 - val_mean_binary_crossentropy: 0.0340 - val_loss: 2225.1470
+Epoch 95/400
+229/229 - 76s - likelihood_loss: 455.2314 - mean_binary_crossentropy: 0.0076 - loss: 634.0404 - val_likelihood_loss: 2173.0256 - val_mean_binary_crossentropy: 0.0362 - val_loss: 2329.1697
+Epoch 96/400
+229/229 - 77s - likelihood_loss: 453.4702 - mean_binary_crossentropy: 0.0076 - loss: 606.5408 - val_likelihood_loss: 1698.7675 - val_mean_binary_crossentropy: 0.0283 - val_loss: 1833.4091
+Epoch 97/400
+229/229 - 77s - likelihood_loss: 452.1664 - mean_binary_crossentropy: 0.0075 - loss: 582.1752 - val_likelihood_loss: 1688.0293 - val_mean_binary_crossentropy: 0.0281 - val_loss: 1798.4777
+Epoch 98/400
+229/229 - 77s - likelihood_loss: 452.5869 - mean_binary_crossentropy: 0.0075 - loss: 561.9777 - val_likelihood_loss: 1698.8541 - val_mean_binary_crossentropy: 0.0283 - val_loss: 1790.8655
+Epoch 99/400
+229/229 - 77s - likelihood_loss: 457.2094 - mean_binary_crossentropy: 0.0076 - loss: 548.5723 - val_likelihood_loss: 1685.6432 - val_mean_binary_crossentropy: 0.0281 - val_loss: 1760.8693
+Epoch 100/400
+229/229 - 77s - likelihood_loss: 463.8802 - mean_binary_crossentropy: 0.0077 - loss: 539.3225 - val_likelihood_loss: 1641.3259 - val_mean_binary_crossentropy: 0.0274 - val_loss: 1702.7462
+Epoch 101/400
+229/229 - 77s - likelihood_loss: 465.8849 - mean_binary_crossentropy: 0.0078 - loss: 527.7626 - val_likelihood_loss: 1747.2869 - val_mean_binary_crossentropy: 0.0291 - val_loss: 1795.2900
+Epoch 102/400
+229/229 - 78s - likelihood_loss: 502.4925 - mean_binary_crossentropy: 0.0084 - loss: 552.1692 - val_likelihood_loss: 1740.5225 - val_mean_binary_crossentropy: 0.0290 - val_loss: 1776.9747
+Epoch 103/400
+229/229 - 78s - likelihood_loss: 453.0838 - mean_binary_crossentropy: 0.0076 - loss: 492.9989 - val_likelihood_loss: 1717.4156 - val_mean_binary_crossentropy: 0.0286 - val_loss: 1746.5664
+Epoch 104/400
+229/229 - 78s - likelihood_loss: 433.4791 - mean_binary_crossentropy: 0.0072 - loss: 464.8444 - val_likelihood_loss: 1796.3341 - val_mean_binary_crossentropy: 0.0299 - val_loss: 1815.2869
+Epoch 105/400
+229/229 - 79s - likelihood_loss: 424.2819 - mean_binary_crossentropy: 0.0071 - loss: 448.4899 - val_likelihood_loss: 1839.7181 - val_mean_binary_crossentropy: 0.0307 - val_loss: 1852.1769
+Epoch 106/400
+229/229 - 77s - likelihood_loss: 421.2586 - mean_binary_crossentropy: 0.0070 - loss: 439.5208 - val_likelihood_loss: 2166.3010 - val_mean_binary_crossentropy: 0.0361 - val_loss: 2174.2412
+Epoch 107/400
+229/229 - 77s - likelihood_loss: 419.2605 - mean_binary_crossentropy: 0.0070 - loss: 432.4386 - val_likelihood_loss: 2161.7627 - val_mean_binary_crossentropy: 0.0360 - val_loss: 2165.4299
+Epoch 108/400
+229/229 - 78s - likelihood_loss: 417.2892 - mean_binary_crossentropy: 0.0070 - loss: 426.5493 - val_likelihood_loss: 2512.7583 - val_mean_binary_crossentropy: 0.0419 - val_loss: 2513.5801
+Epoch 109/400
+229/229 - 77s - likelihood_loss: 412.8982 - mean_binary_crossentropy: 0.0069 - loss: 419.3078 - val_likelihood_loss: 2026.6921 - val_mean_binary_crossentropy: 0.0338 - val_loss: 2025.4031
+Epoch 110/400
+229/229 - 77s - likelihood_loss: 406.1746 - mean_binary_crossentropy: 0.0068 - loss: 410.4582 - val_likelihood_loss: 2093.5520 - val_mean_binary_crossentropy: 0.0349 - val_loss: 2090.1641
+Epoch 111/400
+229/229 - 77s - likelihood_loss: 400.4715 - mean_binary_crossentropy: 0.0067 - loss: 403.1151 - val_likelihood_loss: 2079.0779 - val_mean_binary_crossentropy: 0.0347 - val_loss: 2072.7725
+Epoch 112/400
+229/229 - 78s - likelihood_loss: 409.7648 - mean_binary_crossentropy: 0.0068 - loss: 411.0931 - val_likelihood_loss: 2052.7444 - val_mean_binary_crossentropy: 0.0342 - val_loss: 2044.3009
+Epoch 113/400
+229/229 - 78s - likelihood_loss: 411.5903 - mean_binary_crossentropy: 0.0069 - loss: 411.8584 - val_likelihood_loss: 2038.9941 - val_mean_binary_crossentropy: 0.0340 - val_loss: 2029.4679
+Epoch 114/400
+229/229 - 77s - likelihood_loss: 416.2147 - mean_binary_crossentropy: 0.0069 - loss: 416.0005 - val_likelihood_loss: 2594.1416 - val_mean_binary_crossentropy: 0.0432 - val_loss: 2584.8403
+Epoch 115/400
+229/229 - 76s - likelihood_loss: 415.0572 - mean_binary_crossentropy: 0.0069 - loss: 414.4501 - val_likelihood_loss: 2205.6545 - val_mean_binary_crossentropy: 0.0368 - val_loss: 2198.0493
+Epoch 116/400
+229/229 - 78s - likelihood_loss: 411.8463 - mean_binary_crossentropy: 0.0069 - loss: 411.1114 - val_likelihood_loss: 2744.5549 - val_mean_binary_crossentropy: 0.0457 - val_loss: 2734.7856
+Epoch 117/400
+229/229 - 77s - likelihood_loss: 415.1684 - mean_binary_crossentropy: 0.0069 - loss: 414.3451 - val_likelihood_loss: 2175.9958 - val_mean_binary_crossentropy: 0.0363 - val_loss: 2165.2522
+Epoch 118/400
+229/229 - 77s - likelihood_loss: 408.5583 - mean_binary_crossentropy: 0.0068 - loss: 407.7259 - val_likelihood_loss: 2112.6587 - val_mean_binary_crossentropy: 0.0352 - val_loss: 2102.6050
+Epoch 119/400
+229/229 - 76s - likelihood_loss: 410.8774 - mean_binary_crossentropy: 0.0068 - loss: 409.9656 - val_likelihood_loss: 2170.9893 - val_mean_binary_crossentropy: 0.0362 - val_loss: 2162.0381
+Epoch 120/400
+229/229 - 76s - likelihood_loss: 415.3678 - mean_binary_crossentropy: 0.0069 - loss: 414.4635 - val_likelihood_loss: 1736.2756 - val_mean_binary_crossentropy: 0.0289 - val_loss: 1725.5347
+Epoch 121/400
+229/229 - 77s - likelihood_loss: 430.6563 - mean_binary_crossentropy: 0.0072 - loss: 429.8478 - val_likelihood_loss: 1811.1104 - val_mean_binary_crossentropy: 0.0302 - val_loss: 1797.8666
+Epoch 122/400
+229/229 - 77s - likelihood_loss: 423.3538 - mean_binary_crossentropy: 0.0071 - loss: 422.5582 - val_likelihood_loss: 1883.0857 - val_mean_binary_crossentropy: 0.0314 - val_loss: 1869.1035
+Epoch 123/400
+229/229 - 77s - likelihood_loss: 414.6895 - mean_binary_crossentropy: 0.0069 - loss: 413.8229 - val_likelihood_loss: 2143.3381 - val_mean_binary_crossentropy: 0.0357 - val_loss: 2128.5247
+Epoch 124/400
+229/229 - 77s - likelihood_loss: 417.6458 - mean_binary_crossentropy: 0.0070 - loss: 416.7554 - val_likelihood_loss: 2416.2229 - val_mean_binary_crossentropy: 0.0403 - val_loss: 2399.5603
+Epoch 125/400
+229/229 - 77s - likelihood_loss: 427.2389 - mean_binary_crossentropy: 0.0071 - loss: 426.3221 - val_likelihood_loss: 2806.8545 - val_mean_binary_crossentropy: 0.0468 - val_loss: 2791.4236
+Epoch 126/400
+229/229 - 78s - likelihood_loss: 412.3677 - mean_binary_crossentropy: 0.0069 - loss: 411.5459 - val_likelihood_loss: 2647.4973 - val_mean_binary_crossentropy: 0.0441 - val_loss: 2634.8218
+Epoch 127/400
+229/229 - 76s - likelihood_loss: 402.9515 - mean_binary_crossentropy: 0.0067 - loss: 402.1300 - val_likelihood_loss: 2775.7856 - val_mean_binary_crossentropy: 0.0463 - val_loss: 2764.5212
+Epoch 128/400
+229/229 - 76s - likelihood_loss: 404.9264 - mean_binary_crossentropy: 0.0067 - loss: 403.8892 - val_likelihood_loss: 2675.5295 - val_mean_binary_crossentropy: 0.0446 - val_loss: 2665.1250
+Epoch 129/400
+229/229 - 77s - likelihood_loss: 411.9534 - mean_binary_crossentropy: 0.0069 - loss: 410.9216 - val_likelihood_loss: 2123.4077 - val_mean_binary_crossentropy: 0.0354 - val_loss: 2113.8894
+Epoch 130/400
+229/229 - 76s - likelihood_loss: 409.6860 - mean_binary_crossentropy: 0.0068 - loss: 408.8140 - val_likelihood_loss: 2286.9924 - val_mean_binary_crossentropy: 0.0381 - val_loss: 2278.3062
+Epoch 131/400
+229/229 - 77s - likelihood_loss: 402.4320 - mean_binary_crossentropy: 0.0067 - loss: 401.6021 - val_likelihood_loss: 2069.4675 - val_mean_binary_crossentropy: 0.0345 - val_loss: 2059.1216
+Epoch 132/400
+229/229 - 77s - likelihood_loss: 396.0933 - mean_binary_crossentropy: 0.0066 - loss: 395.1610 - val_likelihood_loss: 1972.4541 - val_mean_binary_crossentropy: 0.0329 - val_loss: 1959.0903
+Epoch 133/400
+229/229 - 77s - likelihood_loss: 394.9734 - mean_binary_crossentropy: 0.0066 - loss: 394.1667 - val_likelihood_loss: 1874.3834 - val_mean_binary_crossentropy: 0.0312 - val_loss: 1859.3660
+Epoch 134/400
+229/229 - 77s - likelihood_loss: 389.3414 - mean_binary_crossentropy: 0.0065 - loss: 388.3919 - val_likelihood_loss: 1779.9094 - val_mean_binary_crossentropy: 0.0297 - val_loss: 1767.6791
+Epoch 135/400
+229/229 - 77s - likelihood_loss: 384.2962 - mean_binary_crossentropy: 0.0064 - loss: 383.4629 - val_likelihood_loss: 2069.9368 - val_mean_binary_crossentropy: 0.0345 - val_loss: 2059.2534
+Epoch 136/400
+229/229 - 76s - likelihood_loss: 372.6824 - mean_binary_crossentropy: 0.0062 - loss: 371.7138 - val_likelihood_loss: 2129.3027 - val_mean_binary_crossentropy: 0.0355 - val_loss: 2118.9995
+Epoch 137/400
+229/229 - 77s - likelihood_loss: 366.4268 - mean_binary_crossentropy: 0.0061 - loss: 365.3453 - val_likelihood_loss: 2491.5032 - val_mean_binary_crossentropy: 0.0415 - val_loss: 2480.0762
+Epoch 138/400
+229/229 - 77s - likelihood_loss: 368.3594 - mean_binary_crossentropy: 0.0061 - loss: 367.3780 - val_likelihood_loss: 2199.9038 - val_mean_binary_crossentropy: 0.0367 - val_loss: 2191.9561
+Epoch 139/400
+229/229 - 78s - likelihood_loss: 367.4627 - mean_binary_crossentropy: 0.0061 - loss: 366.5586 - val_likelihood_loss: 2195.0073 - val_mean_binary_crossentropy: 0.0366 - val_loss: 2186.2917
+Epoch 140/400
+229/229 - 77s - likelihood_loss: 368.2143 - mean_binary_crossentropy: 0.0061 - loss: 367.3621 - val_likelihood_loss: 1907.9980 - val_mean_binary_crossentropy: 0.0318 - val_loss: 1895.9230
+Epoch 141/400
+229/229 - 77s - likelihood_loss: 367.1518 - mean_binary_crossentropy: 0.0061 - loss: 366.3119 - val_likelihood_loss: 1849.3766 - val_mean_binary_crossentropy: 0.0308 - val_loss: 1837.8892
+Epoch 142/400
+229/229 - 76s - likelihood_loss: 369.4994 - mean_binary_crossentropy: 0.0062 - loss: 368.5357 - val_likelihood_loss: 1784.9679 - val_mean_binary_crossentropy: 0.0297 - val_loss: 1774.2296
+Epoch 143/400
+229/229 - 77s - likelihood_loss: 369.2797 - mean_binary_crossentropy: 0.0062 - loss: 368.1224 - val_likelihood_loss: 1850.9473 - val_mean_binary_crossentropy: 0.0308 - val_loss: 1838.6129
+Epoch 144/400
+229/229 - 78s - likelihood_loss: 368.0765 - mean_binary_crossentropy: 0.0061 - loss: 367.1129 - val_likelihood_loss: 2585.5356 - val_mean_binary_crossentropy: 0.0431 - val_loss: 2571.9988
+Epoch 145/400
+229/229 - 78s - likelihood_loss: 362.5434 - mean_binary_crossentropy: 0.0060 - loss: 361.6234 - val_likelihood_loss: 2990.5925 - val_mean_binary_crossentropy: 0.0498 - val_loss: 2976.4495
+Epoch 146/400
+229/229 - 80s - likelihood_loss: 369.8502 - mean_binary_crossentropy: 0.0062 - loss: 368.9299 - val_likelihood_loss: 3660.3967 - val_mean_binary_crossentropy: 0.0610 - val_loss: 3642.6616
+Epoch 147/400
+229/229 - 77s - likelihood_loss: 375.2713 - mean_binary_crossentropy: 0.0063 - loss: 374.1626 - val_likelihood_loss: 3122.7039 - val_mean_binary_crossentropy: 0.0520 - val_loss: 3102.8096
+Epoch 148/400
+229/229 - 77s - likelihood_loss: 378.6364 - mean_binary_crossentropy: 0.0063 - loss: 377.4501 - val_likelihood_loss: 3100.2959 - val_mean_binary_crossentropy: 0.0517 - val_loss: 3083.7549
+Epoch 149/400
+229/229 - 77s - likelihood_loss: 376.1687 - mean_binary_crossentropy: 0.0063 - loss: 375.0675 - val_likelihood_loss: 2777.7368 - val_mean_binary_crossentropy: 0.0463 - val_loss: 2760.9414
+Epoch 150/400
+229/229 - 78s - likelihood_loss: 377.8947 - mean_binary_crossentropy: 0.0063 - loss: 376.9633 - val_likelihood_loss: 2128.5088 - val_mean_binary_crossentropy: 0.0355 - val_loss: 2118.7524
+Epoch 151/400
+229/229 - 77s - likelihood_loss: 375.0245 - mean_binary_crossentropy: 0.0063 - loss: 374.0578 - val_likelihood_loss: 2676.1025 - val_mean_binary_crossentropy: 0.0446 - val_loss: 2664.5400
+Epoch 152/400
+229/229 - 77s - likelihood_loss: 369.6611 - mean_binary_crossentropy: 0.0062 - loss: 368.8843 - val_likelihood_loss: 2551.0164 - val_mean_binary_crossentropy: 0.0425 - val_loss: 2537.8586
+Epoch 153/400
+229/229 - 78s - likelihood_loss: 369.9353 - mean_binary_crossentropy: 0.0062 - loss: 369.1072 - val_likelihood_loss: 2669.0071 - val_mean_binary_crossentropy: 0.0445 - val_loss: 2656.1316
+Epoch 154/400
+229/229 - 76s - likelihood_loss: 365.6300 - mean_binary_crossentropy: 0.0061 - loss: 364.6941 - val_likelihood_loss: 2452.9875 - val_mean_binary_crossentropy: 0.0409 - val_loss: 2440.8843
+Epoch 155/400
+229/229 - 77s - likelihood_loss: 366.3809 - mean_binary_crossentropy: 0.0061 - loss: 365.4997 - val_likelihood_loss: 2263.5417 - val_mean_binary_crossentropy: 0.0377 - val_loss: 2250.4817
+Epoch 156/400
+229/229 - 77s - likelihood_loss: 365.6015 - mean_binary_crossentropy: 0.0061 - loss: 364.5669 - val_likelihood_loss: 2310.2659 - val_mean_binary_crossentropy: 0.0385 - val_loss: 2296.7158
+Epoch 157/400
+229/229 - 76s - likelihood_loss: 370.0469 - mean_binary_crossentropy: 0.0062 - loss: 368.9644 - val_likelihood_loss: 2184.1309 - val_mean_binary_crossentropy: 0.0364 - val_loss: 2171.7014
+Epoch 158/400
+229/229 - 78s - likelihood_loss: 368.5644 - mean_binary_crossentropy: 0.0061 - loss: 367.6633 - val_likelihood_loss: 2122.0737 - val_mean_binary_crossentropy: 0.0354 - val_loss: 2109.2656
+Epoch 159/400
+229/229 - 76s - likelihood_loss: 364.9144 - mean_binary_crossentropy: 0.0061 - loss: 364.0923 - val_likelihood_loss: 1926.1572 - val_mean_binary_crossentropy: 0.0321 - val_loss: 1914.8745
+Epoch 160/400
+229/229 - 76s - likelihood_loss: 360.0551 - mean_binary_crossentropy: 0.0060 - loss: 359.1674 - val_likelihood_loss: 1901.7532 - val_mean_binary_crossentropy: 0.0317 - val_loss: 1887.0515
+Epoch 161/400
+229/229 - 76s - likelihood_loss: 356.9870 - mean_binary_crossentropy: 0.0059 - loss: 356.1286 - val_likelihood_loss: 2064.8413 - val_mean_binary_crossentropy: 0.0344 - val_loss: 2050.8755
+Epoch 162/400
+229/229 - 78s - likelihood_loss: 355.7811 - mean_binary_crossentropy: 0.0059 - loss: 354.9080 - val_likelihood_loss: 2482.4102 - val_mean_binary_crossentropy: 0.0414 - val_loss: 2468.5251
+Epoch 163/400
+229/229 - 79s - likelihood_loss: 357.8419 - mean_binary_crossentropy: 0.0060 - loss: 356.7943 - val_likelihood_loss: 2520.0569 - val_mean_binary_crossentropy: 0.0420 - val_loss: 2508.7375
+Epoch 164/400
+229/229 - 78s - likelihood_loss: 362.1072 - mean_binary_crossentropy: 0.0060 - loss: 361.1685 - val_likelihood_loss: 2734.6055 - val_mean_binary_crossentropy: 0.0456 - val_loss: 2719.0730
+Epoch 165/400
+229/229 - 77s - likelihood_loss: 357.7094 - mean_binary_crossentropy: 0.0060 - loss: 356.7741 - val_likelihood_loss: 2897.9458 - val_mean_binary_crossentropy: 0.0483 - val_loss: 2881.4275
+Epoch 166/400
+229/229 - 77s - likelihood_loss: 355.5580 - mean_binary_crossentropy: 0.0059 - loss: 354.7014 - val_likelihood_loss: 3201.7280 - val_mean_binary_crossentropy: 0.0534 - val_loss: 3185.3567
+Epoch 167/400
+229/229 - 77s - likelihood_loss: 355.1222 - mean_binary_crossentropy: 0.0059 - loss: 354.2305 - val_likelihood_loss: 3231.6130 - val_mean_binary_crossentropy: 0.0539 - val_loss: 3216.8701
+Epoch 168/400
+229/229 - 77s - likelihood_loss: 349.6720 - mean_binary_crossentropy: 0.0058 - loss: 348.7147 - val_likelihood_loss: 3110.3689 - val_mean_binary_crossentropy: 0.0518 - val_loss: 3096.1782
+Epoch 169/400
+229/229 - 76s - likelihood_loss: 345.1111 - mean_binary_crossentropy: 0.0058 - loss: 344.1729 - val_likelihood_loss: 3021.0115 - val_mean_binary_crossentropy: 0.0504 - val_loss: 3003.7651
+Epoch 170/400
+229/229 - 77s - likelihood_loss: 341.3408 - mean_binary_crossentropy: 0.0057 - loss: 340.5557 - val_likelihood_loss: 2806.2307 - val_mean_binary_crossentropy: 0.0468 - val_loss: 2790.4680
+Epoch 171/400
+229/229 - 78s - likelihood_loss: 338.0551 - mean_binary_crossentropy: 0.0056 - loss: 337.2542 - val_likelihood_loss: 2605.6882 - val_mean_binary_crossentropy: 0.0434 - val_loss: 2591.8831
+Epoch 172/400
+229/229 - 78s - likelihood_loss: 337.6620 - mean_binary_crossentropy: 0.0056 - loss: 336.9474 - val_likelihood_loss: 2393.8801 - val_mean_binary_crossentropy: 0.0399 - val_loss: 2378.7156
+Epoch 173/400
+229/229 - 77s - likelihood_loss: 335.2186 - mean_binary_crossentropy: 0.0056 - loss: 334.4059 - val_likelihood_loss: 2557.1958 - val_mean_binary_crossentropy: 0.0426 - val_loss: 2542.3818
+Epoch 174/400
+229/229 - 78s - likelihood_loss: 351.9191 - mean_binary_crossentropy: 0.0059 - loss: 351.1386 - val_likelihood_loss: 2453.3569 - val_mean_binary_crossentropy: 0.0409 - val_loss: 2438.0366
+Epoch 175/400
+229/229 - 76s - likelihood_loss: 337.3830 - mean_binary_crossentropy: 0.0056 - loss: 336.5511 - val_likelihood_loss: 2442.1062 - val_mean_binary_crossentropy: 0.0407 - val_loss: 2425.7388
+Epoch 176/400
+229/229 - 76s - likelihood_loss: 330.9828 - mean_binary_crossentropy: 0.0055 - loss: 330.1282 - val_likelihood_loss: 2478.7725 - val_mean_binary_crossentropy: 0.0413 - val_loss: 2461.2151
+Epoch 177/400
+229/229 - 77s - likelihood_loss: 331.7799 - mean_binary_crossentropy: 0.0055 - loss: 330.9118 - val_likelihood_loss: 2729.2600 - val_mean_binary_crossentropy: 0.0455 - val_loss: 2710.5386
+Epoch 178/400
+229/229 - 76s - likelihood_loss: 334.1293 - mean_binary_crossentropy: 0.0056 - loss: 333.1329 - val_likelihood_loss: 3304.1902 - val_mean_binary_crossentropy: 0.0551 - val_loss: 3285.9653
+Epoch 179/400
+229/229 - 77s - likelihood_loss: 334.8102 - mean_binary_crossentropy: 0.0056 - loss: 333.8040 - val_likelihood_loss: 3535.4343 - val_mean_binary_crossentropy: 0.0589 - val_loss: 3517.2512
+Epoch 180/400
+229/229 - 77s - likelihood_loss: 335.2969 - mean_binary_crossentropy: 0.0056 - loss: 334.3628 - val_likelihood_loss: 3324.7644 - val_mean_binary_crossentropy: 0.0554 - val_loss: 3303.7820
+Epoch 181/400
+229/229 - 77s - likelihood_loss: 333.2701 - mean_binary_crossentropy: 0.0056 - loss: 332.3675 - val_likelihood_loss: 3182.6165 - val_mean_binary_crossentropy: 0.0530 - val_loss: 3162.6340
+Epoch 182/400
+229/229 - 76s - likelihood_loss: 342.4065 - mean_binary_crossentropy: 0.0057 - loss: 341.5245 - val_likelihood_loss: 2882.4143 - val_mean_binary_crossentropy: 0.0480 - val_loss: 2865.0857
+Epoch 183/400
+229/229 - 77s - likelihood_loss: 332.7444 - mean_binary_crossentropy: 0.0055 - loss: 331.7777 - val_likelihood_loss: 2899.5854 - val_mean_binary_crossentropy: 0.0483 - val_loss: 2880.9902
+Epoch 184/400
+229/229 - 76s - likelihood_loss: 330.6837 - mean_binary_crossentropy: 0.0055 - loss: 329.8046 - val_likelihood_loss: 2902.0864 - val_mean_binary_crossentropy: 0.0484 - val_loss: 2882.7253
+Epoch 185/400
+229/229 - 77s - likelihood_loss: 335.3184 - mean_binary_crossentropy: 0.0056 - loss: 334.5017 - val_likelihood_loss: 2481.8369 - val_mean_binary_crossentropy: 0.0414 - val_loss: 2465.0293
+Epoch 186/400
+229/229 - 77s - likelihood_loss: 328.7918 - mean_binary_crossentropy: 0.0055 - loss: 327.9536 - val_likelihood_loss: 2384.4380 - val_mean_binary_crossentropy: 0.0397 - val_loss: 2367.8745
+Epoch 187/400
+229/229 - 79s - likelihood_loss: 324.2460 - mean_binary_crossentropy: 0.0054 - loss: 323.4909 - val_likelihood_loss: 2572.1250 - val_mean_binary_crossentropy: 0.0429 - val_loss: 2555.7087
+Epoch 188/400
+229/229 - 78s - likelihood_loss: 336.2643 - mean_binary_crossentropy: 0.0056 - loss: 335.5050 - val_likelihood_loss: 2574.3901 - val_mean_binary_crossentropy: 0.0429 - val_loss: 2559.0315
+Epoch 189/400
+229/229 - 80s - likelihood_loss: 327.2704 - mean_binary_crossentropy: 0.0055 - loss: 326.4875 - val_likelihood_loss: 2913.0430 - val_mean_binary_crossentropy: 0.0486 - val_loss: 2896.7361
+Epoch 190/400
+229/229 - 77s - likelihood_loss: 334.7477 - mean_binary_crossentropy: 0.0056 - loss: 333.9886 - val_likelihood_loss: 2650.0505 - val_mean_binary_crossentropy: 0.0442 - val_loss: 2635.4148
+Epoch 191/400
+229/229 - 76s - likelihood_loss: 326.4261 - mean_binary_crossentropy: 0.0054 - loss: 325.7265 - val_likelihood_loss: 2959.9592 - val_mean_binary_crossentropy: 0.0493 - val_loss: 2942.5283
+Epoch 192/400
+229/229 - 76s - likelihood_loss: 319.6058 - mean_binary_crossentropy: 0.0053 - loss: 318.8054 - val_likelihood_loss: 3279.2695 - val_mean_binary_crossentropy: 0.0547 - val_loss: 3260.8369
+Epoch 193/400
+229/229 - 77s - likelihood_loss: 318.9439 - mean_binary_crossentropy: 0.0053 - loss: 318.1534 - val_likelihood_loss: 4019.7305 - val_mean_binary_crossentropy: 0.0670 - val_loss: 3996.0535
+Epoch 194/400
+229/229 - 77s - likelihood_loss: 325.0477 - mean_binary_crossentropy: 0.0054 - loss: 324.2190 - val_likelihood_loss: 3921.0063 - val_mean_binary_crossentropy: 0.0654 - val_loss: 3898.6680
+Epoch 195/400
+229/229 - 77s - likelihood_loss: 331.0427 - mean_binary_crossentropy: 0.0055 - loss: 330.2662 - val_likelihood_loss: 4148.2666 - val_mean_binary_crossentropy: 0.0691 - val_loss: 4124.1396
+Epoch 196/400
+229/229 - 76s - likelihood_loss: 342.8593 - mean_binary_crossentropy: 0.0057 - loss: 342.0743 - val_likelihood_loss: 3498.5173 - val_mean_binary_crossentropy: 0.0583 - val_loss: 3475.3594
+Epoch 197/400
+229/229 - 76s - likelihood_loss: 346.3372 - mean_binary_crossentropy: 0.0058 - loss: 345.6151 - val_likelihood_loss: 2997.6995 - val_mean_binary_crossentropy: 0.0500 - val_loss: 2978.2642
+Epoch 198/400
+229/229 - 76s - likelihood_loss: 333.0983 - mean_binary_crossentropy: 0.0056 - loss: 332.3394 - val_likelihood_loss: 2726.7271 - val_mean_binary_crossentropy: 0.0454 - val_loss: 2709.2764
+Epoch 199/400
+229/229 - 76s - likelihood_loss: 322.3297 - mean_binary_crossentropy: 0.0054 - loss: 321.5795 - val_likelihood_loss: 2498.6482 - val_mean_binary_crossentropy: 0.0416 - val_loss: 2481.6479
+Epoch 200/400
+229/229 - 77s - likelihood_loss: 318.5927 - mean_binary_crossentropy: 0.0053 - loss: 317.8623 - val_likelihood_loss: 2908.6267 - val_mean_binary_crossentropy: 0.0485 - val_loss: 2888.7070
+Epoch 201/400
+229/229 - 77s - likelihood_loss: 318.5250 - mean_binary_crossentropy: 0.0053 - loss: 317.7740 - val_likelihood_loss: 3095.8623 - val_mean_binary_crossentropy: 0.0516 - val_loss: 3077.4871
+Epoch 202/400
+229/229 - 77s - likelihood_loss: 317.0880 - mean_binary_crossentropy: 0.0053 - loss: 316.2670 - val_likelihood_loss: 3121.9138 - val_mean_binary_crossentropy: 0.0520 - val_loss: 3103.0339
+Epoch 203/400
+229/229 - 77s - likelihood_loss: 314.5695 - mean_binary_crossentropy: 0.0052 - loss: 313.7556 - val_likelihood_loss: 2664.4312 - val_mean_binary_crossentropy: 0.0444 - val_loss: 2648.8267
+Epoch 204/400
+229/229 - 77s - likelihood_loss: 314.2201 - mean_binary_crossentropy: 0.0052 - loss: 313.4334 - val_likelihood_loss: 2728.0537 - val_mean_binary_crossentropy: 0.0455 - val_loss: 2711.8091
+Epoch 205/400
+229/229 - 77s - likelihood_loss: 314.6514 - mean_binary_crossentropy: 0.0052 - loss: 313.9293 - val_likelihood_loss: 2626.5413 - val_mean_binary_crossentropy: 0.0438 - val_loss: 2610.6628
+Epoch 206/400
+229/229 - 77s - likelihood_loss: 322.6387 - mean_binary_crossentropy: 0.0054 - loss: 321.8809 - val_likelihood_loss: 2715.4714 - val_mean_binary_crossentropy: 0.0453 - val_loss: 2698.7578
+Epoch 207/400
+229/229 - 77s - likelihood_loss: 328.2693 - mean_binary_crossentropy: 0.0055 - loss: 327.4059 - val_likelihood_loss: 2626.6724 - val_mean_binary_crossentropy: 0.0438 - val_loss: 2611.9673
+Epoch 208/400
+229/229 - 79s - likelihood_loss: 323.7270 - mean_binary_crossentropy: 0.0054 - loss: 322.9539 - val_likelihood_loss: 3055.2300 - val_mean_binary_crossentropy: 0.0509 - val_loss: 3039.6648
+Epoch 209/400
+229/229 - 78s - likelihood_loss: 318.7958 - mean_binary_crossentropy: 0.0053 - loss: 317.9577 - val_likelihood_loss: 3570.7549 - val_mean_binary_crossentropy: 0.0595 - val_loss: 3553.9141
+Epoch 210/400
+229/229 - 78s - likelihood_loss: 325.1451 - mean_binary_crossentropy: 0.0054 - loss: 324.2773 - val_likelihood_loss: 3631.9270 - val_mean_binary_crossentropy: 0.0605 - val_loss: 3617.8032
+Epoch 211/400
+229/229 - 77s - likelihood_loss: 324.3818 - mean_binary_crossentropy: 0.0054 - loss: 323.5897 - val_likelihood_loss: 3349.9805 - val_mean_binary_crossentropy: 0.0558 - val_loss: 3334.0132
+Epoch 212/400
+229/229 - 80s - likelihood_loss: 315.0972 - mean_binary_crossentropy: 0.0053 - loss: 314.3580 - val_likelihood_loss: 3661.5625 - val_mean_binary_crossentropy: 0.0610 - val_loss: 3645.3979
+Epoch 213/400
+229/229 - 78s - likelihood_loss: 310.3032 - mean_binary_crossentropy: 0.0052 - loss: 309.4227 - val_likelihood_loss: 3486.5911 - val_mean_binary_crossentropy: 0.0581 - val_loss: 3471.7170
+Epoch 214/400
+229/229 - 78s - likelihood_loss: 309.0166 - mean_binary_crossentropy: 0.0052 - loss: 308.2752 - val_likelihood_loss: 4219.0615 - val_mean_binary_crossentropy: 0.0703 - val_loss: 4204.4419
+Epoch 215/400
+229/229 - 77s - likelihood_loss: 311.5255 - mean_binary_crossentropy: 0.0052 - loss: 310.8155 - val_likelihood_loss: 3468.9167 - val_mean_binary_crossentropy: 0.0578 - val_loss: 3451.0464
+Epoch 216/400
+229/229 - 77s - likelihood_loss: 323.3791 - mean_binary_crossentropy: 0.0054 - loss: 322.6506 - val_likelihood_loss: 3300.7136 - val_mean_binary_crossentropy: 0.0550 - val_loss: 3281.5090
+Epoch 217/400
+229/229 - 76s - likelihood_loss: 315.5760 - mean_binary_crossentropy: 0.0053 - loss: 314.7987 - val_likelihood_loss: 3804.0286 - val_mean_binary_crossentropy: 0.0634 - val_loss: 3785.7046
+Epoch 218/400
+229/229 - 76s - likelihood_loss: 307.1689 - mean_binary_crossentropy: 0.0051 - loss: 306.3428 - val_likelihood_loss: 4153.4204 - val_mean_binary_crossentropy: 0.0692 - val_loss: 4133.2847
+Epoch 219/400
+229/229 - 76s - likelihood_loss: 297.1874 - mean_binary_crossentropy: 0.0050 - loss: 296.3888 - val_likelihood_loss: 3411.4861 - val_mean_binary_crossentropy: 0.0569 - val_loss: 3394.0706
+Epoch 220/400
+229/229 - 78s - likelihood_loss: 291.1040 - mean_binary_crossentropy: 0.0049 - loss: 290.2780 - val_likelihood_loss: 3014.3254 - val_mean_binary_crossentropy: 0.0502 - val_loss: 2998.1724
+Epoch 221/400
+229/229 - 77s - likelihood_loss: 288.6674 - mean_binary_crossentropy: 0.0048 - loss: 287.8324 - val_likelihood_loss: 2753.6272 - val_mean_binary_crossentropy: 0.0459 - val_loss: 2738.1519
+Epoch 222/400
+229/229 - 77s - likelihood_loss: 349.2250 - mean_binary_crossentropy: 0.0058 - loss: 347.6935 - val_likelihood_loss: 2263.5273 - val_mean_binary_crossentropy: 0.0377 - val_loss: 2249.4995
+Epoch 223/400
+229/229 - 77s - likelihood_loss: 369.1587 - mean_binary_crossentropy: 0.0062 - loss: 368.2656 - val_likelihood_loss: 2381.5732 - val_mean_binary_crossentropy: 0.0397 - val_loss: 2368.6660
+Epoch 224/400
+229/229 - 76s - likelihood_loss: 317.6185 - mean_binary_crossentropy: 0.0053 - loss: 316.8832 - val_likelihood_loss: 2513.1890 - val_mean_binary_crossentropy: 0.0419 - val_loss: 2499.3503
+Epoch 225/400
+229/229 - 77s - likelihood_loss: 302.0233 - mean_binary_crossentropy: 0.0050 - loss: 301.3159 - val_likelihood_loss: 2422.4087 - val_mean_binary_crossentropy: 0.0404 - val_loss: 2409.3306
+Epoch 226/400
+229/229 - 77s - likelihood_loss: 293.5612 - mean_binary_crossentropy: 0.0049 - loss: 292.8513 - val_likelihood_loss: 2615.7493 - val_mean_binary_crossentropy: 0.0436 - val_loss: 2602.7700
+Epoch 227/400
+229/229 - 77s - likelihood_loss: 289.2385 - mean_binary_crossentropy: 0.0048 - loss: 288.5685 - val_likelihood_loss: 2718.6899 - val_mean_binary_crossentropy: 0.0453 - val_loss: 2706.3306
+Epoch 228/400
+229/229 - 77s - likelihood_loss: 287.9690 - mean_binary_crossentropy: 0.0048 - loss: 287.2679 - val_likelihood_loss: 3024.2651 - val_mean_binary_crossentropy: 0.0504 - val_loss: 3012.3726
+Epoch 229/400
+229/229 - 77s - likelihood_loss: 293.1156 - mean_binary_crossentropy: 0.0049 - loss: 292.4650 - val_likelihood_loss: 3137.6335 - val_mean_binary_crossentropy: 0.0523 - val_loss: 3124.0691
+Epoch 230/400
+229/229 - 76s - likelihood_loss: 307.9897 - mean_binary_crossentropy: 0.0051 - loss: 307.2882 - val_likelihood_loss: 2767.0200 - val_mean_binary_crossentropy: 0.0461 - val_loss: 2753.3274
+Epoch 231/400
+229/229 - 76s - likelihood_loss: 300.9319 - mean_binary_crossentropy: 0.0050 - loss: 300.2610 - val_likelihood_loss: 3153.7778 - val_mean_binary_crossentropy: 0.0526 - val_loss: 3138.7935
+Epoch 232/400
+229/229 - 76s - likelihood_loss: 296.8041 - mean_binary_crossentropy: 0.0049 - loss: 296.0875 - val_likelihood_loss: 3077.5044 - val_mean_binary_crossentropy: 0.0513 - val_loss: 3062.6697
+Epoch 233/400
+229/229 - 76s - likelihood_loss: 299.4940 - mean_binary_crossentropy: 0.0050 - loss: 298.7349 - val_likelihood_loss: 3252.4519 - val_mean_binary_crossentropy: 0.0542 - val_loss: 3235.3882
+Epoch 234/400
+229/229 - 76s - likelihood_loss: 301.9194 - mean_binary_crossentropy: 0.0050 - loss: 301.1714 - val_likelihood_loss: 3641.4712 - val_mean_binary_crossentropy: 0.0607 - val_loss: 3622.4705
+Epoch 235/400
+229/229 - 77s - likelihood_loss: 320.5201 - mean_binary_crossentropy: 0.0053 - loss: 319.7390 - val_likelihood_loss: 3103.4939 - val_mean_binary_crossentropy: 0.0517 - val_loss: 3086.3816
+Epoch 236/400
+229/229 - 76s - likelihood_loss: 316.0110 - mean_binary_crossentropy: 0.0053 - loss: 315.2763 - val_likelihood_loss: 3055.4114 - val_mean_binary_crossentropy: 0.0509 - val_loss: 3038.8333
+Epoch 237/400
+229/229 - 76s - likelihood_loss: 328.4496 - mean_binary_crossentropy: 0.0055 - loss: 327.6467 - val_likelihood_loss: 2877.4231 - val_mean_binary_crossentropy: 0.0480 - val_loss: 2862.1797
+Epoch 238/400
+229/229 - 77s - likelihood_loss: 302.0015 - mean_binary_crossentropy: 0.0050 - loss: 301.3070 - val_likelihood_loss: 2792.4956 - val_mean_binary_crossentropy: 0.0465 - val_loss: 2777.3245
+Epoch 239/400
+229/229 - 78s - likelihood_loss: 294.9827 - mean_binary_crossentropy: 0.0049 - loss: 294.3297 - val_likelihood_loss: 3192.0588 - val_mean_binary_crossentropy: 0.0532 - val_loss: 3175.4219
+Epoch 240/400
+229/229 - 78s - likelihood_loss: 290.8169 - mean_binary_crossentropy: 0.0048 - loss: 290.1591 - val_likelihood_loss: 3765.4917 - val_mean_binary_crossentropy: 0.0628 - val_loss: 3746.2712
+Epoch 241/400
+229/229 - 77s - likelihood_loss: 293.0818 - mean_binary_crossentropy: 0.0049 - loss: 292.4080 - val_likelihood_loss: 3570.7461 - val_mean_binary_crossentropy: 0.0595 - val_loss: 3551.8523
+Epoch 242/400
+229/229 - 79s - likelihood_loss: 296.6997 - mean_binary_crossentropy: 0.0049 - loss: 295.9338 - val_likelihood_loss: 2460.3362 - val_mean_binary_crossentropy: 0.0410 - val_loss: 2447.6545
+Epoch 243/400
+229/229 - 77s - likelihood_loss: 297.7765 - mean_binary_crossentropy: 0.0050 - loss: 297.0732 - val_likelihood_loss: 2735.1423 - val_mean_binary_crossentropy: 0.0456 - val_loss: 2720.2830
+Epoch 244/400
+229/229 - 78s - likelihood_loss: 305.6185 - mean_binary_crossentropy: 0.0051 - loss: 305.0317 - val_likelihood_loss: 3299.6401 - val_mean_binary_crossentropy: 0.0550 - val_loss: 3283.0127
+Epoch 245/400
+229/229 - 78s - likelihood_loss: 290.8562 - mean_binary_crossentropy: 0.0048 - loss: 290.1258 - val_likelihood_loss: 3620.6243 - val_mean_binary_crossentropy: 0.0603 - val_loss: 3604.2747
+Epoch 246/400
+229/229 - 77s - likelihood_loss: 289.0917 - mean_binary_crossentropy: 0.0048 - loss: 288.4225 - val_likelihood_loss: 3514.1089 - val_mean_binary_crossentropy: 0.0586 - val_loss: 3497.5212
+Epoch 247/400
+229/229 - 77s - likelihood_loss: 302.6311 - mean_binary_crossentropy: 0.0050 - loss: 302.0546 - val_likelihood_loss: 3289.6113 - val_mean_binary_crossentropy: 0.0548 - val_loss: 3272.2180
+Epoch 248/400
+229/229 - 77s - likelihood_loss: 295.1320 - mean_binary_crossentropy: 0.0049 - loss: 294.5131 - val_likelihood_loss: 3398.2620 - val_mean_binary_crossentropy: 0.0566 - val_loss: 3380.9836
+Epoch 249/400
+229/229 - 77s - likelihood_loss: 286.5504 - mean_binary_crossentropy: 0.0048 - loss: 285.9054 - val_likelihood_loss: 2899.0212 - val_mean_binary_crossentropy: 0.0483 - val_loss: 2882.8225
+Epoch 250/400
+229/229 - 78s - likelihood_loss: 291.2035 - mean_binary_crossentropy: 0.0049 - loss: 290.5259 - val_likelihood_loss: 3051.4277 - val_mean_binary_crossentropy: 0.0509 - val_loss: 3035.2300
+Epoch 251/400
+229/229 - 77s - likelihood_loss: 290.9343 - mean_binary_crossentropy: 0.0048 - loss: 290.1714 - val_likelihood_loss: 2904.1865 - val_mean_binary_crossentropy: 0.0484 - val_loss: 2886.4409
+Epoch 252/400
+229/229 - 77s - likelihood_loss: 289.5468 - mean_binary_crossentropy: 0.0048 - loss: 288.6902 - val_likelihood_loss: 3079.2974 - val_mean_binary_crossentropy: 0.0513 - val_loss: 3060.8101
+Epoch 253/400
+229/229 - 77s - likelihood_loss: 286.9053 - mean_binary_crossentropy: 0.0048 - loss: 286.1385 - val_likelihood_loss: 3206.6389 - val_mean_binary_crossentropy: 0.0534 - val_loss: 3187.8953
+Epoch 254/400
+229/229 - 77s - likelihood_loss: 295.5083 - mean_binary_crossentropy: 0.0049 - loss: 294.8035 - val_likelihood_loss: 3034.3706 - val_mean_binary_crossentropy: 0.0506 - val_loss: 3016.6819
+Epoch 255/400
+229/229 - 79s - likelihood_loss: 297.3367 - mean_binary_crossentropy: 0.0050 - loss: 296.6522 - val_likelihood_loss: 2823.3264 - val_mean_binary_crossentropy: 0.0471 - val_loss: 2808.2637
+Epoch 256/400
+229/229 - 78s - likelihood_loss: 287.7896 - mean_binary_crossentropy: 0.0048 - loss: 287.1040 - val_likelihood_loss: 2816.4988 - val_mean_binary_crossentropy: 0.0469 - val_loss: 2801.2383
+Epoch 257/400
+229/229 - 77s - likelihood_loss: 281.4694 - mean_binary_crossentropy: 0.0047 - loss: 280.7697 - val_likelihood_loss: 2717.5452 - val_mean_binary_crossentropy: 0.0453 - val_loss: 2702.1926
+Epoch 258/400
+229/229 - 78s - likelihood_loss: 283.2259 - mean_binary_crossentropy: 0.0047 - loss: 282.3527 - val_likelihood_loss: 2457.0476 - val_mean_binary_crossentropy: 0.0410 - val_loss: 2441.8967
+Epoch 259/400
+229/229 - 78s - likelihood_loss: 282.0106 - mean_binary_crossentropy: 0.0047 - loss: 281.2672 - val_likelihood_loss: 2509.9771 - val_mean_binary_crossentropy: 0.0418 - val_loss: 2494.3462
+Epoch 260/400
+229/229 - 79s - likelihood_loss: 276.5487 - mean_binary_crossentropy: 0.0046 - loss: 275.8285 - val_likelihood_loss: 2953.4436 - val_mean_binary_crossentropy: 0.0492 - val_loss: 2937.7815
+Epoch 261/400
+229/229 - 76s - likelihood_loss: 273.7459 - mean_binary_crossentropy: 0.0046 - loss: 272.9873 - val_likelihood_loss: 2969.9480 - val_mean_binary_crossentropy: 0.0495 - val_loss: 2954.6819
+Epoch 262/400
+229/229 - 76s - likelihood_loss: 278.6724 - mean_binary_crossentropy: 0.0046 - loss: 277.9339 - val_likelihood_loss: 2857.0486 - val_mean_binary_crossentropy: 0.0476 - val_loss: 2841.8572
+Epoch 263/400
+229/229 - 76s - likelihood_loss: 286.4924 - mean_binary_crossentropy: 0.0048 - loss: 285.7718 - val_likelihood_loss: 3055.5474 - val_mean_binary_crossentropy: 0.0509 - val_loss: 3041.0457
+Epoch 264/400
+229/229 - 76s - likelihood_loss: 285.1999 - mean_binary_crossentropy: 0.0048 - loss: 284.4829 - val_likelihood_loss: 3399.8967 - val_mean_binary_crossentropy: 0.0567 - val_loss: 3385.1533
+Epoch 265/400
+229/229 - 77s - likelihood_loss: 280.3657 - mean_binary_crossentropy: 0.0047 - loss: 279.6670 - val_likelihood_loss: 3396.0664 - val_mean_binary_crossentropy: 0.0566 - val_loss: 3380.3433
+Epoch 266/400
+229/229 - 77s - likelihood_loss: 276.4067 - mean_binary_crossentropy: 0.0046 - loss: 275.5975 - val_likelihood_loss: 3669.7251 - val_mean_binary_crossentropy: 0.0612 - val_loss: 3654.2625
+Epoch 267/400
+229/229 - 77s - likelihood_loss: 271.2740 - mean_binary_crossentropy: 0.0045 - loss: 270.4185 - val_likelihood_loss: 3334.5845 - val_mean_binary_crossentropy: 0.0556 - val_loss: 3318.4250
+Epoch 268/400
+229/229 - 78s - likelihood_loss: 271.9462 - mean_binary_crossentropy: 0.0045 - loss: 271.2079 - val_likelihood_loss: 3266.8506 - val_mean_binary_crossentropy: 0.0544 - val_loss: 3248.0659
+Epoch 269/400
+229/229 - 78s - likelihood_loss: 269.6747 - mean_binary_crossentropy: 0.0045 - loss: 268.9994 - val_likelihood_loss: 3918.3621 - val_mean_binary_crossentropy: 0.0653 - val_loss: 3897.8164
+Epoch 270/400
+229/229 - 78s - likelihood_loss: 270.9521 - mean_binary_crossentropy: 0.0045 - loss: 270.2582 - val_likelihood_loss: 4596.6753 - val_mean_binary_crossentropy: 0.0766 - val_loss: 4572.2842
+Epoch 271/400
+229/229 - 77s - likelihood_loss: 272.7616 - mean_binary_crossentropy: 0.0045 - loss: 271.9182 - val_likelihood_loss: 3856.7949 - val_mean_binary_crossentropy: 0.0643 - val_loss: 3839.5869
+Epoch 272/400
+229/229 - 78s - likelihood_loss: 272.1654 - mean_binary_crossentropy: 0.0045 - loss: 271.4555 - val_likelihood_loss: 3231.5542 - val_mean_binary_crossentropy: 0.0539 - val_loss: 3215.1897
+Epoch 273/400
+229/229 - 79s - likelihood_loss: 273.0178 - mean_binary_crossentropy: 0.0046 - loss: 272.3074 - val_likelihood_loss: 3132.4546 - val_mean_binary_crossentropy: 0.0522 - val_loss: 3115.5271
+Epoch 274/400
+229/229 - 78s - likelihood_loss: 275.2462 - mean_binary_crossentropy: 0.0046 - loss: 274.6002 - val_likelihood_loss: 2992.5200 - val_mean_binary_crossentropy: 0.0499 - val_loss: 2975.4409
+Epoch 275/400
+229/229 - 77s - likelihood_loss: 274.1486 - mean_binary_crossentropy: 0.0046 - loss: 273.5213 - val_likelihood_loss: 3028.3689 - val_mean_binary_crossentropy: 0.0505 - val_loss: 3010.1877
+Epoch 276/400
+229/229 - 77s - likelihood_loss: 275.1763 - mean_binary_crossentropy: 0.0046 - loss: 274.5173 - val_likelihood_loss: 3148.0596 - val_mean_binary_crossentropy: 0.0525 - val_loss: 3130.8401
+Epoch 277/400
+229/229 - 77s - likelihood_loss: 271.2123 - mean_binary_crossentropy: 0.0045 - loss: 270.5703 - val_likelihood_loss: 3557.3933 - val_mean_binary_crossentropy: 0.0593 - val_loss: 3538.8826
+Epoch 278/400
+229/229 - 77s - likelihood_loss: 273.1649 - mean_binary_crossentropy: 0.0046 - loss: 272.4691 - val_likelihood_loss: 3860.2756 - val_mean_binary_crossentropy: 0.0643 - val_loss: 3840.5928
+Epoch 279/400
+229/229 - 78s - likelihood_loss: 270.9461 - mean_binary_crossentropy: 0.0045 - loss: 270.2622 - val_likelihood_loss: 4086.1538 - val_mean_binary_crossentropy: 0.0681 - val_loss: 4066.9734
+Epoch 280/400
+229/229 - 77s - likelihood_loss: 277.0840 - mean_binary_crossentropy: 0.0046 - loss: 276.3571 - val_likelihood_loss: 3534.1230 - val_mean_binary_crossentropy: 0.0589 - val_loss: 3515.8442
+Epoch 281/400
+229/229 - 77s - likelihood_loss: 287.4727 - mean_binary_crossentropy: 0.0048 - loss: 286.4232 - val_likelihood_loss: 2444.4980 - val_mean_binary_crossentropy: 0.0407 - val_loss: 2431.3650
+Epoch 282/400
+229/229 - 78s - likelihood_loss: 303.9965 - mean_binary_crossentropy: 0.0051 - loss: 303.1188 - val_likelihood_loss: 2808.1060 - val_mean_binary_crossentropy: 0.0468 - val_loss: 2794.4553
+Epoch 283/400
+229/229 - 78s - likelihood_loss: 276.1712 - mean_binary_crossentropy: 0.0046 - loss: 275.4547 - val_likelihood_loss: 2855.2427 - val_mean_binary_crossentropy: 0.0476 - val_loss: 2840.5220
+Epoch 284/400
+229/229 - 78s - likelihood_loss: 258.5330 - mean_binary_crossentropy: 0.0043 - loss: 257.9000 - val_likelihood_loss: 3052.7908 - val_mean_binary_crossentropy: 0.0509 - val_loss: 3038.2808
+Epoch 285/400
+229/229 - 78s - likelihood_loss: 254.5605 - mean_binary_crossentropy: 0.0042 - loss: 253.9745 - val_likelihood_loss: 3155.6213 - val_mean_binary_crossentropy: 0.0526 - val_loss: 3140.6377
+Epoch 286/400
+229/229 - 78s - likelihood_loss: 250.2100 - mean_binary_crossentropy: 0.0042 - loss: 249.5912 - val_likelihood_loss: 3179.0144 - val_mean_binary_crossentropy: 0.0530 - val_loss: 3165.4719
+Epoch 287/400
+229/229 - 77s - likelihood_loss: 248.5923 - mean_binary_crossentropy: 0.0041 - loss: 247.9621 - val_likelihood_loss: 3064.2336 - val_mean_binary_crossentropy: 0.0511 - val_loss: 3050.9856
+Epoch 288/400
+229/229 - 77s - likelihood_loss: 250.3036 - mean_binary_crossentropy: 0.0042 - loss: 249.5534 - val_likelihood_loss: 3255.7517 - val_mean_binary_crossentropy: 0.0543 - val_loss: 3241.3032
+Epoch 289/400
+229/229 - 77s - likelihood_loss: 253.4122 - mean_binary_crossentropy: 0.0042 - loss: 252.6648 - val_likelihood_loss: 3717.7561 - val_mean_binary_crossentropy: 0.0620 - val_loss: 3700.5488
+Epoch 290/400
+229/229 - 77s - likelihood_loss: 257.6794 - mean_binary_crossentropy: 0.0043 - loss: 256.7975 - val_likelihood_loss: 3766.3293 - val_mean_binary_crossentropy: 0.0628 - val_loss: 3748.6233
+Epoch 291/400
+229/229 - 77s - likelihood_loss: 262.8850 - mean_binary_crossentropy: 0.0044 - loss: 262.1545 - val_likelihood_loss: 3934.6702 - val_mean_binary_crossentropy: 0.0656 - val_loss: 3916.8787
+Epoch 292/400
+229/229 - 78s - likelihood_loss: 279.7477 - mean_binary_crossentropy: 0.0047 - loss: 279.1099 - val_likelihood_loss: 3204.4856 - val_mean_binary_crossentropy: 0.0534 - val_loss: 3189.1692
+Epoch 293/400
+229/229 - 78s - likelihood_loss: 272.3276 - mean_binary_crossentropy: 0.0045 - loss: 271.6564 - val_likelihood_loss: 2987.3176 - val_mean_binary_crossentropy: 0.0498 - val_loss: 2972.9082
+Epoch 294/400
+229/229 - 78s - likelihood_loss: 266.3115 - mean_binary_crossentropy: 0.0044 - loss: 265.6890 - val_likelihood_loss: 3067.7031 - val_mean_binary_crossentropy: 0.0511 - val_loss: 3053.5461
+Epoch 295/400
+229/229 - 78s - likelihood_loss: 262.6255 - mean_binary_crossentropy: 0.0044 - loss: 262.0418 - val_likelihood_loss: 3108.9624 - val_mean_binary_crossentropy: 0.0518 - val_loss: 3095.5217
+Epoch 296/400
+229/229 - 78s - likelihood_loss: 258.4542 - mean_binary_crossentropy: 0.0043 - loss: 257.8509 - val_likelihood_loss: 3313.5693 - val_mean_binary_crossentropy: 0.0552 - val_loss: 3297.7742
+Epoch 297/400
+229/229 - 78s - likelihood_loss: 260.5541 - mean_binary_crossentropy: 0.0043 - loss: 259.9130 - val_likelihood_loss: 3584.0320 - val_mean_binary_crossentropy: 0.0597 - val_loss: 3566.3733
+Epoch 298/400
+229/229 - 78s - likelihood_loss: 265.8548 - mean_binary_crossentropy: 0.0044 - loss: 265.2190 - val_likelihood_loss: 3744.4019 - val_mean_binary_crossentropy: 0.0624 - val_loss: 3727.4089
+Epoch 299/400
+229/229 - 77s - likelihood_loss: 269.0146 - mean_binary_crossentropy: 0.0045 - loss: 268.3812 - val_likelihood_loss: 3724.7124 - val_mean_binary_crossentropy: 0.0621 - val_loss: 3708.7334
+Epoch 300/400
+229/229 - 78s - likelihood_loss: 271.4217 - mean_binary_crossentropy: 0.0045 - loss: 270.7540 - val_likelihood_loss: 3950.5688 - val_mean_binary_crossentropy: 0.0658 - val_loss: 3933.3152
+Epoch 301/400
+229/229 - 78s - likelihood_loss: 265.4734 - mean_binary_crossentropy: 0.0044 - loss: 264.8161 - val_likelihood_loss: 3887.8638 - val_mean_binary_crossentropy: 0.0648 - val_loss: 3871.3860
+Epoch 302/400
+229/229 - 77s - likelihood_loss: 263.0623 - mean_binary_crossentropy: 0.0044 - loss: 262.4131 - val_likelihood_loss: 3541.3030 - val_mean_binary_crossentropy: 0.0590 - val_loss: 3526.6008
+Epoch 303/400
+229/229 - 77s - likelihood_loss: 261.8419 - mean_binary_crossentropy: 0.0044 - loss: 261.0861 - val_likelihood_loss: 3513.8042 - val_mean_binary_crossentropy: 0.0586 - val_loss: 3497.1667
+Epoch 304/400
+229/229 - 78s - likelihood_loss: 257.7357 - mean_binary_crossentropy: 0.0043 - loss: 257.0464 - val_likelihood_loss: 3342.9351 - val_mean_binary_crossentropy: 0.0557 - val_loss: 3326.3950
+Epoch 305/400
+229/229 - 78s - likelihood_loss: 257.4930 - mean_binary_crossentropy: 0.0043 - loss: 256.7085 - val_likelihood_loss: 3061.0532 - val_mean_binary_crossentropy: 0.0510 - val_loss: 3047.1670
+Epoch 306/400
+229/229 - 77s - likelihood_loss: 261.0527 - mean_binary_crossentropy: 0.0044 - loss: 260.2715 - val_likelihood_loss: 2817.9124 - val_mean_binary_crossentropy: 0.0470 - val_loss: 2803.2388
+Epoch 307/400
+229/229 - 77s - likelihood_loss: 265.7266 - mean_binary_crossentropy: 0.0044 - loss: 265.0084 - val_likelihood_loss: 3192.8984 - val_mean_binary_crossentropy: 0.0532 - val_loss: 3178.7524
+Epoch 308/400
+229/229 - 77s - likelihood_loss: 275.4513 - mean_binary_crossentropy: 0.0046 - loss: 274.6833 - val_likelihood_loss: 3322.4426 - val_mean_binary_crossentropy: 0.0554 - val_loss: 3307.0405
+Epoch 309/400
+229/229 - 77s - likelihood_loss: 277.0530 - mean_binary_crossentropy: 0.0046 - loss: 276.3247 - val_likelihood_loss: 3311.2476 - val_mean_binary_crossentropy: 0.0552 - val_loss: 3296.7119
+Epoch 310/400
+229/229 - 77s - likelihood_loss: 269.6150 - mean_binary_crossentropy: 0.0045 - loss: 268.7235 - val_likelihood_loss: 3110.4150 - val_mean_binary_crossentropy: 0.0518 - val_loss: 3094.8945
+Epoch 311/400
+229/229 - 77s - likelihood_loss: 269.7936 - mean_binary_crossentropy: 0.0045 - loss: 269.0852 - val_likelihood_loss: 3139.4670 - val_mean_binary_crossentropy: 0.0523 - val_loss: 3125.3594
+Epoch 312/400
+229/229 - 79s - likelihood_loss: 258.0990 - mean_binary_crossentropy: 0.0043 - loss: 257.4078 - val_likelihood_loss: 3020.6470 - val_mean_binary_crossentropy: 0.0503 - val_loss: 3006.6890
+Epoch 313/400
+229/229 - 77s - likelihood_loss: 252.5867 - mean_binary_crossentropy: 0.0042 - loss: 251.9462 - val_likelihood_loss: 2979.1167 - val_mean_binary_crossentropy: 0.0497 - val_loss: 2965.9043
+Epoch 314/400
+229/229 - 77s - likelihood_loss: 250.0239 - mean_binary_crossentropy: 0.0042 - loss: 249.3413 - val_likelihood_loss: 3025.9390 - val_mean_binary_crossentropy: 0.0504 - val_loss: 3011.6074
+Epoch 315/400
+229/229 - 77s - likelihood_loss: 251.0414 - mean_binary_crossentropy: 0.0042 - loss: 250.4020 - val_likelihood_loss: 3322.1011 - val_mean_binary_crossentropy: 0.0554 - val_loss: 3305.5969
+Epoch 316/400
+229/229 - 77s - likelihood_loss: 257.1936 - mean_binary_crossentropy: 0.0043 - loss: 256.5948 - val_likelihood_loss: 3395.0886 - val_mean_binary_crossentropy: 0.0566 - val_loss: 3378.5828
+Epoch 317/400
+229/229 - 77s - likelihood_loss: 270.8465 - mean_binary_crossentropy: 0.0045 - loss: 270.2186 - val_likelihood_loss: 3411.0232 - val_mean_binary_crossentropy: 0.0569 - val_loss: 3394.3816
+Epoch 318/400
+229/229 - 76s - likelihood_loss: 271.4454 - mean_binary_crossentropy: 0.0045 - loss: 270.9060 - val_likelihood_loss: 3047.6714 - val_mean_binary_crossentropy: 0.0508 - val_loss: 3033.3159
+Epoch 319/400
+229/229 - 78s - likelihood_loss: 255.6504 - mean_binary_crossentropy: 0.0043 - loss: 255.0246 - val_likelihood_loss: 3298.8350 - val_mean_binary_crossentropy: 0.0550 - val_loss: 3282.1006
+Epoch 320/400
+229/229 - 77s - likelihood_loss: 247.9461 - mean_binary_crossentropy: 0.0041 - loss: 247.3100 - val_likelihood_loss: 3362.4551 - val_mean_binary_crossentropy: 0.0560 - val_loss: 3345.5234
+Epoch 321/400
+229/229 - 78s - likelihood_loss: 243.3336 - mean_binary_crossentropy: 0.0041 - loss: 242.7144 - val_likelihood_loss: 3741.1338 - val_mean_binary_crossentropy: 0.0624 - val_loss: 3722.1548
+Epoch 322/400
+229/229 - 77s - likelihood_loss: 242.5074 - mean_binary_crossentropy: 0.0040 - loss: 241.8991 - val_likelihood_loss: 4134.6465 - val_mean_binary_crossentropy: 0.0689 - val_loss: 4116.5112
+Epoch 323/400
+229/229 - 77s - likelihood_loss: 249.9773 - mean_binary_crossentropy: 0.0042 - loss: 249.3083 - val_likelihood_loss: 4016.0769 - val_mean_binary_crossentropy: 0.0669 - val_loss: 3998.6062
+Epoch 324/400
+229/229 - 77s - likelihood_loss: 251.4951 - mean_binary_crossentropy: 0.0042 - loss: 250.8524 - val_likelihood_loss: 4221.2119 - val_mean_binary_crossentropy: 0.0704 - val_loss: 4201.7891
+Epoch 325/400
+229/229 - 76s - likelihood_loss: 251.5581 - mean_binary_crossentropy: 0.0042 - loss: 250.8343 - val_likelihood_loss: 4023.7524 - val_mean_binary_crossentropy: 0.0671 - val_loss: 4004.3816
+Epoch 326/400
+229/229 - 77s - likelihood_loss: 251.5294 - mean_binary_crossentropy: 0.0042 - loss: 250.8944 - val_likelihood_loss: 4097.8013 - val_mean_binary_crossentropy: 0.0683 - val_loss: 4077.0200
+Epoch 327/400
+229/229 - 77s - likelihood_loss: 259.6878 - mean_binary_crossentropy: 0.0043 - loss: 259.0623 - val_likelihood_loss: 4033.3237 - val_mean_binary_crossentropy: 0.0672 - val_loss: 4014.8333
+Epoch 328/400
+229/229 - 77s - likelihood_loss: 270.2279 - mean_binary_crossentropy: 0.0045 - loss: 269.5565 - val_likelihood_loss: 3550.7083 - val_mean_binary_crossentropy: 0.0592 - val_loss: 3532.5471
+Epoch 329/400
+229/229 - 78s - likelihood_loss: 273.4993 - mean_binary_crossentropy: 0.0046 - loss: 272.6953 - val_likelihood_loss: 2851.4382 - val_mean_binary_crossentropy: 0.0475 - val_loss: 2835.1411
+Epoch 330/400
+229/229 - 78s - likelihood_loss: 275.0853 - mean_binary_crossentropy: 0.0046 - loss: 274.1118 - val_likelihood_loss: 3297.5168 - val_mean_binary_crossentropy: 0.0550 - val_loss: 3277.0417
+Epoch 331/400
+229/229 - 77s - likelihood_loss: 269.9131 - mean_binary_crossentropy: 0.0045 - loss: 269.1036 - val_likelihood_loss: 2987.0918 - val_mean_binary_crossentropy: 0.0498 - val_loss: 2971.8542
+Epoch 332/400
+229/229 - 78s - likelihood_loss: 249.6820 - mean_binary_crossentropy: 0.0042 - loss: 249.0253 - val_likelihood_loss: 3067.1099 - val_mean_binary_crossentropy: 0.0511 - val_loss: 3050.8423
+Epoch 333/400
+229/229 - 78s - likelihood_loss: 240.2399 - mean_binary_crossentropy: 0.0040 - loss: 239.6074 - val_likelihood_loss: 3178.5518 - val_mean_binary_crossentropy: 0.0530 - val_loss: 3163.2300
+Epoch 334/400
+229/229 - 78s - likelihood_loss: 237.7186 - mean_binary_crossentropy: 0.0040 - loss: 237.1264 - val_likelihood_loss: 3473.4055 - val_mean_binary_crossentropy: 0.0579 - val_loss: 3456.0139
+Epoch 335/400
+229/229 - 77s - likelihood_loss: 241.5090 - mean_binary_crossentropy: 0.0040 - loss: 240.9396 - val_likelihood_loss: 3611.6538 - val_mean_binary_crossentropy: 0.0602 - val_loss: 3594.9353
+Epoch 336/400
+229/229 - 79s - likelihood_loss: 245.0502 - mean_binary_crossentropy: 0.0041 - loss: 244.4357 - val_likelihood_loss: 3575.8362 - val_mean_binary_crossentropy: 0.0596 - val_loss: 3560.0242
+Epoch 337/400
+229/229 - 76s - likelihood_loss: 249.2788 - mean_binary_crossentropy: 0.0042 - loss: 248.5675 - val_likelihood_loss: 3571.3511 - val_mean_binary_crossentropy: 0.0595 - val_loss: 3554.3689
+Epoch 338/400
+229/229 - 77s - likelihood_loss: 250.0070 - mean_binary_crossentropy: 0.0042 - loss: 249.3630 - val_likelihood_loss: 4124.1528 - val_mean_binary_crossentropy: 0.0687 - val_loss: 4105.4546
+Epoch 339/400
+229/229 - 77s - likelihood_loss: 250.7706 - mean_binary_crossentropy: 0.0042 - loss: 250.0960 - val_likelihood_loss: 3575.8157 - val_mean_binary_crossentropy: 0.0596 - val_loss: 3559.8682
+Epoch 340/400
+229/229 - 77s - likelihood_loss: 239.8118 - mean_binary_crossentropy: 0.0040 - loss: 239.2121 - val_likelihood_loss: 3273.6975 - val_mean_binary_crossentropy: 0.0546 - val_loss: 3258.8442
+Epoch 341/400
+229/229 - 76s - likelihood_loss: 234.2359 - mean_binary_crossentropy: 0.0039 - loss: 233.6490 - val_likelihood_loss: 3432.3911 - val_mean_binary_crossentropy: 0.0572 - val_loss: 3415.2373
+Epoch 342/400
+229/229 - 77s - likelihood_loss: 232.2243 - mean_binary_crossentropy: 0.0039 - loss: 231.6480 - val_likelihood_loss: 4033.2507 - val_mean_binary_crossentropy: 0.0672 - val_loss: 4015.0042
+Epoch 343/400
+229/229 - 77s - likelihood_loss: 234.5913 - mean_binary_crossentropy: 0.0039 - loss: 234.0036 - val_likelihood_loss: 4178.6343 - val_mean_binary_crossentropy: 0.0696 - val_loss: 4160.9956
+Epoch 344/400
+229/229 - 78s - likelihood_loss: 241.7507 - mean_binary_crossentropy: 0.0040 - loss: 241.1153 - val_likelihood_loss: 4208.2021 - val_mean_binary_crossentropy: 0.0701 - val_loss: 4190.5776
+Epoch 345/400
+229/229 - 77s - likelihood_loss: 247.8705 - mean_binary_crossentropy: 0.0041 - loss: 247.2847 - val_likelihood_loss: 3696.0620 - val_mean_binary_crossentropy: 0.0616 - val_loss: 3679.5930
+Epoch 346/400
+229/229 - 77s - likelihood_loss: 241.7896 - mean_binary_crossentropy: 0.0040 - loss: 241.2544 - val_likelihood_loss: 3967.4495 - val_mean_binary_crossentropy: 0.0661 - val_loss: 3950.8467
+Epoch 347/400
+229/229 - 76s - likelihood_loss: 236.6091 - mean_binary_crossentropy: 0.0039 - loss: 235.9682 - val_likelihood_loss: 3632.5493 - val_mean_binary_crossentropy: 0.0605 - val_loss: 3616.6628
+Epoch 348/400
+229/229 - 76s - likelihood_loss: 237.6845 - mean_binary_crossentropy: 0.0040 - loss: 236.9991 - val_likelihood_loss: 3565.6294 - val_mean_binary_crossentropy: 0.0594 - val_loss: 3548.4451
+Epoch 349/400
+229/229 - 78s - likelihood_loss: 253.0069 - mean_binary_crossentropy: 0.0042 - loss: 252.3507 - val_likelihood_loss: 3966.0830 - val_mean_binary_crossentropy: 0.0661 - val_loss: 3949.3193
+Epoch 350/400
+229/229 - 77s - likelihood_loss: 244.9045 - mean_binary_crossentropy: 0.0041 - loss: 244.2374 - val_likelihood_loss: 4092.3918 - val_mean_binary_crossentropy: 0.0682 - val_loss: 4074.5422
+Epoch 351/400
+229/229 - 77s - likelihood_loss: 236.5723 - mean_binary_crossentropy: 0.0039 - loss: 235.9829 - val_likelihood_loss: 3977.9648 - val_mean_binary_crossentropy: 0.0663 - val_loss: 3960.8799
+Epoch 352/400
+229/229 - 76s - likelihood_loss: 232.9419 - mean_binary_crossentropy: 0.0039 - loss: 232.3245 - val_likelihood_loss: 4137.7759 - val_mean_binary_crossentropy: 0.0690 - val_loss: 4120.1406
+Epoch 353/400
+229/229 - 76s - likelihood_loss: 236.3555 - mean_binary_crossentropy: 0.0039 - loss: 235.6590 - val_likelihood_loss: 3625.8613 - val_mean_binary_crossentropy: 0.0604 - val_loss: 3609.7234
+Epoch 354/400
+229/229 - 77s - likelihood_loss: 240.1498 - mean_binary_crossentropy: 0.0040 - loss: 239.5911 - val_likelihood_loss: 3670.8782 - val_mean_binary_crossentropy: 0.0612 - val_loss: 3654.2197
+Epoch 355/400
+229/229 - 77s - likelihood_loss: 242.0687 - mean_binary_crossentropy: 0.0040 - loss: 241.5192 - val_likelihood_loss: 3700.3088 - val_mean_binary_crossentropy: 0.0617 - val_loss: 3685.3799
+Epoch 356/400
+229/229 - 79s - likelihood_loss: 241.6028 - mean_binary_crossentropy: 0.0040 - loss: 241.0454 - val_likelihood_loss: 4013.4158 - val_mean_binary_crossentropy: 0.0669 - val_loss: 3997.9768
+Epoch 357/400
+229/229 - 77s - likelihood_loss: 238.9266 - mean_binary_crossentropy: 0.0040 - loss: 238.3151 - val_likelihood_loss: 4167.1729 - val_mean_binary_crossentropy: 0.0695 - val_loss: 4151.4033
+Epoch 358/400
+229/229 - 78s - likelihood_loss: 240.1281 - mean_binary_crossentropy: 0.0040 - loss: 239.5320 - val_likelihood_loss: 3485.4280 - val_mean_binary_crossentropy: 0.0581 - val_loss: 3465.9729
+Epoch 359/400
+229/229 - 77s - likelihood_loss: 241.2151 - mean_binary_crossentropy: 0.0040 - loss: 240.6504 - val_likelihood_loss: 3367.2520 - val_mean_binary_crossentropy: 0.0561 - val_loss: 3349.9673
+Epoch 360/400
+229/229 - 77s - likelihood_loss: 230.7105 - mean_binary_crossentropy: 0.0038 - loss: 230.1441 - val_likelihood_loss: 3309.8901 - val_mean_binary_crossentropy: 0.0552 - val_loss: 3293.9683
+Epoch 361/400
+229/229 - 77s - likelihood_loss: 227.0345 - mean_binary_crossentropy: 0.0038 - loss: 226.4744 - val_likelihood_loss: 3299.1357 - val_mean_binary_crossentropy: 0.0550 - val_loss: 3283.0928
+Epoch 362/400
+229/229 - 77s - likelihood_loss: 229.5043 - mean_binary_crossentropy: 0.0038 - loss: 228.9004 - val_likelihood_loss: 3190.7671 - val_mean_binary_crossentropy: 0.0532 - val_loss: 3176.6099
+Epoch 363/400
+229/229 - 77s - likelihood_loss: 233.1674 - mean_binary_crossentropy: 0.0039 - loss: 232.5936 - val_likelihood_loss: 3394.5125 - val_mean_binary_crossentropy: 0.0566 - val_loss: 3378.8650
+Epoch 364/400
+229/229 - 77s - likelihood_loss: 239.7524 - mean_binary_crossentropy: 0.0040 - loss: 239.1394 - val_likelihood_loss: 3098.0605 - val_mean_binary_crossentropy: 0.0516 - val_loss: 3081.6003
+Epoch 365/400
+229/229 - 77s - likelihood_loss: 243.6676 - mean_binary_crossentropy: 0.0041 - loss: 243.0653 - val_likelihood_loss: 3666.6431 - val_mean_binary_crossentropy: 0.0611 - val_loss: 3648.2993
+Epoch 366/400
+229/229 - 77s - likelihood_loss: 237.0875 - mean_binary_crossentropy: 0.0040 - loss: 236.4638 - val_likelihood_loss: 4383.9287 - val_mean_binary_crossentropy: 0.0731 - val_loss: 4360.9390
+Epoch 367/400
+229/229 - 77s - likelihood_loss: 241.0543 - mean_binary_crossentropy: 0.0040 - loss: 240.4335 - val_likelihood_loss: 4149.8872 - val_mean_binary_crossentropy: 0.0692 - val_loss: 4131.4595
+Epoch 368/400
+229/229 - 78s - likelihood_loss: 253.1952 - mean_binary_crossentropy: 0.0042 - loss: 252.5558 - val_likelihood_loss: 4170.6675 - val_mean_binary_crossentropy: 0.0695 - val_loss: 4150.2090
+Epoch 369/400
+229/229 - 77s - likelihood_loss: 233.7750 - mean_binary_crossentropy: 0.0039 - loss: 233.0919 - val_likelihood_loss: 5090.5459 - val_mean_binary_crossentropy: 0.0848 - val_loss: 5067.8164
+Epoch 370/400
+229/229 - 77s - likelihood_loss: 232.5868 - mean_binary_crossentropy: 0.0039 - loss: 231.9337 - val_likelihood_loss: 4842.0454 - val_mean_binary_crossentropy: 0.0807 - val_loss: 4818.8066
+Epoch 371/400
+229/229 - 77s - likelihood_loss: 233.5623 - mean_binary_crossentropy: 0.0039 - loss: 232.8382 - val_likelihood_loss: 4293.8667 - val_mean_binary_crossentropy: 0.0716 - val_loss: 4274.0942
+Epoch 372/400
+229/229 - 77s - likelihood_loss: 227.4908 - mean_binary_crossentropy: 0.0038 - loss: 226.8816 - val_likelihood_loss: 3986.2400 - val_mean_binary_crossentropy: 0.0664 - val_loss: 3967.3672
+Epoch 373/400
+229/229 - 77s - likelihood_loss: 230.9225 - mean_binary_crossentropy: 0.0038 - loss: 230.3275 - val_likelihood_loss: 3920.8518 - val_mean_binary_crossentropy: 0.0653 - val_loss: 3902.4966
+Epoch 374/400
+229/229 - 77s - likelihood_loss: 233.9923 - mean_binary_crossentropy: 0.0039 - loss: 233.3954 - val_likelihood_loss: 3736.1826 - val_mean_binary_crossentropy: 0.0623 - val_loss: 3717.7234
+Epoch 375/400
+229/229 - 77s - likelihood_loss: 236.0084 - mean_binary_crossentropy: 0.0039 - loss: 235.4019 - val_likelihood_loss: 3588.5552 - val_mean_binary_crossentropy: 0.0598 - val_loss: 3568.5815
+Epoch 376/400
+229/229 - 77s - likelihood_loss: 235.7260 - mean_binary_crossentropy: 0.0039 - loss: 235.1431 - val_likelihood_loss: 3847.9282 - val_mean_binary_crossentropy: 0.0641 - val_loss: 3829.0649
+Epoch 377/400
+229/229 - 77s - likelihood_loss: 227.6283 - mean_binary_crossentropy: 0.0038 - loss: 227.0524 - val_likelihood_loss: 3883.7573 - val_mean_binary_crossentropy: 0.0647 - val_loss: 3864.2041
+Epoch 378/400
+229/229 - 77s - likelihood_loss: 226.9798 - mean_binary_crossentropy: 0.0038 - loss: 226.4346 - val_likelihood_loss: 3938.0137 - val_mean_binary_crossentropy: 0.0656 - val_loss: 3918.0259
+Epoch 379/400
+229/229 - 77s - likelihood_loss: 234.5144 - mean_binary_crossentropy: 0.0039 - loss: 233.9142 - val_likelihood_loss: 3756.4224 - val_mean_binary_crossentropy: 0.0626 - val_loss: 3737.1980
+Epoch 380/400
+229/229 - 77s - likelihood_loss: 239.1339 - mean_binary_crossentropy: 0.0040 - loss: 238.4904 - val_likelihood_loss: 3400.9246 - val_mean_binary_crossentropy: 0.0567 - val_loss: 3383.0012
+Epoch 381/400
+229/229 - 77s - likelihood_loss: 244.4859 - mean_binary_crossentropy: 0.0041 - loss: 243.9509 - val_likelihood_loss: 3837.2700 - val_mean_binary_crossentropy: 0.0640 - val_loss: 3817.6389
+Epoch 382/400
+229/229 - 78s - likelihood_loss: 242.0430 - mean_binary_crossentropy: 0.0040 - loss: 241.5660 - val_likelihood_loss: 4165.7974 - val_mean_binary_crossentropy: 0.0694 - val_loss: 4147.7295
+Epoch 383/400
+229/229 - 77s - likelihood_loss: 233.1112 - mean_binary_crossentropy: 0.0039 - loss: 232.6312 - val_likelihood_loss: 4183.4297 - val_mean_binary_crossentropy: 0.0697 - val_loss: 4164.2314
+Epoch 384/400
+229/229 - 77s - likelihood_loss: 230.4824 - mean_binary_crossentropy: 0.0038 - loss: 229.9969 - val_likelihood_loss: 4287.0537 - val_mean_binary_crossentropy: 0.0715 - val_loss: 4266.5498
+Epoch 385/400
+229/229 - 77s - likelihood_loss: 226.9296 - mean_binary_crossentropy: 0.0038 - loss: 226.4133 - val_likelihood_loss: 4175.9521 - val_mean_binary_crossentropy: 0.0696 - val_loss: 4154.1855
+Epoch 386/400
+229/229 - 77s - likelihood_loss: 227.2000 - mean_binary_crossentropy: 0.0038 - loss: 226.6085 - val_likelihood_loss: 3988.4348 - val_mean_binary_crossentropy: 0.0665 - val_loss: 3967.4546
+Epoch 387/400
+229/229 - 77s - likelihood_loss: 226.1457 - mean_binary_crossentropy: 0.0038 - loss: 225.5614 - val_likelihood_loss: 3941.5264 - val_mean_binary_crossentropy: 0.0657 - val_loss: 3918.8496
+Epoch 388/400
+229/229 - 76s - likelihood_loss: 232.0442 - mean_binary_crossentropy: 0.0039 - loss: 231.4087 - val_likelihood_loss: 4168.8135 - val_mean_binary_crossentropy: 0.0695 - val_loss: 4148.5459
+Epoch 389/400
+229/229 - 77s - likelihood_loss: 232.4022 - mean_binary_crossentropy: 0.0039 - loss: 231.8052 - val_likelihood_loss: 4173.0063 - val_mean_binary_crossentropy: 0.0696 - val_loss: 4152.6655
+Epoch 390/400
+229/229 - 76s - likelihood_loss: 228.6452 - mean_binary_crossentropy: 0.0038 - loss: 228.1006 - val_likelihood_loss: 3943.9644 - val_mean_binary_crossentropy: 0.0657 - val_loss: 3924.2415
+Epoch 391/400
+229/229 - 76s - likelihood_loss: 232.1434 - mean_binary_crossentropy: 0.0039 - loss: 231.3469 - val_likelihood_loss: 3367.8101 - val_mean_binary_crossentropy: 0.0561 - val_loss: 3349.4873
+Epoch 392/400
+229/229 - 77s - likelihood_loss: 230.3090 - mean_binary_crossentropy: 0.0038 - loss: 229.6518 - val_likelihood_loss: 4695.5630 - val_mean_binary_crossentropy: 0.0783 - val_loss: 4673.1978
+Epoch 393/400
+229/229 - 77s - likelihood_loss: 224.9344 - mean_binary_crossentropy: 0.0037 - loss: 224.3163 - val_likelihood_loss: 5543.3237 - val_mean_binary_crossentropy: 0.0924 - val_loss: 5518.9473
+Epoch 394/400
+229/229 - 78s - likelihood_loss: 222.5486 - mean_binary_crossentropy: 0.0037 - loss: 221.9073 - val_likelihood_loss: 5265.4175 - val_mean_binary_crossentropy: 0.0878 - val_loss: 5242.5464
+Epoch 395/400
+229/229 - 78s - likelihood_loss: 220.1268 - mean_binary_crossentropy: 0.0037 - loss: 219.5341 - val_likelihood_loss: 4802.4565 - val_mean_binary_crossentropy: 0.0800 - val_loss: 4778.5239
+Epoch 396/400
+229/229 - 77s - likelihood_loss: 220.3644 - mean_binary_crossentropy: 0.0037 - loss: 219.7511 - val_likelihood_loss: 4586.1636 - val_mean_binary_crossentropy: 0.0764 - val_loss: 4563.3110
+Epoch 397/400
+229/229 - 77s - likelihood_loss: 223.3316 - mean_binary_crossentropy: 0.0037 - loss: 222.8087 - val_likelihood_loss: 4452.2012 - val_mean_binary_crossentropy: 0.0742 - val_loss: 4428.5093
+Epoch 398/400
+229/229 - 77s - likelihood_loss: 226.1389 - mean_binary_crossentropy: 0.0038 - loss: 225.5402 - val_likelihood_loss: 4102.1807 - val_mean_binary_crossentropy: 0.0684 - val_loss: 4082.9697
+Epoch 399/400
+229/229 - 78s - likelihood_loss: 224.9019 - mean_binary_crossentropy: 0.0037 - loss: 224.3493 - val_likelihood_loss: 3970.8813 - val_mean_binary_crossentropy: 0.0662 - val_loss: 3949.5435
+Epoch 400/400
+229/229 - 78s - likelihood_loss: 231.8367 - mean_binary_crossentropy: 0.0039 - loss: 231.2824 - val_likelihood_loss: 3975.1143 - val_mean_binary_crossentropy: 0.0663 - val_loss: 3955.3618
+Total time elapsed for training = 40558.047228336334 seconds
+Training finished at 2020-07-17 03:29:45.868942
+Saved model to disk (.h5)
+Pickled training history
