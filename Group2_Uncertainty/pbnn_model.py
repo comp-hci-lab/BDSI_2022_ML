@@ -1,5 +1,14 @@
 from __main__ import *
 
+FILTERS = 32
+DATA_SIZE = 60000*144*144
+BATCH_SIZE = 1
+EPOCHS = 100
+VERBOSE = 2
+        
+PRIOR_MU = 0
+PRIOR_SIGMA = 10
+
 def make_model():
 
     class KLDivergence:
@@ -20,7 +29,7 @@ def make_model():
 
     posterior_fn = tfp.layers.default_mean_field_normal_fn(
               loc_initializer=tf.random_normal_initializer(
-                  mean=PRIOR_MU, stddev=0.05),
+                  mean=0, stddev=10),
               untransformed_scale_initializer=tf.random_normal_initializer(
                   mean=np.log(np.exp(0.001) - 1), stddev=0.05))
 
@@ -109,7 +118,7 @@ def make_model():
     print('Output size:', output_layer.shape)
 
     model = keras.models.Model(inputs=input_layer, outputs=output_layer,
-                               name = 'model_' + LAYER_NAME)
+                               name = 'model')
 
     for layer in model.layers:
         if type(layer) == tfp.python.layers.conv_variational.Conv2DFlipout:
